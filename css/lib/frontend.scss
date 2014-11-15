@@ -1,2 +1,105 @@
 @import 'common';
 @import 'includes/frontend/vars';
+@import 'includes/frontend/buttons';
+
+header
+{
+    height: 124px;
+    background:transparent url(../../img/header-bg.png) left top repeat-x;
+    border-bottom: 5px solid $secondary-color;
+
+    ul
+    {
+        li
+        {
+            display: inline-block;
+        }
+    }
+
+    .content
+    {
+        #header-sub-menu
+        {
+            float: right;
+
+            ul
+            {
+                li
+                {
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    background:#e9e9ed;
+                    color:$main-color;
+                    padding: 5px 10px;
+                    position: relative;
+
+                    &:last-child
+                    {
+                        border: 1px solid $secondary-color;
+                        border-top: none;
+                        margin-right: -3px;
+                    }
+
+                    a
+                    {
+                        display: inline-block;
+                        height: 100%;
+                        width: 100%;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                }
+            }
+        }
+        .logo
+        {
+            float: left;
+            margin-top: 42px;
+        }
+        nav
+        {
+            float: right;
+
+            ul
+            {
+                margin-top: 40px;
+                li
+                {
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 14px;
+                    color: $main-color;
+                    margin-right: 20px;
+
+                    a
+                    {
+                        display: inline-block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        cursor: pointer;
+                    }
+                    i
+                    {
+                        display: block;
+                        text-align: center;
+                    }
+
+                    &:last-child
+                    {
+                        margin-right: 0;
+                    }
+                    &:hover
+                    {
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
+}
