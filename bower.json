@@ -1,8 +1,8 @@
 {
-  "name": "iknsa - F",
+  "name": "Front End",
   "version": "0.0.0",
   "homepage": "https://github.com/khalid-bd/f",
-  "description": "The ultimate form treatment",
+  "description": "The front end framework with the structure of basic front end requirements",
   "keywords": [
     "Contact",
     "form",
@@ -12,7 +12,7 @@
     "processing"
   ],
   "authors": [
-    "Khalid Sookia <iknsa.f@gmail.com>"
+    "Khalid Sookia <khalidsookia@gmail.com>"
   ],
   "license": "MIT",
   "ignore": [

@@ -1,8 +1,27 @@
 @import 'compass';
-@import "normalize";
+// @import "normalize";
+@import "compass/reset";
+@import 'includes/common/vars';
 
-div, p, h1, h2, h3, h4, h5, h6, aside, section,article, details, figcaption, figure, footer, header, hgroup, main, nav, summary
+div, p, h1, h2, h3, h4, h5, h6, aside, section,article, details, figcaption, figure, footer, header, hgroup, main, nav, summary, li
 {
     margin: 0;
     padding: 0;
+}
+*{
+    box-sizing:border-box;
+}
+body
+{
+    font-family: calibri;
+}
+.container
+{
+    width: $max-width;
+    margin: 0 auto;
+}
+.content
+{
+    width: $content;
+    margin: 0 auto;
 }
