@@ -151,6 +151,48 @@ main
                 width: 100%;
                 background: rgba(#fff, 0.5);
                 margin: 30px 0;
+                padding: 35px 0;
+                @include box-shadow(#5a5a5a 0px 5px 15px);
+
+                .element
+                {
+                    font-size: 18px;
+                    margin-top: 20px;
+                    color: $main-color;
+
+                    &:first-child
+                    {
+                        margin-top: 0;
+                    }
+
+                    label
+                    {
+                        display: inline-block;
+                        width: 368px;
+                        text-align: right;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        margin-right: 20px;
+                    }
+                    input[type=email], input[type=password], input[type=text]
+                    {
+                        width: 300px;
+                        border: 1px solid rgba($secondary-color, 0.5);
+                        @include border-radius(5px);
+                        height: 38px;
+                        padding: 10px 20px;
+                    }
+
+                }
+            }
+            input[type=submit]
+            {
+                @include submit-btn;
+
+                &:hover
+                {
+                    background:#a581ad;
+                }
             }
         }
     }

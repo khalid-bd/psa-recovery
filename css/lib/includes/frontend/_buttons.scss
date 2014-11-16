@@ -1,0 +1,15 @@
+@mixin submit-btn
+{
+    border: none;
+    outline: none;
+    font-size: 24px;
+    color: white;
+    background:#bd94c5;
+    @include border-radius(5px);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: calibri;
+    display: block;
+    margin: 0 auto;
+    padding: 3px 64px;
+}
