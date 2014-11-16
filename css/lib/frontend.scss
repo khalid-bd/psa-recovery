@@ -1,5 +1,5 @@
-@import 'common';
 @import 'includes/frontend/vars';
+@import 'common';
 @import 'includes/frontend/buttons';
 
 header
@@ -37,7 +37,7 @@ header
                     {
                         border: 1px solid $secondary-color;
                         border-top: none;
-                        margin-right: -3px;
+                        // margin-right: -3px;
                     }
 
                     a
@@ -51,6 +51,12 @@ header
         {
             float: left;
             margin-top: 42px;
+            position: relative;
+
+            a
+            {
+                @include block-link;
+            }
         }
         nav
         {
@@ -94,7 +100,41 @@ header
 
 main
 {
-    min-height: 100px;
+    background:#ededed;
+    position: relative;
+    z-index: 0;
+    min-height: 350px;
+    .container
+    {
+        #main-bg-cars
+        {
+            z-index: -1;
+            position: absolute;
+            background:transparent url(../../img/main-bg.jpg) left top no-repeat;
+            min-height: 350px;
+            width: 1420px;
+
+            div
+            {
+                height: 350px;
+                line-height: 350px;
+                &:first-child
+                {
+                    float: left;
+                    margin-left: 10px;
+                }
+                &:last-child
+                {
+                    float: right;
+                    margin-right: 10px;
+                }
+                img
+                {
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
 }
 
 footer
@@ -139,7 +179,7 @@ footer
             {
                 float: right;
                 background:#b8b9b9;
-                padding: 5px 10px;
+                padding: 10px 20px;
                 i
                 {
                     background:transparent url(../../img/footer-lang.png) left top no-repeat;
@@ -157,7 +197,7 @@ footer
             &.active
             {
                 position: relative;
-                top: -70px;
+                top: -45px;
                 background: #fff;
                 border: 1px solid #b8b9b9;
                 width: 140px;
@@ -169,6 +209,7 @@ footer
                     position: relative;
                     background:inherit;
                     border-bottom: 1px solid #b8b9b9;
+                    padding: 0px 17px;
                     padding-bottom: 10px;
                     color: $secondary-color;
 
@@ -181,7 +222,7 @@ footer
                 .option
                 {
                     clear:both;
-                    padding: 10px 25px 0;
+                    padding: 5px 20px 0;
                     display: block;
 
                     &.active
@@ -199,9 +240,15 @@ footer
         .legales
         {
             float: right;
-            padding: 5px 10px;
+            padding: 10px 20px;
             background: #b8b9b9;
             margin-left: 20px;
+            position: relative;
+
+            a
+            {
+                @include block-link;
+            }
         }
     }
 }

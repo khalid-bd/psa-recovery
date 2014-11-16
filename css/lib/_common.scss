@@ -2,41 +2,38 @@
 // @import "normalize";
 @import "compass/reset";
 @import 'includes/common/vars';
-
+*{
+    box-sizing:border-box;
+}
 div, p, h1, h2, h3, h4, h5, h6, aside, section,article, details, figcaption, figure, footer, header, hgroup, main, nav, summary, li
 {
     margin: 0;
     padding: 0;
+}
+body
+{
+    font-family: calibri;
 }
 a
 {
     color: initial;
     text-decoration: none;
 }
-*{
-    box-sizing:border-box;
-}
-body
+h1
 {
-    font-family: calibri;
+    @include h1;
+}
+b
+{
+    font-weight: 800;
 }
 .container
 {
-    width: $max-width;
+    max-width: $max-width;
     margin: 0 auto;
 }
 .content
 {
-    width: $content;
+    max-width: $content;
     margin: 0 auto;
 }
- @mixin block-link
- {
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
- }
