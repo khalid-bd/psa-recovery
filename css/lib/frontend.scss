@@ -106,11 +106,13 @@ main
     min-height: 350px;
     .container
     {
+        background:transparent url(../../img/main-bg.jpg) left top no-repeat;
+        position: relative;
+        z-index: -2;
         #main-bg-cars
         {
             z-index: -1;
             position: absolute;
-            background:transparent url(../../img/main-bg.jpg) left top no-repeat;
             min-height: 350px;
             width: 1420px;
 
@@ -152,7 +154,7 @@ main
                 background: rgba(#fff, 0.5);
                 margin: 30px 0;
                 padding: 35px 0;
-                @include box-shadow(#5a5a5a 0px 5px 15px);
+                @include box-shadow(#7c7c7c 0px 3px 10px);
 
                 .element
                 {
