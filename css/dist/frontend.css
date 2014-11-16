@@ -256,29 +256,83 @@ main .container .content .transparent {
   width: 100%;
   background: rgba(255, 255, 255, 0.5);
   margin: 30px 0;
+  padding: 35px 0;
+  -moz-box-shadow: #5a5a5a 0px 5px 15px;
+  -webkit-box-shadow: #5a5a5a 0px 5px 15px;
+  box-shadow: #5a5a5a 0px 5px 15px;
+}
+/* line 157, ../lib/frontend.scss */
+main .container .content .transparent .element {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #4b4a4d;
+}
+/* line 163, ../lib/frontend.scss */
+main .container .content .transparent .element:first-child {
+  margin-top: 0;
+}
+/* line 168, ../lib/frontend.scss */
+main .container .content .transparent .element label {
+  display: inline-block;
+  width: 368px;
+  text-align: right;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+/* line 177, ../lib/frontend.scss */
+main .container .content .transparent .element input[type=email], main .container .content .transparent .element input[type=password], main .container .content .transparent .element input[type=text] {
+  width: 300px;
+  border: 1px solid rgba(124, 41, 139, 0.5);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  height: 38px;
+  padding: 10px 20px;
+}
+/* line 188, ../lib/frontend.scss */
+main .container .content input[type=submit] {
+  border: none;
+  outline: none;
+  font-size: 24px;
+  color: white;
+  background: #bd94c5;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: calibri;
+  display: block;
+  margin: 0 auto;
+  padding: 3px 64px;
+}
+/* line 192, ../lib/frontend.scss */
+main .container .content input[type=submit]:hover {
+  background: #a581ad;
 }
 
-/* line 159, ../lib/frontend.scss */
+/* line 201, ../lib/frontend.scss */
 footer {
   height: 119px;
   background: transparent url(../../img/footer-bg.png) left top repeat-x;
   position: relative;
 }
-/* line 165, ../lib/frontend.scss */
+/* line 207, ../lib/frontend.scss */
 footer .ico {
   padding-top: 10px;
 }
-/* line 168, ../lib/frontend.scss */
+/* line 210, ../lib/frontend.scss */
 footer .ico div {
   position: relative;
   display: inline-block;
   margin-right: 55px;
 }
-/* line 174, ../lib/frontend.scss */
+/* line 216, ../lib/frontend.scss */
 footer .ico div:last-child {
   margin-right: 0;
 }
-/* line 179, ../lib/frontend.scss */
+/* line 221, ../lib/frontend.scss */
 footer .ico div a {
   display: inline-block;
   position: absolute;
@@ -288,24 +342,24 @@ footer .ico div a {
   height: 100%;
   cursor: pointer;
 }
-/* line 186, ../lib/frontend.scss */
+/* line 228, ../lib/frontend.scss */
 footer .opt {
   float: right;
   font-size: 12px;
   color: #4b4a4d;
 }
-/* line 192, ../lib/frontend.scss */
+/* line 234, ../lib/frontend.scss */
 footer .opt .lang {
   float: left;
   cursor: pointer;
 }
-/* line 197, ../lib/frontend.scss */
+/* line 239, ../lib/frontend.scss */
 footer .opt .lang .choose {
   float: right;
   background: #b8b9b9;
   padding: 10px 20px;
 }
-/* line 202, ../lib/frontend.scss */
+/* line 244, ../lib/frontend.scss */
 footer .opt .lang .choose i {
   background: transparent url(../../img/footer-lang.png) left top no-repeat;
   display: inline-block;
@@ -313,11 +367,11 @@ footer .opt .lang .choose i {
   height: 7px;
   margin-left: 10px;
 }
-/* line 211, ../lib/frontend.scss */
+/* line 253, ../lib/frontend.scss */
 footer .opt .lang .option {
   display: none;
 }
-/* line 216, ../lib/frontend.scss */
+/* line 258, ../lib/frontend.scss */
 footer .opt .lang.active {
   position: relative;
   top: -45px;
@@ -329,7 +383,7 @@ footer .opt .lang.active {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 226, ../lib/frontend.scss */
+/* line 268, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -338,25 +392,25 @@ footer .opt .lang.active .choose {
   padding-bottom: 10px;
   color: #7c298b;
 }
-/* line 235, ../lib/frontend.scss */
+/* line 277, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 241, ../lib/frontend.scss */
+/* line 283, ../lib/frontend.scss */
 footer .opt .lang.active .option {
   clear: both;
   padding: 5px 20px 0;
   display: block;
 }
-/* line 247, ../lib/frontend.scss */
+/* line 289, ../lib/frontend.scss */
 footer .opt .lang.active .option.active {
   color: #7c298b;
 }
-/* line 252, ../lib/frontend.scss */
+/* line 294, ../lib/frontend.scss */
 footer .opt .lang.active .option a {
   color: inherit;
 }
-/* line 259, ../lib/frontend.scss */
+/* line 301, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   padding: 10px 20px;
@@ -364,7 +418,7 @@ footer .opt .legales {
   margin-left: 20px;
   position: relative;
 }
-/* line 267, ../lib/frontend.scss */
+/* line 309, ../lib/frontend.scss */
 footer .opt .legales a {
   display: inline-block;
   position: absolute;
