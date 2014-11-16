@@ -70,22 +70,28 @@ div, p, h1, h2, h3, h4, h5, h6, aside, section, article, details, figcaption, fi
 }
 
 /* line 11, ../lib/_common.scss */
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+/* line 16, ../lib/_common.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 14, ../lib/_common.scss */
+/* line 19, ../lib/_common.scss */
 body {
   font-family: calibri;
 }
 
-/* line 18, ../lib/_common.scss */
+/* line 23, ../lib/_common.scss */
 .container {
   width: 1420px;
   margin: 0 auto;
 }
 
-/* line 23, ../lib/_common.scss */
+/* line 28, ../lib/_common.scss */
 .content {
   width: 940px;
   margin: 0 auto;
