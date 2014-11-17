@@ -22,4 +22,15 @@ jQuery(document).ready(function(){
             $(this).attr("class", classe);
         }).stop();
 // ------------ End footer language change -----------------------
+// 
+// Icon Links toggle title background change
+    $(".ico-links ul li")
+        .hover(function() {
+            console.log(this);
+            $('span', this).addClass( "active" );
+        }).stop()
+        .mouseout(function() {
+            $('span', this).removeClass("active");
+        }).stop();
+// ------------ End footer language change -----------------------
 });
