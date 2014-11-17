@@ -2,6 +2,9 @@ $max-width: 1420px;
 $content: 940px;
 
 $h1-font-size: 30px;
+$h2-font-size: 36px;
+$h6-font-size: 14px;
+$p-font-size: 30px;
 
 
 
@@ -21,4 +24,24 @@ $h1-font-size: 30px;
     font-size: $h1-font-size;
     color: $secondary-color;
     text-transform: uppercase;
+}
+
+@mixin h2
+{
+    font-size: $h2-font-size;
+    color: $secondary-color;
+    font-weight: 200;
+}
+
+@mixin h6
+{
+    font-size: $h6-font-size;
+    color: $main-color;
+}
+
+@mixin p
+{
+    font-size: $p-font-size;
+    color: $main-color;
+    line-height: $p-font-size * 1.1;
 }
