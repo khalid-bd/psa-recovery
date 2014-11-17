@@ -341,28 +341,81 @@ main .container .content input[type=submit] {
 main .container .content input[type=submit]:hover {
   background: #a581ad;
 }
+/* line 208, ../lib/frontend.scss */
+main .ico-links {
+  text-align: center;
+}
+/* line 211, ../lib/frontend.scss */
+main .ico-links ul {
+  display: inline-block;
+}
+/* line 215, ../lib/frontend.scss */
+main .ico-links ul li {
+  position: relative;
+  display: inline-block;
+  width: 222px;
+  height: 204px;
+  overflow: hidden;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  margin-right: 13px;
+}
+/* line 225, ../lib/frontend.scss */
+main .ico-links ul li:last-child {
+  margin-right: 0;
+}
+/* line 230, ../lib/frontend.scss */
+main .ico-links ul li span {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  min-height: 55px;
+  background: rgba(75, 74, 77, 0.9);
+  color: white;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 10px 40px;
+}
+/* line 245, ../lib/frontend.scss */
+main .ico-links ul li span.active {
+  background: rgba(124, 41, 139, 0.9);
+}
+/* line 251, ../lib/frontend.scss */
+main .ico-links ul li a {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
 
-/* line 210, ../lib/frontend.scss */
+/* line 260, ../lib/frontend.scss */
 footer {
   height: 119px;
   background: transparent url(../../img/footer-bg.png) left top repeat-x;
   position: relative;
 }
-/* line 216, ../lib/frontend.scss */
+/* line 266, ../lib/frontend.scss */
 footer .ico {
   padding-top: 10px;
 }
-/* line 219, ../lib/frontend.scss */
+/* line 269, ../lib/frontend.scss */
 footer .ico div {
   position: relative;
   display: inline-block;
   margin-right: 55px;
 }
-/* line 225, ../lib/frontend.scss */
+/* line 275, ../lib/frontend.scss */
 footer .ico div:last-child {
   margin-right: 0;
 }
-/* line 230, ../lib/frontend.scss */
+/* line 280, ../lib/frontend.scss */
 footer .ico div a {
   display: inline-block;
   position: absolute;
@@ -372,24 +425,24 @@ footer .ico div a {
   height: 100%;
   cursor: pointer;
 }
-/* line 237, ../lib/frontend.scss */
+/* line 287, ../lib/frontend.scss */
 footer .opt {
   float: right;
   font-size: 12px;
   color: #4b4a4d;
 }
-/* line 243, ../lib/frontend.scss */
+/* line 293, ../lib/frontend.scss */
 footer .opt .lang {
   float: left;
   cursor: pointer;
 }
-/* line 248, ../lib/frontend.scss */
+/* line 298, ../lib/frontend.scss */
 footer .opt .lang .choose {
   float: right;
   background: #b8b9b9;
   padding: 10px 20px;
 }
-/* line 253, ../lib/frontend.scss */
+/* line 303, ../lib/frontend.scss */
 footer .opt .lang .choose i {
   background: transparent url(../../img/footer-lang.png) left top no-repeat;
   display: inline-block;
@@ -397,11 +450,11 @@ footer .opt .lang .choose i {
   height: 7px;
   margin-left: 10px;
 }
-/* line 262, ../lib/frontend.scss */
+/* line 312, ../lib/frontend.scss */
 footer .opt .lang .option {
   display: none;
 }
-/* line 267, ../lib/frontend.scss */
+/* line 317, ../lib/frontend.scss */
 footer .opt .lang.active {
   position: relative;
   top: -45px;
@@ -413,7 +466,7 @@ footer .opt .lang.active {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 277, ../lib/frontend.scss */
+/* line 327, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -422,25 +475,25 @@ footer .opt .lang.active .choose {
   padding-bottom: 10px;
   color: #7c298b;
 }
-/* line 286, ../lib/frontend.scss */
+/* line 336, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 292, ../lib/frontend.scss */
+/* line 342, ../lib/frontend.scss */
 footer .opt .lang.active .option {
   clear: both;
   padding: 5px 20px 0;
   display: block;
 }
-/* line 298, ../lib/frontend.scss */
+/* line 348, ../lib/frontend.scss */
 footer .opt .lang.active .option.active {
   color: #7c298b;
 }
-/* line 303, ../lib/frontend.scss */
+/* line 353, ../lib/frontend.scss */
 footer .opt .lang.active .option a {
   color: inherit;
 }
-/* line 310, ../lib/frontend.scss */
+/* line 360, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   padding: 10px 20px;
@@ -448,7 +501,7 @@ footer .opt .legales {
   margin-left: 20px;
   position: relative;
 }
-/* line 318, ../lib/frontend.scss */
+/* line 368, ../lib/frontend.scss */
 footer .opt .legales a {
   display: inline-block;
   position: absolute;

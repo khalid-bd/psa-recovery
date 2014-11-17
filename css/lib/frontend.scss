@@ -205,6 +205,56 @@ main
             }
         }
     }
+    .ico-links
+    {
+        text-align: center;
+        ul
+        {
+            display: inline-block;
+
+            li
+            {
+                position: relative;
+                display: inline-block;
+                width: 222px;
+                height: 204px;
+                overflow: hidden;
+                @include border-radius(5px);
+                margin-right: 13px;
+
+                &:last-child
+                {
+                    margin-right: 0;
+                }
+
+                span
+                {
+                    display: inline-block;
+                    position: absolute;
+                    width: 100%;
+                    min-height: 55px;
+                    background:rgba($main-color, 0.9);
+                    color: white;
+                    bottom: 0;
+                    left: 0;
+                    text-align: center;
+                    font-size: 17px;
+                    text-transform: uppercase;
+                    padding: 10px 40px;
+
+                    &.active
+                    {
+                        background:rgba($secondary-color, 0.9);
+                    }
+                }
+
+                a
+                {
+                    @include block-link;
+                }
+            }
+        }
+    }
 }
 
 footer
