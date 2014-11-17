@@ -23,6 +23,19 @@ h1
 {
     @include h1;
 }
+h2
+{
+    @include h2;
+}
+p
+{
+    @include p;
+
+}
+h6
+{
+     @include h6;
+}
 b
 {
     font-weight: 800;
