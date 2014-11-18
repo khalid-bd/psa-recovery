@@ -1,13 +1,13 @@
 /*
 Error: Undefined variable: "$secondary-color".
-        on line 25 of c:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss, in `h1'
-        from line 24 of c:/wamp/www/psa-recovery/css/lib/_common.scss
-        from line 1 of c:/wamp/www/psa-recovery/css/lib/backend.scss
+        on line 25 of C:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss, in `h1'
+        from line 24 of C:/wamp/www/psa-recovery/css/lib/_common.scss
+        from line 1 of C:/wamp/www/psa-recovery/css/lib/backend.scss
 
 Backtrace:
-c:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss:25:in `h1'
-c:/wamp/www/psa-recovery/css/lib/_common.scss:24
-c:/wamp/www/psa-recovery/css/lib/backend.scss:1
+C:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss:25:in `h1'
+C:/wamp/www/psa-recovery/css/lib/_common.scss:24
+C:/wamp/www/psa-recovery/css/lib/backend.scss:1
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.8/lib/sass/script/tree/variable.rb:49:in `_perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.8/lib/sass/script/tree/node.rb:50:in `perform'
 c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:384:in `visit_prop'
@@ -88,4 +88,4 @@ c:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.4.8/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary-color\".\A         on line 25 of c:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss, in `h1'\A         from line 24 of c:/wamp/www/psa-recovery/css/lib/_common.scss\A         from line 1 of c:/wamp/www/psa-recovery/css/lib/backend.scss"; }
+  content: "Error: Undefined variable: \"$secondary-color\".\A         on line 25 of C:/wamp/www/psa-recovery/css/lib/includes/common/_vars.scss, in `h1'\A         from line 24 of C:/wamp/www/psa-recovery/css/lib/_common.scss\A         from line 1 of C:/wamp/www/psa-recovery/css/lib/backend.scss"; }
