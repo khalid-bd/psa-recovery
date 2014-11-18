@@ -115,6 +115,29 @@ main
         margin-bottom: 15px;
     }
 
+    .mentions
+    {
+        margin: -25px 0;
+        padding: 0 20px;
+        p
+        {
+            font-size: 18px;
+            text-align: left;
+            line-height: 22px;
+
+            a
+            {
+                text-decoration: underline;
+                color: $secondary-color;
+            }
+        }
+        h3
+        {
+            font-size: 30px;
+            color: $main-color;
+        }
+    }
+
     .container
     {
         background:transparent url(../../img/main-bg.jpg) left top no-repeat;
@@ -219,6 +242,7 @@ main
                 width: 222px;
                 height: 204px;
                 overflow: hidden;
+                border: 1px solid #cccccc;
                 @include border-radius(5px);
                 margin-right: 13px;
 
@@ -253,6 +277,17 @@ main
                     @include block-link;
                 }
             }
+        }
+    }
+    .block-links
+    {
+        text-align: center;
+        a
+        {
+            @include submit-btn;
+            display: inline-block;
+            padding: 10px 45px;
+            margin-bottom: 65px;
         }
     }
 }

@@ -14,19 +14,17 @@ jQuery(document).ready(function(){
 // Toggle footer language change
     $("footer .content .opt .lang")
         .mouseover(function() { 
-            var classe = $(this).attr("class").replace("lang", "lang active");
-            $(this).attr("class", classe);
+            $(this).addClass( "active" );
         }).stop()
         .mouseout(function() {
-            var classe = $(this).attr("class").replace("lang active", "lang");
-            $(this).attr("class", classe);
+            var classe = $(this).removeClass("active");
         }).stop();
 // ------------ End footer language change -----------------------
 // 
 // Icon Links toggle title background change
     $(".ico-links ul li")
         .hover(function() {
-            console.log(this);
+            // console.log(this);
             $('span', this).addClass( "active" );
         }).stop()
         .mouseout(function() {

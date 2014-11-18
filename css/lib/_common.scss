@@ -26,10 +26,21 @@ h1
 h2
 {
     @include h2;
+
+    em
+    {
+        font-size: 48px;
+        font-weight: 800;
+    }
 }
 p
 {
     @include p;
+
+    em
+    {
+        font-weight: 200;
+    }
 
 }
 h6
