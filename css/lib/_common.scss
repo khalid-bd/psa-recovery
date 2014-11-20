@@ -13,6 +13,7 @@ div, p, h1, h2, h3, h4, h5, h6, aside, section,article, details, figcaption, fig
 body
 {
     font-family: calibri;
+    position: relative;
 }
 a
 {
@@ -32,6 +33,19 @@ h2
         font-size: 48px;
         font-weight: 800;
     }
+}
+h4
+{
+    @extend h2;
+    font-size: 30px;
+}
+h5
+{
+    margin-top: 30px;
+    margin-bottom: -10px;
+    font-size: 18px;
+    color: $main-color;
+    text-align: center;
 }
 p
 {
