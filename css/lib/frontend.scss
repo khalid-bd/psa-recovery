@@ -363,16 +363,83 @@ main
                         font-weight: 600;
                         text-transform: uppercase;
                         margin-right: 20px;
+                        float: left;
+                        line-height: 37px;
                     }
                     input[type=email], input[type=password], input[type=text]
                     {
-                        width: 300px;
-                        border: 1px solid rgba($secondary-color, 0.5);
+                        width: 280px;
+                        border: 1px solid rgba($secondary-color, 0.3);
                         @include border-radius(5px);
                         height: 38px;
                         padding: 10px 20px;
                     }
 
+                    .custom-select 
+                    {
+                        position: relative;
+                        display: inline-block;
+                        
+                        select 
+                        {
+                            display: inline-block;
+                            border: 1px solid rgba($secondary-color, 0.3);
+                            margin: 0;
+                            font: inherit;
+                            outline:none; /* remove focus ring from Webkit */
+                            background: #fafafa;
+                            height: 38px;
+                            width: 280px;
+                            padding: 0px 15px;
+                            color: $main-color;
+                            @include border-radius(5px);
+                            background:#fff;
+                            
+                            // -webkit-appearance:none; /* remove the strong OSX influence from Webkit */
+                            option
+                            {
+                                &:hover
+                                {
+                                    // background:#414246;
+                                }
+                            }
+                        }
+
+                        /* Select arrow styling */
+                        &:after
+                        {
+                            content: "";
+                            position: absolute;
+                            display: inline-block;
+                            top: 1px;
+                            right: 1px;
+                            // line-height: 30px;
+                            height: 36px;
+                            padding: 0 10px;
+                            background: url(../../img/simple-select.png) no-repeat scroll 40% 50% #fff;
+                            
+                            pointer-events:none;
+                            
+                            @include border-radius(5px);
+                        }
+                        
+                        .no-pointer-events &:after
+                        {
+                            content: none;
+                        }
+                    }
+                    .multiple-select
+                    {
+                        @extend .custom-select;
+                        select
+                        {
+                            height: initial;
+                        }
+                        &:after
+                        {
+                            background: url(../../img/multiple-select.png) no-repeat scroll 40% 50% #fff;
+                        }
+                    }
                 }
             }
             input[type=submit]

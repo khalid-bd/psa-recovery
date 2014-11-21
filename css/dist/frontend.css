@@ -517,11 +517,13 @@ main .container .content .transparent .element label {
   font-weight: 600;
   text-transform: uppercase;
   margin-right: 20px;
+  float: left;
+  line-height: 37px;
 }
-/* line 367, ../lib/frontend.scss */
+/* line 369, ../lib/frontend.scss */
 main .container .content .transparent .element input[type=email], main .container .content .transparent .element input[type=password], main .container .content .transparent .element input[type=text] {
-  width: 300px;
-  border: 1px solid rgba(124, 41, 139, 0.5);
+  width: 280px;
+  border: 1px solid rgba(124, 41, 139, 0.3);
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -529,6 +531,57 @@ main .container .content .transparent .element input[type=email], main .containe
   padding: 10px 20px;
 }
 /* line 378, ../lib/frontend.scss */
+main .container .content .transparent .element .custom-select, main .container .content .transparent .element .multiple-select {
+  position: relative;
+  display: inline-block;
+  /* Select arrow styling */
+}
+/* line 383, ../lib/frontend.scss */
+main .container .content .transparent .element .custom-select select, main .container .content .transparent .element .multiple-select select {
+  display: inline-block;
+  border: 1px solid rgba(124, 41, 139, 0.3);
+  margin: 0;
+  font: inherit;
+  outline: none;
+  /* remove focus ring from Webkit */
+  background: #fafafa;
+  height: 38px;
+  width: 280px;
+  padding: 0px 15px;
+  color: #4b4a4d;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #fff;
+}
+/* line 409, ../lib/frontend.scss */
+main .container .content .transparent .element .custom-select:after, main .container .content .transparent .element .multiple-select:after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  top: 1px;
+  right: 1px;
+  height: 36px;
+  padding: 0 10px;
+  background: url(../../img/simple-select.png) no-repeat scroll 40% 50% #fff;
+  pointer-events: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 426, ../lib/frontend.scss */
+.no-pointer-events main .container .content .transparent .element .custom-select:after, .no-pointer-events main .container .content .transparent .element .multiple-select:after {
+  content: none;
+}
+/* line 434, ../lib/frontend.scss */
+main .container .content .transparent .element .multiple-select select {
+  height: initial;
+}
+/* line 438, ../lib/frontend.scss */
+main .container .content .transparent .element .multiple-select:after {
+  background: url(../../img/multiple-select.png) no-repeat scroll 40% 50% #fff;
+}
+/* line 445, ../lib/frontend.scss */
 main .container .content input[type=submit] {
   border: none;
   outline: none;
@@ -545,19 +598,19 @@ main .container .content input[type=submit] {
   margin: 0 auto;
   padding: 3px 64px;
 }
-/* line 382, ../lib/frontend.scss */
+/* line 449, ../lib/frontend.scss */
 main .container .content input[type=submit]:hover {
   background: #a581ad;
 }
-/* line 389, ../lib/frontend.scss */
+/* line 456, ../lib/frontend.scss */
 main .ico-links {
   text-align: center;
 }
-/* line 392, ../lib/frontend.scss */
+/* line 459, ../lib/frontend.scss */
 main .ico-links ul {
   display: inline-block;
 }
-/* line 396, ../lib/frontend.scss */
+/* line 463, ../lib/frontend.scss */
 main .ico-links ul li {
   position: relative;
   display: inline-block;
@@ -570,11 +623,11 @@ main .ico-links ul li {
   border-radius: 5px;
   margin-right: 13px;
 }
-/* line 407, ../lib/frontend.scss */
+/* line 474, ../lib/frontend.scss */
 main .ico-links ul li:last-child {
   margin-right: 0;
 }
-/* line 412, ../lib/frontend.scss */
+/* line 479, ../lib/frontend.scss */
 main .ico-links ul li span {
   display: inline-block;
   position: absolute;
@@ -589,11 +642,11 @@ main .ico-links ul li span {
   text-transform: uppercase;
   padding: 10px 40px;
 }
-/* line 427, ../lib/frontend.scss */
+/* line 494, ../lib/frontend.scss */
 main .ico-links ul li span.active {
   background: rgba(124, 41, 139, 0.9);
 }
-/* line 433, ../lib/frontend.scss */
+/* line 500, ../lib/frontend.scss */
 main .ico-links ul li a {
   display: inline-block;
   position: absolute;
@@ -603,11 +656,11 @@ main .ico-links ul li a {
   height: 100%;
   cursor: pointer;
 }
-/* line 440, ../lib/frontend.scss */
+/* line 507, ../lib/frontend.scss */
 main .block-links {
   text-align: center;
 }
-/* line 443, ../lib/frontend.scss */
+/* line 510, ../lib/frontend.scss */
 main .block-links a {
   border: none;
   outline: none;
@@ -627,38 +680,38 @@ main .block-links a {
   padding: 10px 45px;
   margin-bottom: 65px;
 }
-/* line 453, ../lib/frontend.scss */
+/* line 520, ../lib/frontend.scss */
 main .mentions_legales label {
   float: left;
 }
-/* line 457, ../lib/frontend.scss */
+/* line 524, ../lib/frontend.scss */
 main .mentions_legales textarea {
   max-width: calc(100% - 410px);
   min-width: 243px;
 }
 
-/* line 465, ../lib/frontend.scss */
+/* line 532, ../lib/frontend.scss */
 footer {
   height: 119px;
   background: transparent url(../../img/footer-bg.png) left top repeat-x;
   position: relative;
   z-index: 1;
 }
-/* line 473, ../lib/frontend.scss */
+/* line 540, ../lib/frontend.scss */
 footer .ico {
   padding-top: 10px;
 }
-/* line 476, ../lib/frontend.scss */
+/* line 543, ../lib/frontend.scss */
 footer .ico div {
   position: relative;
   display: inline-block;
   margin-right: 55px;
 }
-/* line 482, ../lib/frontend.scss */
+/* line 549, ../lib/frontend.scss */
 footer .ico div:last-child {
   margin-right: 0;
 }
-/* line 487, ../lib/frontend.scss */
+/* line 554, ../lib/frontend.scss */
 footer .ico div a {
   display: inline-block;
   position: absolute;
@@ -668,24 +721,24 @@ footer .ico div a {
   height: 100%;
   cursor: pointer;
 }
-/* line 494, ../lib/frontend.scss */
+/* line 561, ../lib/frontend.scss */
 footer .opt {
   float: right;
   font-size: 12px;
   color: #4b4a4d;
 }
-/* line 500, ../lib/frontend.scss */
+/* line 567, ../lib/frontend.scss */
 footer .opt .lang {
   float: left;
   cursor: pointer;
 }
-/* line 505, ../lib/frontend.scss */
+/* line 572, ../lib/frontend.scss */
 footer .opt .lang .choose {
   float: right;
   background: #b8b9b9;
   padding: 10px 20px;
 }
-/* line 510, ../lib/frontend.scss */
+/* line 577, ../lib/frontend.scss */
 footer .opt .lang .choose i {
   background: transparent url(../../img/footer-lang.png) left top no-repeat;
   display: inline-block;
@@ -693,11 +746,11 @@ footer .opt .lang .choose i {
   height: 7px;
   margin-left: 10px;
 }
-/* line 519, ../lib/frontend.scss */
+/* line 586, ../lib/frontend.scss */
 footer .opt .lang .option {
   display: none;
 }
-/* line 524, ../lib/frontend.scss */
+/* line 591, ../lib/frontend.scss */
 footer .opt .lang.active {
   position: relative;
   top: -45px;
@@ -709,7 +762,7 @@ footer .opt .lang.active {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 534, ../lib/frontend.scss */
+/* line 601, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -718,25 +771,25 @@ footer .opt .lang.active .choose {
   padding-bottom: 10px;
   color: #7c298b;
 }
-/* line 543, ../lib/frontend.scss */
+/* line 610, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 549, ../lib/frontend.scss */
+/* line 616, ../lib/frontend.scss */
 footer .opt .lang.active .option {
   clear: both;
   padding: 5px 20px 0;
   display: block;
 }
-/* line 555, ../lib/frontend.scss */
+/* line 622, ../lib/frontend.scss */
 footer .opt .lang.active .option.active {
   color: #7c298b;
 }
-/* line 560, ../lib/frontend.scss */
+/* line 627, ../lib/frontend.scss */
 footer .opt .lang.active .option a {
   color: inherit;
 }
-/* line 567, ../lib/frontend.scss */
+/* line 634, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   padding: 10px 20px;
@@ -744,7 +797,7 @@ footer .opt .legales {
   margin-left: 20px;
   position: relative;
 }
-/* line 575, ../lib/frontend.scss */
+/* line 642, ../lib/frontend.scss */
 footer .opt .legales a {
   display: inline-block;
   position: absolute;
