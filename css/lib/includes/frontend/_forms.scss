@@ -1,0 +1,169 @@
+label
+{
+    display: inline-block;
+    width: 368px;
+    text-align: right;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 20px;
+    float: left;
+    line-height: 37px;
+}
+input[type=email], input[type=password], input[type=text]
+{
+    width: 280px;
+    border: 1px solid rgba($secondary-color, 0.3);
+    @include border-radius(5px);
+    height: 38px;
+    padding: 10px 20px;
+}
+
+// simple select
+.custom-select 
+{
+    position: relative;
+    display: inline-block;
+    
+    select 
+    {
+        display: inline-block;
+        border: 1px solid rgba($secondary-color, 0.3);
+        margin: 0;
+        font: inherit;
+        outline:none; /* remove focus ring from Webkit */
+        background: #fafafa;
+        height: 38px;
+        min-width: 280px;
+        padding: 0px 15px;
+        color: $main-color;
+        @include border-radius(5px);
+        background:#fff;
+        
+        option
+        {
+            &:hover
+            {
+                background:#4b4a4d;
+                color: white;
+            }
+        }
+    }
+
+    /* Select arrow styling */
+    &:after
+    {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        top: 1px;
+        right: 1px;
+        // line-height: 30px;
+        height: 36px;
+        padding: 0 19px;
+        background: url(../../img/simple-select.png) no-repeat scroll 40% 50% #fff;
+        
+        pointer-events:none;
+        
+        @include border-radius(5px);
+    }
+    
+    .no-pointer-events &:after
+    {
+        content: none;
+    }
+}
+// Multi select extends simple select
+.multiple-select
+{
+    @extend .custom-select;
+    @include border-radius(5px);
+    select
+    {
+        height: initial;
+
+    @include border-radius(5px);
+        option
+        {
+            padding: 5px;
+        }
+    }
+    &:after
+    {
+    @include border-radius(5px);
+        background: url(../../img/multiple-select.png) no-repeat scroll 50% 25% #fff;
+        height: 99px;
+    }
+}
+textarea
+{
+    width: 280px;
+    max-width: 530px;
+    height: 130px;
+    padding: 10px;
+    font-family: inherit;
+    color: rgba($main-color, 0.5);
+    font-size: 14px;
+    border: 1px solid rgba($secondary-color, 0.3);
+    @include border-radius(5px);
+}
+.checkbox
+{
+    span
+    {
+        cursor: pointer;
+        &:before
+        {
+            display: inline-block;
+            width: 12px;
+            height: 13px;
+            content: "";
+            background:url(../../img/checkbox.png) no-repeat;
+            margin-right: 10px;
+        }
+        &.checked
+        {
+            &:before
+            {
+                background:url(../../img/checkbox-checked.png) no-repeat;
+            }
+        }
+    }
+    input
+    {
+        visibility: hidden;
+        margin-top: 15px;
+    }
+}
+.row-checkbox
+{
+    span
+    {
+        &:after
+        {
+            display:block;
+            content: "";
+        }
+    }
+    .indent
+    {
+        margin-left: 392px;
+    }
+}
+.radio
+{
+    @extend .checkbox;
+    span
+    {
+        &:before
+        {
+            background:url(../../img/radio.png) no-repeat;
+        }
+        &.checked
+        {
+            &:before
+            {
+                background:url(../../img/radio-checked.png) no-repeat;
+            }
+        }
+    }
+}
