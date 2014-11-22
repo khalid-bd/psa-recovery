@@ -31,4 +31,24 @@ jQuery(document).ready(function(){
             $('span', this).removeClass("active");
         }).stop();
 // ------------ End footer language change -----------------------
-});
+// 
+// ------------close popin------------
+    $('.js-close').click(function(){
+        $('.popin').remove();
+        $('.disable').remove();
+    })
+// ------------------------------------------------
+// 
+// ------------Checkboxes------------
+    $('.checkbox span, .radio span').click(function() {
+        if($(this).prev('input').prop("checked")) 
+        {
+            $(this).prev('input').prop("checked", false);
+            $(this).removeClass('checked');
+        }else {
+            $(this).prev('input').prop("checked", true);
+            $(this).addClass('checked');
+        }
+    });
+    $('.row-checkbox input:nth-child(4)').nextAll('input').addClass('indent');
+});//End annonymous function
