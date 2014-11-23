@@ -1,3 +1,103 @@
+h2.error
+{
+    font-size: 18px;
+    margin-top: -20px;
+    font-weight: 600;
+    color: $error-color;
+    text-transform: uppercase;
+    display: none;
+}
+
+.call
+{
+    .i-error
+    {
+        border: 1px solid $error-color;
+    }
+    .message
+    {
+        position: absolute;
+        display: none;
+    }
+
+    input[type='radio']
+    {
+        margin-left: -15px;
+    }
+    section.date-time
+    {
+        display: none;
+        margin: 20px 80px 0;
+        padding: 20px 0;
+        border-top: 1px solid rgba($main-color, 0.5);
+        border-bottom: 1px solid rgba($main-color, 0.5);
+
+        label
+        {
+            color: $secondary-color;
+            width: 288px;
+        }
+        .custom-select:after
+        {
+            background:url(../../img/call-back-select.png) no-repeat scroll 40% 50% #fff;
+        }
+        .date
+        {
+            .message
+            {
+                top: 40px;
+                margin-left: 312px;
+            }
+        }
+        .time
+        {
+            .custom-select
+            {
+                margin-right: 20px;
+                min-width: 100px;
+                select
+                {
+                    min-width:100px;
+                }
+            }
+        }
+    }
+}
+.plan
+{
+    h2
+    {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .custom-select
+    {
+        width: 379px;
+
+        select
+        {
+            width: 379px;
+        }
+    }
+}
+.error
+{
+    margin-left: 392px;
+    font-size: 18px;
+    color: $error-color;
+    font-weight: 200;
+    display: inline-block;
+    max-width: 329px;
+    font-style: italic;
+    display: none;
+}
+.message
+{
+    margin-left: 392px;
+    margin-top: 10px;
+    color: $secondary-color;
+    font-style: italic;
+}
 label
 {
     display: inline-block;
@@ -166,4 +266,8 @@ textarea
             }
         }
     }
+}
+.row-radio
+{
+    @extend .row-checkbox;
 }

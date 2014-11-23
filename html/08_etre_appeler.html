@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>08_etre_appeler_conf</title>
+    <title>08_etre_appeler</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -57,26 +57,63 @@
             </div>
 
             <div class="content">
-                <h1><b>Me faire rappeler</b></h1>
+                <h1><b>me faire rappeler</b></h1>
 
-                <div class="transparent">
-                    <h4>Votre demande de rappel a été enregistrée.</h4>
+                <form action="#" class="call">
+
+                    <div class="transparent">
+                        <h2 class="error">Message d'erreur</h2>
+                        <div class="element">
+                            <label for="email">Votre numéro de téléphone</label>
+                            <input type="text" class="tel" name="tel" placeholder="1234567890">
+                            <br>
+                            <div class="tel error">Erreur de saisie dans le numéro de téléphone, merci de ressaisir</div>
+                        </div>
+                        <div class="element radio row-radio">
+                            <label for="row_radio">Type de rappel</label>
+                            <input type="radio" value="7" name="radio"><span class="tel now">Immédiat</span><div class="tel now message">Le temps d'attente est estimé à 8 minutes</div>
+                            <input type="radio" value="8" name="radio"><span class="tel later">Différé</span>
+                        </div>
+                        <section class="date-time">
+                            
+                        <div class="element date">
+                            <label for="simple_select">Date du rappel</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                </select>
+                            </div>
+                            <div class="message">Date limite de paiement : Lundi 22 septembre</div>
+                        </div>
+                        <div class="element time">
+                            <label for="simple_select">Heure de rappel</label>
+                            <div class="custom-select h">
+                                <select>
+                                    <option value="1">08h</option>
+                                    <option value="1">09h</option>
+                                    <option value="1">10h</option>
+                                </select>
+                            </div>
+                            <div class="custom-select m">
+                                <select>
+                                    <option value="1">00mn</option>
+                                    <option value="1">15mn</option>
+                                    <option value="1">30mn</option>
+                                    <option value="1">45mn</option>
+                                </select>
+                            </div>
+                        </div>
+                        </section>
+                    </div><!-- end transparent -->
                     
-                    <div class="info">
-                        <h4><b>Un email de confirmation vous a été envoyé.</b></h4>
+                    <div class="element">
+                        <input type="submit" value="valider">
                     </div>
-
-                </div><!-- end transparent -->
-
-                <div class="slider">
-                    <div class="slider-element">
-                        <img src="../img/dynamic/slider1.png" alt="">
-                        <img src="../img/dynamic/slider2.png" alt="">
-                        <img src="../img/dynamic/slider3.png" alt="">
-                        <img src="../img/dynamic/slider4.png" alt="">
-                    </div>
-                </div>
-                                        
+                    
+                </form>
+                    
             </div><!-- end .content -->
 
         </div><!-- end container -->
