@@ -180,7 +180,7 @@ main
             z-index: -1;
             position: absolute;
             min-height: 350px;
-            width: 1420px;
+            width: 100%;
 
             div
             {
@@ -188,13 +188,13 @@ main
                 line-height: 350px;
                 &:first-child
                 {
-                    float: left;
-                    margin-left: 10px;
+                    position: absolute;
+                    left: 10px;
                 }
                 &:last-child
                 {
-                    float: right;
-                    margin-right: 10px;
+                    position: absolute;
+                    right: 10px;
                 }
                 img
                 {
@@ -430,3 +430,5 @@ footer
         }
     }
 }
+
+@import 'includes/frontend/responsive';

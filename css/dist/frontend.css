@@ -543,11 +543,18 @@ textarea {
 }
 
 /* line 1, ../lib/includes/frontend/_carousel.scss */
+.slider {
+  background: #e7e7e7;
+  background: url(../../img/carousel-border-top.png) no-repeat #e7e7e7 50% 0%;
+  padding: 20px 0 1px;
+}
+
+/* line 7, ../lib/includes/frontend/_carousel.scss */
 .carousel {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
-/* line 6, ../lib/includes/frontend/_carousel.scss */
+/* line 12, ../lib/includes/frontend/_carousel.scss */
 .carousel .bg {
   display: inline-block;
   background: white;
@@ -555,7 +562,7 @@ textarea {
 }
 
 /* Slider */
-/* line 53, ../lib/includes/frontend/_carousel.scss */
+/* line 59, ../lib/includes/frontend/_carousel.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -572,7 +579,7 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 68, ../lib/includes/frontend/_carousel.scss */
+/* line 74, ../lib/includes/frontend/_carousel.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -580,21 +587,21 @@ textarea {
   margin: 0;
   padding: 0;
 }
-/* line 75, ../lib/includes/frontend/_carousel.scss */
+/* line 81, ../lib/includes/frontend/_carousel.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 79, ../lib/includes/frontend/_carousel.scss */
+/* line 85, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-list {
   background: #fff url('/img/ajax-loader.gif') center center no-repeat;
 }
-/* line 83, ../lib/includes/frontend/_carousel.scss */
+/* line 89, ../lib/includes/frontend/_carousel.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 88, ../lib/includes/frontend/_carousel.scss */
+/* line 94, ../lib/includes/frontend/_carousel.scss */
 .slick-slider .slick-track {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -603,59 +610,59 @@ textarea {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 96, ../lib/includes/frontend/_carousel.scss */
+/* line 102, ../lib/includes/frontend/_carousel.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-/* line 102, ../lib/includes/frontend/_carousel.scss */
+/* line 108, ../lib/includes/frontend/_carousel.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 108, ../lib/includes/frontend/_carousel.scss */
+/* line 114, ../lib/includes/frontend/_carousel.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 112, ../lib/includes/frontend/_carousel.scss */
+/* line 118, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 116, ../lib/includes/frontend/_carousel.scss */
+/* line 122, ../lib/includes/frontend/_carousel.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 120, ../lib/includes/frontend/_carousel.scss */
+/* line 126, ../lib/includes/frontend/_carousel.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 123, ../lib/includes/frontend/_carousel.scss */
+/* line 129, ../lib/includes/frontend/_carousel.scss */
 .slick-slide img {
   display: block;
 }
-/* line 126, ../lib/includes/frontend/_carousel.scss */
+/* line 132, ../lib/includes/frontend/_carousel.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 132, ../lib/includes/frontend/_carousel.scss */
+/* line 138, ../lib/includes/frontend/_carousel.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 136, ../lib/includes/frontend/_carousel.scss */
+/* line 142, ../lib/includes/frontend/_carousel.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 140, ../lib/includes/frontend/_carousel.scss */
+/* line 146, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 144, ../lib/includes/frontend/_carousel.scss */
+/* line 150, ../lib/includes/frontend/_carousel.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -663,15 +670,8 @@ textarea {
 }
 
 /* Icons */
-@font-face {
-  font-family: "slick";
-  src: url('/font/slick.eot');
-  src: url('/font/slick.eot?#iefix') format("embedded-opentype"), url('/font/slick.woff') format("woff"), url('/font/slick.ttf') format("truetype"), url('/font/slick.svg#slick') format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /* Arrows */
-/* line 167, ../lib/includes/frontend/_carousel.scss */
+/* line 173, ../lib/includes/frontend/_carousel.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -690,9 +690,8 @@ textarea {
   outline: none;
 }
 
-/* line 184, ../lib/includes/frontend/_carousel.scss */
+/* line 190, ../lib/includes/frontend/_carousel.scss */
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
   font-size: 20px;
   line-height: 1;
   color: white;
@@ -703,34 +702,34 @@ textarea {
   height: 50px;
 }
 
-/* line 195, ../lib/includes/frontend/_carousel.scss */
+/* line 201, ../lib/includes/frontend/_carousel.scss */
 .slick-prev {
   left: -5px;
   background: url("../../img/carousel-previous.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 198, ../lib/includes/frontend/_carousel.scss */
+/* line 204, ../lib/includes/frontend/_carousel.scss */
 .slick-prev:before {
   content: "";
 }
 
-/* line 202, ../lib/includes/frontend/_carousel.scss */
+/* line 208, ../lib/includes/frontend/_carousel.scss */
 .slick-next {
   right: -5px;
   background: url("../../img/carousel-next.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 205, ../lib/includes/frontend/_carousel.scss */
+/* line 211, ../lib/includes/frontend/_carousel.scss */
 .slick-next:before {
   content: "";
 }
 
 /* Dots */
-/* line 212, ../lib/includes/frontend/_carousel.scss */
+/* line 218, ../lib/includes/frontend/_carousel.scss */
 .slick-slider {
   margin-bottom: 70px;
   text-align: center;
 }
 
-/* line 216, ../lib/includes/frontend/_carousel.scss */
+/* line 222, ../lib/includes/frontend/_carousel.scss */
 .slick-dots {
   position: absolute;
   bottom: -42px;
@@ -740,7 +739,7 @@ textarea {
   padding: 0;
   width: 100%;
 }
-/* line 225, ../lib/includes/frontend/_carousel.scss */
+/* line 231, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -750,7 +749,7 @@ textarea {
   padding: 0;
   cursor: pointer;
 }
-/* line 234, ../lib/includes/frontend/_carousel.scss */
+/* line 240, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -765,15 +764,15 @@ textarea {
   cursor: pointer;
   background: url("../../img/carousel-dots.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 247, ../lib/includes/frontend/_carousel.scss */
+/* line 253, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-/* line 249, ../lib/includes/frontend/_carousel.scss */
+/* line 255, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 254, ../lib/includes/frontend/_carousel.scss */
+/* line 260, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -781,16 +780,13 @@ textarea {
   content: "";
   width: 20px;
   height: 20px;
-  font-family: "slick";
   font-size: 6px;
   line-height: 20px;
   text-align: center;
   color: black;
   opacity: 0.25;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
-/* line 273, ../lib/includes/frontend/_carousel.scss */
+/* line 277, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
@@ -962,7 +958,7 @@ main .container #main-bg-cars {
   z-index: -1;
   position: absolute;
   min-height: 350px;
-  width: 1420px;
+  width: 100%;
 }
 /* line 185, ../lib/frontend.scss */
 main .container #main-bg-cars div {
@@ -971,13 +967,13 @@ main .container #main-bg-cars div {
 }
 /* line 189, ../lib/frontend.scss */
 main .container #main-bg-cars div:first-child {
-  float: left;
-  margin-left: 10px;
+  position: absolute;
+  left: 10px;
 }
 /* line 194, ../lib/frontend.scss */
 main .container #main-bg-cars div:last-child {
-  float: right;
-  margin-right: 10px;
+  position: absolute;
+  right: 10px;
 }
 /* line 199, ../lib/frontend.scss */
 main .container #main-bg-cars div img {
@@ -1242,4 +1238,11 @@ footer .opt .legales a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+}
+
+@media (min-width: 320px) and (max-width: 940px) {
+  /* line 5, ../lib/includes/frontend/_responsive.scss */
+  body {
+    background: red;
+  }
 }
