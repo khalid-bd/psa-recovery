@@ -50,5 +50,69 @@ jQuery(document).ready(function(){
             $(this).addClass('checked');
         }
     });
-    $('.row-checkbox input:nth-child(4)').nextAll('input').addClass('indent');
+    $('.row-checkbox input:nth-child(4), .row-radio input:nth-child(4)').nextAll('input').addClass('indent');
+
+// Call back page
+//  tel number section
+//  .match(/^0[1-9]([-. ]?[0-9]{2}){4}$/)
+
+    $('input.tel').focusout(function(){
+        var num = $(this).val().replace(/ /g, '');
+        if(!num.match(/^0[1-9]([-. ]?[0-9]{2}){4}$/))
+        {
+            $('.call h2.error').css('display', 'block');
+            $(this).addClass('i-error');
+            $('.tel.error').css('display', 'inline-block');
+        }else {
+            $('.call h2.error').css('display', 'none');
+            $(this).removeClass('i-error');
+            $('.tel.error').css('display', 'none');
+        }
+    });
+    // callback now radio button
+    $('span.tel.now').click(function(){
+        if($(this).hasClass("checked"))
+        {
+            $('.tel.now.message').slideDown(400);
+            $('.call input[type=radio]:nth-child(odd)').css('margin-top', '50px');
+        }
+        else {
+            $('.tel.now.message').slideUp(200);
+            $('.call input[type=radio]:nth-child(odd)').css('margin-top', '20px');
+        }
+    });
+    // callback later radio button
+    $('span.tel.later').click(function(){
+        if($(this).hasClass("checked"))
+        {
+            $('section.date-time').slideDown(400);
+        }
+        else {
+            $('section.date-time').slideUp(400);
+        }
+    });
+
+    // Email input error
+    
+    $('input.mail').focusout(function(){
+        if(!$(this).val().replace(/ /g, '').match(/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/))
+        {
+            $(this).addClass('i-error');
+            $('.mail.error').slideDown(400);
+        }else {
+            $(this).removeClass('i-error');
+            $('.mail.error').slideUp(200);
+        }
+    });
+    // MDP error at least 3 char
+    $('input.mdp').focusout(function(){
+        if(!$(this).val().match(/[a-z0-9]{3,}/))
+        {
+            $(this).addClass('i-error');
+            $('.mdp.error').slideDown(400);
+        }else {
+            $(this).removeClass('i-error');
+            $('.mdp.error').slideUp(200);
+        }
+    });
 });//End annonymous function
