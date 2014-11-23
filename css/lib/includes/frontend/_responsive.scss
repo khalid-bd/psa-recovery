@@ -1,0 +1,9 @@
+@import 'breakpoint';
+
+@include breakpoint(320px 940px)
+{
+    body
+    {
+        background:red;
+    }
+}
