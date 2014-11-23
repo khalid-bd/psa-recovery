@@ -115,4 +115,12 @@ jQuery(document).ready(function(){
             $('.mdp.error').slideUp(200);
         }
     });
+// Carousel
+    $('.carousel').slick({
+            dots: true,
+            autoplay: true,
+            draggable: true,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+    });
 });//End annonymous function
