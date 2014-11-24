@@ -123,4 +123,21 @@ jQuery(document).ready(function(){
             slidesToShow: 4,
             slidesToScroll: 4,
     });
+
+    // Responsive
+    // Nav toggle
+    // 
+    $('nav').prepend('<div id="responsive-nav-icon"></div>');
+    $('#responsive-nav-icon').click(function(){
+        if($(this).hasClass('active'))
+        {
+            $(this).removeClass('active');
+            $('nav').slideUp(300);
+            $('#header-sub-menu').slideUp(200);
+        }else {
+            $(this).addClass('active');
+            $('nav').slideDown(400);
+            $('#header-sub-menu').delay(100).slideDown(300);
+        }
+    })
 });//End annonymous function

@@ -4,6 +4,169 @@
 {
     body
     {
-        background:red;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    header
+    {
+        background:url(../../img/responsive/header-bg.png) repeat-x;
+        height: 91px;
+        .content
+        {
+            .logo
+            {
+                img
+                {
+                    margin-top: 20px;
+                    width: 220px;
+                    height: 55px;
+                }
+                width: 220px;
+                height: 55px;
+                float: unset;
+                margin: 0 auto;
+            }
+
+            #responsive-nav-icon
+            {
+                width: 48px;
+                height: 39px;
+                position: absolute;
+                top: 20px;
+                right: 2%;
+                background:url(../../img/responsive/nav.png) no-repeat;
+                cursor: pointer;
+
+                &.active
+                {
+                    background:url(../../img/responsive/nav-active.png) no-repeat;
+                }
+            }
+
+            nav
+            {
+                display: none;
+                float: unset;
+                position: relative;
+                top: -27px;
+                ul
+                {
+                    li
+                    {
+                        text-align: center;
+                        display: block;
+                        width: 100%;
+                        font-size: 24px;
+                        color: white;
+                        font-weight: 200;
+                        padding: 15px 0;
+                        background:url(../../img/responsive/nav-seperator.png) repeat-x #3a393e;
+                        i
+                        {
+                            display: none;
+                        }
+                        &:hover
+                        {
+                            color: inherit;
+                        }
+                    }
+                }
+            }
+            #header-sub-menu
+            {
+                display: none;
+                position: relative;
+                top: -27px;
+                clear: both;
+                width: 101%;
+
+                ul
+                {
+                    background:#333237;
+                    padding: 20px 0 30px;
+                    li
+                    {
+                        display: block;
+                        width: 60%;
+                        margin: 10px auto;
+                        border: 1px solid #7d7d80;
+                        text-align: center;
+                        font-size: 24px;
+                        font-weight: 200;
+                        text-transform: unset;
+                        background:inherit;
+                        color: white;
+                        padding: 5px 0 10px;
+                        @include border-radius(5px);
+                        &:last-child
+                        {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ico
+    {
+        top: 100px;
+        margin: 0 auto;
+        left: calc(50% - 124px);
+
+        div
+        {
+            margin-right: 45px;
+        }
+    }
+    
+    main
+    {
+        .container
+        {
+            max-width: 100%;
+
+            #main-bg-cars
+            {
+                div
+                {
+                    display: inline-block;
+                    height: auto;
+                    height: 350px;
+                    max-width: 55%;
+                    &:first-child
+                    {
+                        left: -40px;
+                    }
+                    &:last-child
+                    {
+                        right: -40px;
+                    }
+
+                    img
+                    {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+    footer
+    {
+        height: 64px;
+        background:url(../../img/responsive/footer-bg.png) repeat-x;
+        .opt
+        {
+            float: unset;
+            display: inline-block;
+            margin-left: calc(50% - 123px);
+
+            .legales
+            {
+                float: unset;
+                display: inline-block;
+            }
+        }
     }
 }
