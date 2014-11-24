@@ -25,9 +25,12 @@ header
 
     .content
     {
+        position: relative;
         #header-sub-menu
         {
-            float: right;
+            position: absolute;
+            top: 0;
+            right: 3px;
 
             ul
             {
@@ -71,7 +74,7 @@ header
 
             ul
             {
-                margin-top: 40px;
+                margin-top: 63px;
                 li
                 {
                     position: relative;
@@ -186,6 +189,8 @@ main
             {
                 height: 350px;
                 line-height: 350px;
+                width: 50%;
+                max-width: 500px;
                 &:first-child
                 {
                     position: absolute;
@@ -194,11 +199,13 @@ main
                 &:last-child
                 {
                     position: absolute;
+                    height: inherit;
                     right: 10px;
                 }
                 img
                 {
                     vertical-align: middle;
+                    width: 100%;
                 }
             }
         }
@@ -318,29 +325,6 @@ footer
     height: 119px;
     background:transparent url(../../img/footer-bg.png) left top repeat-x;
     position: relative;
-    z-index: 1;
-
-
-    .ico
-    {
-        padding-top: 10px;
-        div
-        {
-            position: relative;
-            display: inline-block;
-            margin-right: 55px;
-
-            &:last-child
-            {
-                margin-right: 0;
-            }
-
-            a
-            {
-                @include block-link;
-            }
-        }
-    }
 
     .opt
     {
@@ -427,6 +411,31 @@ footer
             {
                 @include block-link;
             }
+        }
+    }
+}
+.ico
+{
+    padding-top: 10px;
+    position: absolute;
+    bottom: 50px;
+    div
+    {
+        position: relative;
+        display: inline-block;
+        margin-right: 55px;
+        height: 54px;
+        line-height: 54px;
+        vertical-align: top;
+
+        &:last-child
+        {
+            margin-right: 0;
+        }
+
+        a
+        {
+            @include block-link;
         }
     }
 }

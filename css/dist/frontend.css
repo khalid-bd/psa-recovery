@@ -805,11 +805,17 @@ header {
 header ul li {
   display: inline-block;
 }
-/* line 28, ../lib/frontend.scss */
-header .content #header-sub-menu {
-  float: right;
+/* line 26, ../lib/frontend.scss */
+header .content {
+  position: relative;
 }
-/* line 34, ../lib/frontend.scss */
+/* line 29, ../lib/frontend.scss */
+header .content #header-sub-menu {
+  position: absolute;
+  top: 0;
+  right: 3px;
+}
+/* line 37, ../lib/frontend.scss */
 header .content #header-sub-menu ul li {
   text-transform: uppercase;
   font-size: 11px;
@@ -818,12 +824,12 @@ header .content #header-sub-menu ul li {
   padding: 5px 10px;
   position: relative;
 }
-/* line 43, ../lib/frontend.scss */
+/* line 46, ../lib/frontend.scss */
 header .content #header-sub-menu ul li:last-child {
   border: 1px solid #7c298b;
   border-top: none;
 }
-/* line 50, ../lib/frontend.scss */
+/* line 53, ../lib/frontend.scss */
 header .content #header-sub-menu ul li a {
   display: inline-block;
   position: absolute;
@@ -833,13 +839,13 @@ header .content #header-sub-menu ul li a {
   height: 100%;
   cursor: pointer;
 }
-/* line 57, ../lib/frontend.scss */
+/* line 60, ../lib/frontend.scss */
 header .content .logo {
   float: left;
   margin-top: 42px;
   position: relative;
 }
-/* line 63, ../lib/frontend.scss */
+/* line 66, ../lib/frontend.scss */
 header .content .logo a {
   display: inline-block;
   position: absolute;
@@ -849,15 +855,15 @@ header .content .logo a {
   height: 100%;
   cursor: pointer;
 }
-/* line 68, ../lib/frontend.scss */
+/* line 71, ../lib/frontend.scss */
 header .content nav {
   float: right;
 }
-/* line 72, ../lib/frontend.scss */
-header .content nav ul {
-  margin-top: 40px;
-}
 /* line 75, ../lib/frontend.scss */
+header .content nav ul {
+  margin-top: 63px;
+}
+/* line 78, ../lib/frontend.scss */
 header .content nav ul li {
   position: relative;
   text-transform: uppercase;
@@ -866,7 +872,7 @@ header .content nav ul li {
   color: #4b4a4d;
   margin-right: 20px;
 }
-/* line 84, ../lib/frontend.scss */
+/* line 87, ../lib/frontend.scss */
 header .content nav ul li a {
   display: inline-block;
   position: absolute;
@@ -876,45 +882,45 @@ header .content nav ul li a {
   height: 100%;
   cursor: pointer;
 }
-/* line 88, ../lib/frontend.scss */
+/* line 91, ../lib/frontend.scss */
 header .content nav ul li i {
   display: block;
   text-align: center;
 }
-/* line 94, ../lib/frontend.scss */
+/* line 97, ../lib/frontend.scss */
 header .content nav ul li:last-child {
   margin-right: 0;
 }
-/* line 98, ../lib/frontend.scss */
+/* line 101, ../lib/frontend.scss */
 header .content nav ul li:hover {
   color: #7c298b;
 }
 
-/* line 108, ../lib/frontend.scss */
+/* line 111, ../lib/frontend.scss */
 main {
   position: relative;
   z-index: 0;
   min-height: 350px;
 }
-/* line 114, ../lib/frontend.scss */
+/* line 117, ../lib/frontend.scss */
 main h1, main h2, main h4, main h6, main p {
   text-align: center;
 }
-/* line 118, ../lib/frontend.scss */
+/* line 121, ../lib/frontend.scss */
 main .info {
   margin-top: 20px;
   margin-bottom: 15px;
 }
-/* line 124, ../lib/frontend.scss */
+/* line 127, ../lib/frontend.scss */
 main .contact {
   margin-top: -10px;
 }
-/* line 129, ../lib/frontend.scss */
+/* line 132, ../lib/frontend.scss */
 main .mentions {
   margin: -25px 0;
   padding: 0 20px;
 }
-/* line 133, ../lib/frontend.scss */
+/* line 136, ../lib/frontend.scss */
 main .mentions p {
   font-size: 18px;
   text-align: left;
@@ -922,19 +928,19 @@ main .mentions p {
   margin: 10px 0;
   padding: 3px 0;
 }
-/* line 141, ../lib/frontend.scss */
+/* line 144, ../lib/frontend.scss */
 main .mentions p a {
   text-decoration: underline;
   color: #7c298b;
 }
-/* line 147, ../lib/frontend.scss */
+/* line 150, ../lib/frontend.scss */
 main .mentions h3 {
   font-size: 24px;
   color: #4b4a4d;
   margin: 20px 0 -5px;
   text-transform: uppercase;
 }
-/* line 156, ../lib/frontend.scss */
+/* line 159, ../lib/frontend.scss */
 main .mentions ol li {
   display: inline-block;
   font-size: 18px;
@@ -942,49 +948,53 @@ main .mentions ol li {
   margin: 8px 0;
   color: #4b4a4d;
 }
-/* line 164, ../lib/frontend.scss */
+/* line 167, ../lib/frontend.scss */
 main .mentions ol li span {
   color: #7c298b;
   font-weight: 600;
 }
-/* line 173, ../lib/frontend.scss */
+/* line 176, ../lib/frontend.scss */
 main .container {
   background: transparent url(../../img/main-bg.jpg) left top no-repeat;
   position: relative;
   z-index: -2;
 }
-/* line 178, ../lib/frontend.scss */
+/* line 181, ../lib/frontend.scss */
 main .container #main-bg-cars {
   z-index: -1;
   position: absolute;
   min-height: 350px;
   width: 100%;
 }
-/* line 185, ../lib/frontend.scss */
+/* line 188, ../lib/frontend.scss */
 main .container #main-bg-cars div {
   height: 350px;
   line-height: 350px;
+  width: 50%;
+  max-width: 500px;
 }
-/* line 189, ../lib/frontend.scss */
+/* line 194, ../lib/frontend.scss */
 main .container #main-bg-cars div:first-child {
   position: absolute;
   left: 10px;
 }
-/* line 194, ../lib/frontend.scss */
+/* line 199, ../lib/frontend.scss */
 main .container #main-bg-cars div:last-child {
   position: absolute;
+  height: inherit;
   right: 10px;
 }
-/* line 199, ../lib/frontend.scss */
+/* line 205, ../lib/frontend.scss */
 main .container #main-bg-cars div img {
   vertical-align: middle;
+  width: 100%;
 }
-/* line 206, ../lib/frontend.scss */
+/* line 213, ../lib/frontend.scss */
 main .container .content {
   padding-top: 35px;
   padding-bottom: 35px;
 }
-/* line 211, ../lib/frontend.scss */
+/* line 218, ../lib/frontend.scss */
 main .container .content .transparent {
   border: 1px solid #7c298b;
   -moz-border-radius: 5px;
@@ -998,18 +1008,18 @@ main .container .content .transparent {
   -webkit-box-shadow: #7c7c7c 0px 3px 10px;
   box-shadow: #7c7c7c 0px 3px 10px;
 }
-/* line 221, ../lib/frontend.scss */
+/* line 228, ../lib/frontend.scss */
 main .container .content .transparent .element {
   font-size: 18px;
   margin-top: 20px;
   color: #4b4a4d;
   position: relative;
 }
-/* line 228, ../lib/frontend.scss */
+/* line 235, ../lib/frontend.scss */
 main .container .content .transparent .element:first-child {
   margin-top: 0;
 }
-/* line 234, ../lib/frontend.scss */
+/* line 241, ../lib/frontend.scss */
 main .container .content input[type=submit] {
   border: none;
   outline: none;
@@ -1030,15 +1040,15 @@ main .container .content input[type=submit] {
 main .container .content input[type=submit]:hover {
   background: #a581ad;
 }
-/* line 240, ../lib/frontend.scss */
+/* line 247, ../lib/frontend.scss */
 main .ico-links {
   text-align: center;
 }
-/* line 243, ../lib/frontend.scss */
+/* line 250, ../lib/frontend.scss */
 main .ico-links ul {
   display: inline-block;
 }
-/* line 247, ../lib/frontend.scss */
+/* line 254, ../lib/frontend.scss */
 main .ico-links ul li {
   position: relative;
   display: inline-block;
@@ -1051,11 +1061,11 @@ main .ico-links ul li {
   border-radius: 5px;
   margin-right: 13px;
 }
-/* line 258, ../lib/frontend.scss */
+/* line 265, ../lib/frontend.scss */
 main .ico-links ul li:last-child {
   margin-right: 0;
 }
-/* line 263, ../lib/frontend.scss */
+/* line 270, ../lib/frontend.scss */
 main .ico-links ul li span {
   display: inline-block;
   position: absolute;
@@ -1070,11 +1080,11 @@ main .ico-links ul li span {
   text-transform: uppercase;
   padding: 10px 40px;
 }
-/* line 278, ../lib/frontend.scss */
+/* line 285, ../lib/frontend.scss */
 main .ico-links ul li span.active {
   background: rgba(124, 41, 139, 0.9);
 }
-/* line 284, ../lib/frontend.scss */
+/* line 291, ../lib/frontend.scss */
 main .ico-links ul li a {
   display: inline-block;
   position: absolute;
@@ -1084,11 +1094,11 @@ main .ico-links ul li a {
   height: 100%;
   cursor: pointer;
 }
-/* line 291, ../lib/frontend.scss */
+/* line 298, ../lib/frontend.scss */
 main .block-links {
   text-align: center;
 }
-/* line 294, ../lib/frontend.scss */
+/* line 301, ../lib/frontend.scss */
 main .block-links a {
   border: none;
   outline: none;
@@ -1112,65 +1122,40 @@ main .block-links a {
 main .block-links a:hover {
   background: #a581ad;
 }
-/* line 304, ../lib/frontend.scss */
+/* line 311, ../lib/frontend.scss */
 main .mentions_legales label {
   float: left;
 }
-/* line 308, ../lib/frontend.scss */
+/* line 315, ../lib/frontend.scss */
 main .mentions_legales textarea {
   max-width: calc(100% - 410px);
   min-width: 243px;
 }
 
-/* line 316, ../lib/frontend.scss */
+/* line 323, ../lib/frontend.scss */
 footer {
   height: 119px;
   background: transparent url(../../img/footer-bg.png) left top repeat-x;
   position: relative;
-  z-index: 1;
 }
-/* line 324, ../lib/frontend.scss */
-footer .ico {
-  padding-top: 10px;
-}
-/* line 327, ../lib/frontend.scss */
-footer .ico div {
-  position: relative;
-  display: inline-block;
-  margin-right: 55px;
-}
-/* line 333, ../lib/frontend.scss */
-footer .ico div:last-child {
-  margin-right: 0;
-}
-/* line 338, ../lib/frontend.scss */
-footer .ico div a {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  cursor: pointer;
-}
-/* line 345, ../lib/frontend.scss */
+/* line 329, ../lib/frontend.scss */
 footer .opt {
   float: right;
   font-size: 12px;
   color: #4b4a4d;
 }
-/* line 351, ../lib/frontend.scss */
+/* line 335, ../lib/frontend.scss */
 footer .opt .lang {
   float: left;
   cursor: pointer;
 }
-/* line 356, ../lib/frontend.scss */
+/* line 340, ../lib/frontend.scss */
 footer .opt .lang .choose {
   float: right;
   background: #b8b9b9;
   padding: 10px 20px;
 }
-/* line 361, ../lib/frontend.scss */
+/* line 345, ../lib/frontend.scss */
 footer .opt .lang .choose i {
   background: transparent url(../../img/footer-lang.png) left top no-repeat;
   display: inline-block;
@@ -1178,11 +1163,11 @@ footer .opt .lang .choose i {
   height: 7px;
   margin-left: 10px;
 }
-/* line 370, ../lib/frontend.scss */
+/* line 354, ../lib/frontend.scss */
 footer .opt .lang .option {
   display: none;
 }
-/* line 375, ../lib/frontend.scss */
+/* line 359, ../lib/frontend.scss */
 footer .opt .lang.active {
   position: relative;
   top: -45px;
@@ -1194,7 +1179,7 @@ footer .opt .lang.active {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 385, ../lib/frontend.scss */
+/* line 369, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -1203,25 +1188,25 @@ footer .opt .lang.active .choose {
   padding-bottom: 10px;
   color: #7c298b;
 }
-/* line 394, ../lib/frontend.scss */
+/* line 378, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 400, ../lib/frontend.scss */
+/* line 384, ../lib/frontend.scss */
 footer .opt .lang.active .option {
   clear: both;
   padding: 5px 20px 0;
   display: block;
 }
-/* line 406, ../lib/frontend.scss */
+/* line 390, ../lib/frontend.scss */
 footer .opt .lang.active .option.active {
   color: #7c298b;
 }
-/* line 411, ../lib/frontend.scss */
+/* line 395, ../lib/frontend.scss */
 footer .opt .lang.active .option a {
   color: inherit;
 }
-/* line 418, ../lib/frontend.scss */
+/* line 402, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   padding: 10px 20px;
@@ -1229,8 +1214,38 @@ footer .opt .legales {
   margin-left: 20px;
   position: relative;
 }
-/* line 426, ../lib/frontend.scss */
+/* line 410, ../lib/frontend.scss */
 footer .opt .legales a {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* line 417, ../lib/frontend.scss */
+.ico {
+  padding-top: 10px;
+  position: absolute;
+  bottom: 50px;
+}
+/* line 422, ../lib/frontend.scss */
+.ico div {
+  position: relative;
+  display: inline-block;
+  margin-right: 55px;
+  height: 54px;
+  line-height: 54px;
+  vertical-align: top;
+}
+/* line 431, ../lib/frontend.scss */
+.ico div:last-child {
+  margin-right: 0;
+}
+/* line 436, ../lib/frontend.scss */
+.ico div a {
   display: inline-block;
   position: absolute;
   top: 0;
@@ -1243,6 +1258,153 @@ footer .opt .legales a {
 @media (min-width: 320px) and (max-width: 940px) {
   /* line 5, ../lib/includes/frontend/_responsive.scss */
   body {
-    background: red;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* line 10, ../lib/includes/frontend/_responsive.scss */
+  header {
+    background: url(../../img/responsive/header-bg.png) repeat-x;
+    height: 91px;
+  }
+  /* line 16, ../lib/includes/frontend/_responsive.scss */
+  header .content .logo {
+    width: 220px;
+    height: 55px;
+    float: unset;
+    margin: 0 auto;
+  }
+  /* line 18, ../lib/includes/frontend/_responsive.scss */
+  header .content .logo img {
+    margin-top: 20px;
+    width: 220px;
+    height: 55px;
+  }
+  /* line 30, ../lib/includes/frontend/_responsive.scss */
+  header .content #responsive-nav-icon {
+    width: 48px;
+    height: 39px;
+    position: absolute;
+    top: 20px;
+    right: 2%;
+    background: url(../../img/responsive/nav.png) no-repeat;
+    cursor: pointer;
+  }
+  /* line 40, ../lib/includes/frontend/_responsive.scss */
+  header .content #responsive-nav-icon.active {
+    background: url(../../img/responsive/nav-active.png) no-repeat;
+  }
+  /* line 46, ../lib/includes/frontend/_responsive.scss */
+  header .content nav {
+    display: none;
+    float: unset;
+    position: relative;
+    top: -27px;
+  }
+  /* line 54, ../lib/includes/frontend/_responsive.scss */
+  header .content nav ul li {
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    font-weight: 200;
+    padding: 15px 0;
+    background: url(../../img/responsive/nav-seperator.png) repeat-x #3a393e;
+  }
+  /* line 64, ../lib/includes/frontend/_responsive.scss */
+  header .content nav ul li i {
+    display: none;
+  }
+  /* line 68, ../lib/includes/frontend/_responsive.scss */
+  header .content nav ul li:hover {
+    color: inherit;
+  }
+  /* line 75, ../lib/includes/frontend/_responsive.scss */
+  header .content #header-sub-menu {
+    display: none;
+    position: relative;
+    top: -27px;
+    clear: both;
+    width: 101%;
+  }
+  /* line 83, ../lib/includes/frontend/_responsive.scss */
+  header .content #header-sub-menu ul {
+    background: #333237;
+    padding: 20px 0 30px;
+  }
+  /* line 87, ../lib/includes/frontend/_responsive.scss */
+  header .content #header-sub-menu ul li {
+    display: block;
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid #7d7d80;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 200;
+    text-transform: unset;
+    background: inherit;
+    color: white;
+    padding: 5px 0 10px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+  }
+  /* line 101, ../lib/includes/frontend/_responsive.scss */
+  header .content #header-sub-menu ul li:last-child {
+    display: none;
+  }
+
+  /* line 111, ../lib/includes/frontend/_responsive.scss */
+  .ico {
+    top: 100px;
+    margin: 0 auto;
+    left: calc(50% - 124px);
+  }
+  /* line 117, ../lib/includes/frontend/_responsive.scss */
+  .ico div {
+    margin-right: 45px;
+  }
+
+  /* line 125, ../lib/includes/frontend/_responsive.scss */
+  main .container {
+    max-width: 100%;
+  }
+  /* line 131, ../lib/includes/frontend/_responsive.scss */
+  main .container #main-bg-cars div {
+    display: inline-block;
+    height: auto;
+    height: 350px;
+    max-width: 55%;
+  }
+  /* line 137, ../lib/includes/frontend/_responsive.scss */
+  main .container #main-bg-cars div:first-child {
+    left: -40px;
+  }
+  /* line 141, ../lib/includes/frontend/_responsive.scss */
+  main .container #main-bg-cars div:last-child {
+    right: -40px;
+  }
+  /* line 146, ../lib/includes/frontend/_responsive.scss */
+  main .container #main-bg-cars div img {
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  /* line 155, ../lib/includes/frontend/_responsive.scss */
+  footer {
+    height: 64px;
+    background: url(../../img/responsive/footer-bg.png) repeat-x;
+  }
+  /* line 159, ../lib/includes/frontend/_responsive.scss */
+  footer .opt {
+    float: unset;
+    display: inline-block;
+    margin-left: calc(50% - 123px);
+  }
+  /* line 165, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .legales {
+    float: unset;
+    display: inline-block;
   }
 }
