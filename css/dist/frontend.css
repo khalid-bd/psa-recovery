@@ -970,8 +970,8 @@ main .container #main-bg-cars {
 main .container #main-bg-cars div {
   height: 350px;
   line-height: 350px;
-  width: 50%;
-  max-width: 500px;
+  width: 55%;
+  max-width: 400px;
 }
 /* line 194, ../lib/frontend.scss */
 main .container #main-bg-cars div:first-child {
@@ -1259,32 +1259,44 @@ footer .opt .legales a {
   /* line 5, ../lib/includes/frontend/_responsive.scss */
   body, header, main, aside, footer {
     max-width: 100%;
+    min-width: 100%;
   }
 
-  /* line 9, ../lib/includes/frontend/_responsive.scss */
+  /* line 10, ../lib/includes/frontend/_responsive.scss */
   body {
     overflow-x: hidden;
   }
 
-  /* line 13, ../lib/includes/frontend/_responsive.scss */
+  /* line 14, ../lib/includes/frontend/_responsive.scss */
+  .content {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* line 19, ../lib/includes/frontend/_responsive.scss */
   header {
     background: url(../../img/responsive/header-bg.png) repeat-x;
     height: 91px;
+    text-align: center;
   }
-  /* line 19, ../lib/includes/frontend/_responsive.scss */
+  /* line 26, ../lib/includes/frontend/_responsive.scss */
   header .content .logo {
+    display: inline-block;
+    width: 37.5% !important;
+    margin-left: calc(50% - 37.5%);
+    height: initial;
+    float: initial;
     width: 220px;
     height: 55px;
     float: unset;
     margin: 0 auto;
   }
-  /* line 21, ../lib/includes/frontend/_responsive.scss */
+  /* line 33, ../lib/includes/frontend/_responsive.scss */
   header .content .logo img {
     margin-top: 20px;
-    width: 220px;
-    height: 55px;
+    width: 100%;
   }
-  /* line 33, ../lib/includes/frontend/_responsive.scss */
+  /* line 45, ../lib/includes/frontend/_responsive.scss */
   header .content #responsive-nav-icon {
     width: 48px;
     height: 39px;
@@ -1294,18 +1306,19 @@ footer .opt .legales a {
     background: url(../../img/responsive/nav.png) no-repeat;
     cursor: pointer;
   }
-  /* line 43, ../lib/includes/frontend/_responsive.scss */
+  /* line 55, ../lib/includes/frontend/_responsive.scss */
   header .content #responsive-nav-icon.active {
     background: url(../../img/responsive/nav-active.png) no-repeat;
   }
-  /* line 49, ../lib/includes/frontend/_responsive.scss */
+  /* line 61, ../lib/includes/frontend/_responsive.scss */
   header .content nav {
     display: none;
     float: unset;
     position: relative;
     top: -27px;
+    width: 100%;
   }
-  /* line 57, ../lib/includes/frontend/_responsive.scss */
+  /* line 70, ../lib/includes/frontend/_responsive.scss */
   header .content nav ul li {
     text-align: center;
     display: block;
@@ -1316,15 +1329,15 @@ footer .opt .legales a {
     padding: 15px 0;
     background: url(../../img/responsive/nav-seperator.png) repeat-x #3a393e;
   }
-  /* line 67, ../lib/includes/frontend/_responsive.scss */
+  /* line 80, ../lib/includes/frontend/_responsive.scss */
   header .content nav ul li i {
     display: none;
   }
-  /* line 71, ../lib/includes/frontend/_responsive.scss */
+  /* line 84, ../lib/includes/frontend/_responsive.scss */
   header .content nav ul li:hover {
     color: inherit;
   }
-  /* line 78, ../lib/includes/frontend/_responsive.scss */
+  /* line 91, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu {
     display: none;
     position: relative;
@@ -1332,12 +1345,12 @@ footer .opt .legales a {
     clear: both;
     width: 101%;
   }
-  /* line 86, ../lib/includes/frontend/_responsive.scss */
+  /* line 99, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul {
     background: #333237;
     padding: 20px 0 30px;
   }
-  /* line 90, ../lib/includes/frontend/_responsive.scss */
+  /* line 103, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul li {
     display: block;
     width: 60%;
@@ -1354,61 +1367,71 @@ footer .opt .legales a {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 104, ../lib/includes/frontend/_responsive.scss */
+  /* line 117, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul li:last-child {
     display: none;
   }
 
-  /* line 114, ../lib/includes/frontend/_responsive.scss */
+  /* line 127, ../lib/includes/frontend/_responsive.scss */
   .ico {
     top: 100px;
-    margin: 0 auto;
     left: calc(50% - 124px);
+    max-height: 60px;
   }
-  /* line 120, ../lib/includes/frontend/_responsive.scss */
+  /* line 133, ../lib/includes/frontend/_responsive.scss */
   .ico div {
     margin-right: 45px;
   }
 
-  /* line 128, ../lib/includes/frontend/_responsive.scss */
+  /* line 141, ../lib/includes/frontend/_responsive.scss */
   main .container {
     max-width: 100%;
+    min-width: 100%;
   }
-  /* line 134, ../lib/includes/frontend/_responsive.scss */
+  /* line 146, ../lib/includes/frontend/_responsive.scss */
+  main .container #main-bg-cars {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* line 150, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div {
     display: inline-block;
     height: auto;
     height: 350px;
     max-width: 55%;
   }
-  /* line 140, ../lib/includes/frontend/_responsive.scss */
+  /* line 156, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:first-child {
     left: -40px;
   }
-  /* line 144, ../lib/includes/frontend/_responsive.scss */
+  /* line 160, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:last-child {
     right: -40px;
   }
-  /* line 149, ../lib/includes/frontend/_responsive.scss */
+  /* line 165, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div img {
     width: 100%;
     vertical-align: middle;
   }
 
-  /* line 158, ../lib/includes/frontend/_responsive.scss */
+  /* line 174, ../lib/includes/frontend/_responsive.scss */
   footer {
     height: 64px;
     background: url(../../img/responsive/footer-bg.png) repeat-x;
   }
-  /* line 162, ../lib/includes/frontend/_responsive.scss */
+  /* line 178, ../lib/includes/frontend/_responsive.scss */
   footer .opt {
-    float: unset;
+    float: initial;
     display: inline-block;
     margin-left: calc(50% - 123px);
   }
-  /* line 168, ../lib/includes/frontend/_responsive.scss */
+  /* line 187, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang.active {
+    top: -60px;
+    margin-left: -32px;
+  }
+  /* line 194, ../lib/includes/frontend/_responsive.scss */
   footer .opt .legales {
-    float: unset;
     display: inline-block;
   }
 }

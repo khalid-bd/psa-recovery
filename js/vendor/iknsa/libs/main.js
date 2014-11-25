@@ -127,7 +127,7 @@ jQuery(document).ready(function(){
     // Responsive
     // Nav toggle
     // 
-    $("nav").prepend("<div id='responsive-nav-icon'></div>");
+    // $("nav").prepend("<div id='responsive-nav-icon'></div>");
     // $('nav').addClass('test');
     $('#responsive-nav-icon').click(function(){
         if($(this).hasClass('active'))
@@ -135,10 +135,12 @@ jQuery(document).ready(function(){
             $(this).removeClass('active');
             $('nav').slideUp(300);
             $('#header-sub-menu').slideUp(200);
+            console.log('removeClass')
         }else {
             $(this).addClass('active');
             $('nav').slideDown(400);
             $('#header-sub-menu').delay(100).slideDown(300);
+            console.log('addClass')
         }
     })
 });//End annonymous function
