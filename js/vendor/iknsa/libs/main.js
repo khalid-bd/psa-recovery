@@ -127,7 +127,8 @@ jQuery(document).ready(function(){
     // Responsive
     // Nav toggle
     // 
-    $('nav').prepend('<div id="responsive-nav-icon"></div>');
+    $("nav").prepend("<div id='responsive-nav-icon'></div>");
+    // $('nav').addClass('test');
     $('#responsive-nav-icon').click(function(){
         if($(this).hasClass('active'))
         {

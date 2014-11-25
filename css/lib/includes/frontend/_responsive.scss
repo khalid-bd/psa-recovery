@@ -2,9 +2,12 @@
 
 @include breakpoint(320px 940px)
 {
-    body
+    body,header,main,aside,footer
     {
         max-width: 100%;
+    }
+    body
+    {
         overflow-x: hidden;
     }
     header
