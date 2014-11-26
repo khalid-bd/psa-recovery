@@ -142,5 +142,11 @@ jQuery(document).ready(function(){
             $('#header-sub-menu').delay(100).slideDown(300);
             console.log('addClass')
         }
-    })
+    });
+
+    // move div.ico from after footer to after header
+    if($(document).width() < 930)
+    {
+        $('div.ico').appendTo('header');
+    }
 });//End annonymous function
