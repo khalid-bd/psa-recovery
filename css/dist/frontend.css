@@ -1397,40 +1397,66 @@ footer .opt .legales a {
   main .container #main-bg-cars div {
     display: inline-block;
     height: auto;
-    height: 350px;
+    height: 310px;
     max-width: 55%;
+    line-height: 310px;
   }
-  /* line 156, ../lib/includes/frontend/_responsive.scss */
+  /* line 157, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:first-child {
     left: -40px;
   }
-  /* line 160, ../lib/includes/frontend/_responsive.scss */
+  /* line 161, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:last-child {
     right: -40px;
   }
-  /* line 165, ../lib/includes/frontend/_responsive.scss */
+  /* line 166, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div img {
     width: 100%;
     vertical-align: middle;
   }
+  /* line 173, ../lib/includes/frontend/_responsive.scss */
+  main .container .content {
+    width: 77.5%;
+    padding-top: 80px;
+  }
+  /* line 178, ../lib/includes/frontend/_responsive.scss */
+  main .container .content h1 {
+    position: absolute;
+    left: 0;
+    font-size: 110%;
+    width: 100%;
+    text-align: center;
+  }
+  /* line 186, ../lib/includes/frontend/_responsive.scss */
+  main .container .content .transparent {
+    margin-top: 100px;
+  }
+  /* line 189, ../lib/includes/frontend/_responsive.scss */
+  main .container .content .transparent .info {
+    margin: 0;
+  }
+  /* line 194, ../lib/includes/frontend/_responsive.scss */
+  main .container .content .transparent .info p em {
+    font-size: 24px;
+  }
 
-  /* line 174, ../lib/includes/frontend/_responsive.scss */
+  /* line 204, ../lib/includes/frontend/_responsive.scss */
   footer {
     height: 64px;
     background: url(../../img/responsive/footer-bg.png) repeat-x;
   }
-  /* line 178, ../lib/includes/frontend/_responsive.scss */
+  /* line 208, ../lib/includes/frontend/_responsive.scss */
   footer .opt {
     float: initial;
     display: inline-block;
     margin-left: calc(50% - 123px);
   }
-  /* line 187, ../lib/includes/frontend/_responsive.scss */
+  /* line 217, ../lib/includes/frontend/_responsive.scss */
   footer .opt .lang.active {
     top: -60px;
     margin-left: -32px;
   }
-  /* line 194, ../lib/includes/frontend/_responsive.scss */
+  /* line 224, ../lib/includes/frontend/_responsive.scss */
   footer .opt .legales {
     display: inline-block;
   }

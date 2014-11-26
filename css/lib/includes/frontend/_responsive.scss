@@ -151,8 +151,9 @@
                 {
                     display: inline-block;
                     height: auto;
-                    height: 350px;
+                    height: 310px;
                     max-width: 55%;
+                    line-height: 310px;
                     &:first-child
                     {
                         left: -40px;
@@ -166,6 +167,35 @@
                     {
                         width: 100%;
                         vertical-align: middle;
+                    }
+                }
+            }
+            .content
+            {
+                width: 77.5%;
+                padding-top: 80px;
+
+                h1
+                {
+                    position: absolute;
+                    left: 0;
+                    font-size: 110%;
+                    width: 100%;
+                    text-align: center;
+                }
+                .transparent
+                {
+                    margin-top: 100px;
+                    .info
+                    {
+                        margin: 0;
+                        p
+                        {
+                            em
+                            {
+                                font-size: 24px;
+                            }
+                        }
                     }
                 }
             }
@@ -199,3 +229,5 @@
         }
     }
 }
+
+@import 'responsive-forms';
