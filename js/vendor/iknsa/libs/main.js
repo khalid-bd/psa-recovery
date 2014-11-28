@@ -148,8 +148,8 @@ jQuery(document).ready(function(){
             $('#header-sub-menu').slideUp(200);
         }else {
             $(this).addClass('active');
+            $('#header-sub-menu').slideDown(100).css('display', 'inline-block');
             $('nav').slideDown(400).css('display', 'inline-block');
-            $('#header-sub-menu').delay(300).slideDown(400).css('display', 'inline-block');
         }
     });
 
