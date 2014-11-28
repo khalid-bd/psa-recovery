@@ -103,6 +103,7 @@
                 top: 28px;
                 // clear: both;
                 width: 100%;
+                right: 0;
 
                 ul
                 {
@@ -136,6 +137,8 @@
     {
         max-height: 60px;
         position: initial;
+        float: initial;
+        text-align: center;
 
         div
         {
