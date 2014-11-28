@@ -2,10 +2,12 @@
 
 @include breakpoint(320px 940px)
 {
+    // @import 'responsive-forms';
+
     body,header,main,aside,footer
     {
         max-width: 100%;
-        min-width: 100%;
+        min-width: 640px;
     }
     body
     {
@@ -21,25 +23,29 @@
         background:url(../../img/responsive/header-bg.png) repeat-x;
         height: 91px;
         text-align: center;
+        clear: both;
         .content
         {
             .logo
             {
                 display: inline-block;
-                width: 37.5% !important;
-                margin-left: calc(50% - 37.5%);
+                // width: 37.5% !important;
+                width: 240px;
+                // margin-left: calc(50% - 37.5%);
+                // float: left;
                 height: initial;
-                float: initial;
+                position: absolute;
+                margin: 0 auto;
+                top: 0;
+                left:0;
                 img
                 {
-                    margin-top: 20px;
                     width: 100%;
-                    // height: 60%;
+                    margin-top: 20px;
                 }
-                width: 220px;
-                height: 55px;
-                float: unset;
-                margin: 0 auto;
+                // width: 220px;
+                // height: 55px;
+                // float: unset;
             }
 
             #responsive-nav-icon
@@ -51,6 +57,7 @@
                 right: 2%;
                 background:url(../../img/responsive/nav.png) no-repeat;
                 cursor: pointer;
+                z-index: 1;
 
                 &.active
                 {
@@ -63,8 +70,9 @@
                 display: none;
                 float: unset;
                 position: relative;
-                top: -27px;
+                top: 28px;
                 width: 100%;
+                z-index: 0;
                 ul
                 {
                     li
@@ -83,7 +91,7 @@
                         }
                         &:hover
                         {
-                            color: inherit;
+                            // color: inherit;
                         }
                     }
                 }
@@ -92,9 +100,9 @@
             {
                 display: none;
                 position: relative;
-                top: -27px;
-                clear: both;
-                width: 101%;
+                top: 28px;
+                // clear: both;
+                width: 100%;
 
                 ul
                 {
@@ -127,12 +135,18 @@
     .ico
     {
         max-height: 60px;
-        display: block;
-        margin-top: 170px;
+        position: initial;
 
         div
         {
-            margin-right: 5%;
+            padding: 0 5% 0 0;
+            margin: 0;
+            display: inline-block;
+
+            &:last-child
+            {
+                padding-right: 0;
+            }
         }
     }
     
@@ -146,7 +160,7 @@
             #main-bg-cars
             {
                 max-width: 100%;
-                overflow-x: hidden;
+                overflow: hidden;
                 div
                 {
                     display: inline-block;
@@ -156,11 +170,11 @@
                     line-height: 310px;
                     &:first-child
                     {
-                        left: -40px;
+                        left: -10%;
                     }
                     &:last-child
                     {
-                        right: -40px;
+                        right: -10%;
                     }
 
                     img
@@ -173,15 +187,15 @@
             .content
             {
                 width: 77.5%;
-                padding-top: 80px;
 
                 h1
                 {
                     position: absolute;
                     left: 0;
-                    font-size: 110%;
+                    font-size: 24px;
                     width: 100%;
                     text-align: center;
+                    font-weight: 600;
                 }
                 .transparent
                 {
@@ -194,6 +208,40 @@
                             em
                             {
                                 font-size: 24px;
+                            }
+                        }
+                    }
+                }
+                .ico-links
+                {
+                    ul
+                    {
+                        li
+                        {
+                            display: block;
+                            float: unset;
+                            width: 100%;
+                            clear: both;
+                            margin: 10px 0;
+                            height: 108px;
+
+                            img
+                            {
+                                float: left;
+                                width: 144px;
+                                border-right: 1px solid #ccc;
+                            }
+                            span
+                            {
+                                width: 100%;
+                                position: absolute;
+                                top: 0;
+                                left: 144px;
+                                text-indent: -144px;
+                                height: 100%;
+                                line-height: 90px;
+                                color: $main-color;
+                                background:transparent url(../../img/responsive/icon-links-bg.png) left top repeat-x;
                             }
                         }
                     }
@@ -228,6 +276,58 @@
             }
         }
     }
-}
 
-@import 'responsive-forms';
+    // forms
+    main
+    {
+        .container
+        {
+            .content
+            {
+                form
+                {
+                    label
+                    {
+                        width: initial;
+                        float: initial;
+                        display: block;
+                        text-align: center;
+                        margin: 0;
+                    }
+                    input[type="email"], input[type="password"], input[type="text"],div.custom-select
+                    {
+                        width: 85%;
+                        margin-left: 7.5%;
+
+                        select
+                        {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .message
+    {
+        margin-left: 0;
+        text-align: center;
+    }
+    .popin
+    {
+        max-width: 100%;
+
+        section
+        {
+            .left
+            {
+                width: 55%;
+            }
+            .right
+            {
+                width: 41%;
+                padding-top: 8px;
+            }
+        }
+    }
+}

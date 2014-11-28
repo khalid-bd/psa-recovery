@@ -62,6 +62,12 @@ header
             float: left;
             margin-top: 42px;
             position: relative;
+            width: 264px;
+
+            img
+            {
+                width: 100%;
+            }
 
             a
             {
@@ -183,13 +189,13 @@ main
         {
             z-index: -1;
             position: absolute;
-            min-height: 350px;
+            min-height: 300px;
             width: 100%;
 
             div
             {
-                height: 350px;
-                line-height: 350px;
+                height: 300px;
+                line-height: 300px;
                 width: 55%;
                 max-width: 400px;
                 &:first-child
