@@ -10,10 +10,6 @@ h2.error
 
 .call
 {
-    .i-error
-    {
-        border: 1px solid $error-color;
-    }
     .message
     {
         position: absolute;
@@ -80,6 +76,10 @@ h2.error
         }
     }
 }
+.i-error
+{
+    border: 1px solid $error-color !important;
+}
 .error
 {
     margin-left: 392px;
@@ -116,6 +116,7 @@ input[type=email], input[type=password], input[type=text]
     @include border-radius(5px);
     height: 38px;
     padding: 10px 20px;
+    outline: none;
 }
 
 // simple select

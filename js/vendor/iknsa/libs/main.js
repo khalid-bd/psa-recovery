@@ -94,7 +94,7 @@ jQuery(document).ready(function(){
 
     // Email input error
     
-    $('input.mail').focusout(function(){
+    $('input[type=email]').focusout(function(){
         if(!$(this).val().replace(/ /g, '').match(/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/))
         {
             $(this).addClass('i-error');
@@ -105,7 +105,7 @@ jQuery(document).ready(function(){
         }
     });
     // MDP error at least 3 char
-    $('input.mdp').focusout(function(){
+    $('input[type=password]').focusout(function(){
         if(!$(this).val().match(/[a-z0-9]{3,}/))
         {
             $(this).addClass('i-error');

@@ -169,19 +169,15 @@ h2.error, h4.error {
 }
 
 /* line 13, ../lib/includes/frontend/_forms.scss */
-.call .i-error {
-  border: 1px solid #ff0000;
-}
-/* line 17, ../lib/includes/frontend/_forms.scss */
 .call .message {
   position: absolute;
   display: none;
 }
-/* line 23, ../lib/includes/frontend/_forms.scss */
+/* line 19, ../lib/includes/frontend/_forms.scss */
 .call input[type='radio'] {
   margin-left: -15px;
 }
-/* line 27, ../lib/includes/frontend/_forms.scss */
+/* line 23, ../lib/includes/frontend/_forms.scss */
 .call section.date-time {
   display: none;
   margin: 20px 80px 0;
@@ -189,42 +185,47 @@ h2.error, h4.error {
   border-top: 1px solid rgba(75, 74, 77, 0.5);
   border-bottom: 1px solid rgba(75, 74, 77, 0.5);
 }
-/* line 35, ../lib/includes/frontend/_forms.scss */
+/* line 31, ../lib/includes/frontend/_forms.scss */
 .call section.date-time label {
   color: #7c298b;
   width: 288px;
 }
-/* line 40, ../lib/includes/frontend/_forms.scss */
+/* line 36, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .custom-select:after, .call section.date-time .multiple-select:after {
   background: url(../../img/call-back-select.png) no-repeat scroll 40% 50% #fff;
 }
-/* line 46, ../lib/includes/frontend/_forms.scss */
+/* line 42, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .date .message {
   top: 40px;
   margin-left: 312px;
 }
-/* line 54, ../lib/includes/frontend/_forms.scss */
+/* line 50, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .time .custom-select, .call section.date-time .time .multiple-select {
   margin-right: 20px;
   min-width: 100px;
 }
-/* line 58, ../lib/includes/frontend/_forms.scss */
+/* line 54, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .time .custom-select select, .call section.date-time .time .multiple-select select {
   min-width: 100px;
 }
 
-/* line 68, ../lib/includes/frontend/_forms.scss */
+/* line 64, ../lib/includes/frontend/_forms.scss */
 .plan h2, .plan h4 {
   font-size: 36px;
   font-weight: 600;
 }
-/* line 73, ../lib/includes/frontend/_forms.scss */
+/* line 69, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select, .plan .multiple-select {
   width: 379px;
 }
-/* line 77, ../lib/includes/frontend/_forms.scss */
+/* line 73, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select select, .plan .multiple-select select {
   width: 379px;
+}
+
+/* line 79, ../lib/includes/frontend/_forms.scss */
+.i-error {
+  border: 1px solid #ff0000 !important;
 }
 
 /* line 83, ../lib/includes/frontend/_forms.scss */
@@ -268,15 +269,16 @@ input[type=email], input[type=password], input[type=text] {
   border-radius: 5px;
   height: 38px;
   padding: 10px 20px;
+  outline: none;
 }
 
-/* line 122, ../lib/includes/frontend/_forms.scss */
+/* line 123, ../lib/includes/frontend/_forms.scss */
 .custom-select, .multiple-select {
   position: relative;
   display: inline-block;
   /* Select arrow styling */
 }
-/* line 127, ../lib/includes/frontend/_forms.scss */
+/* line 128, ../lib/includes/frontend/_forms.scss */
 .custom-select select, .multiple-select select {
   display: inline-block;
   border: 1px solid rgba(124, 41, 139, 0.3);
@@ -294,12 +296,12 @@ input[type=email], input[type=password], input[type=text] {
   border-radius: 5px;
   background: #fff;
 }
-/* line 144, ../lib/includes/frontend/_forms.scss */
+/* line 145, ../lib/includes/frontend/_forms.scss */
 .custom-select select option:hover, .multiple-select select option:hover {
   background: #4b4a4d;
   color: white;
 }
-/* line 153, ../lib/includes/frontend/_forms.scss */
+/* line 154, ../lib/includes/frontend/_forms.scss */
 .custom-select:after, .multiple-select:after {
   content: "";
   position: absolute;
@@ -314,29 +316,29 @@ input[type=email], input[type=password], input[type=text] {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 170, ../lib/includes/frontend/_forms.scss */
+/* line 171, ../lib/includes/frontend/_forms.scss */
 .no-pointer-events .custom-select:after, .no-pointer-events .multiple-select:after {
   content: none;
 }
 
-/* line 176, ../lib/includes/frontend/_forms.scss */
+/* line 177, ../lib/includes/frontend/_forms.scss */
 .multiple-select {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 180, ../lib/includes/frontend/_forms.scss */
+/* line 181, ../lib/includes/frontend/_forms.scss */
 .multiple-select select {
   height: initial;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 185, ../lib/includes/frontend/_forms.scss */
+/* line 186, ../lib/includes/frontend/_forms.scss */
 .multiple-select select option {
   padding: 5px;
 }
-/* line 190, ../lib/includes/frontend/_forms.scss */
+/* line 191, ../lib/includes/frontend/_forms.scss */
 .multiple-select:after {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -345,7 +347,7 @@ input[type=email], input[type=password], input[type=text] {
   height: 99px;
 }
 
-/* line 197, ../lib/includes/frontend/_forms.scss */
+/* line 198, ../lib/includes/frontend/_forms.scss */
 textarea {
   width: 280px;
   max-width: 530px;
@@ -360,11 +362,11 @@ textarea {
   border-radius: 5px;
 }
 
-/* line 211, ../lib/includes/frontend/_forms.scss */
+/* line 212, ../lib/includes/frontend/_forms.scss */
 .checkbox span, .radio span {
   cursor: pointer;
 }
-/* line 214, ../lib/includes/frontend/_forms.scss */
+/* line 215, ../lib/includes/frontend/_forms.scss */
 .checkbox span:before, .radio span:before {
   display: inline-block;
   width: 12px;
@@ -373,31 +375,31 @@ textarea {
   background: url(../../img/checkbox.png) no-repeat;
   margin-right: 10px;
 }
-/* line 225, ../lib/includes/frontend/_forms.scss */
+/* line 226, ../lib/includes/frontend/_forms.scss */
 .checkbox span.checked:before, .radio span.checked:before {
   background: url(../../img/checkbox-checked.png) no-repeat;
 }
-/* line 231, ../lib/includes/frontend/_forms.scss */
+/* line 232, ../lib/includes/frontend/_forms.scss */
 .checkbox input, .radio input {
   visibility: hidden;
   margin-top: 15px;
 }
 
-/* line 241, ../lib/includes/frontend/_forms.scss */
+/* line 242, ../lib/includes/frontend/_forms.scss */
 .row-checkbox span:after, .row-radio span:after {
   display: block;
   content: "";
 }
-/* line 247, ../lib/includes/frontend/_forms.scss */
+/* line 248, ../lib/includes/frontend/_forms.scss */
 .row-checkbox .indent, .row-radio .indent {
   margin-left: 392px;
 }
 
-/* line 257, ../lib/includes/frontend/_forms.scss */
+/* line 258, ../lib/includes/frontend/_forms.scss */
 .radio span:before {
   background: url(../../img/radio.png) no-repeat;
 }
-/* line 263, ../lib/includes/frontend/_forms.scss */
+/* line 264, ../lib/includes/frontend/_forms.scss */
 .radio span.checked:before {
   background: url(../../img/radio-checked.png) no-repeat;
 }
