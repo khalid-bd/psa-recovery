@@ -116,13 +116,24 @@ jQuery(document).ready(function(){
         }
     });
 // Carousel
-    $('.carousel').slick({
-            dots: true,
-            autoplay: true,
-            draggable: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-    });
+    if($(document).width() > 930)
+    {
+        $('.carousel').slick({
+                dots: true,
+                autoplay: true,
+                draggable: true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+        });
+    }else {
+        $('.carousel').slick({
+                dots: true,
+                autoplay: true,
+                draggable: true,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+        });
+    }
 
     // Responsive
     // Nav toggle
@@ -135,18 +146,17 @@ jQuery(document).ready(function(){
             $(this).removeClass('active');
             $('nav').slideUp(300);
             $('#header-sub-menu').slideUp(200);
-            console.log('removeClass')
         }else {
             $(this).addClass('active');
-            $('nav').slideDown(400);
-            $('#header-sub-menu').delay(100).slideDown(300);
-            console.log('addClass')
+            $('nav').slideDown(400).css('display', 'inline-block');
+            $('#header-sub-menu').delay(300).slideDown(400).css('display', 'inline-block');
         }
     });
 
     // move div.ico from after footer to after header
     if($(document).width() < 930)
     {
-        $('div.ico').appendTo('header');
+        $('div.ico').prependTo('main .container');
     }
+
 });//End annonymous function
