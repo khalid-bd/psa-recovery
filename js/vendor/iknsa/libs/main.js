@@ -1,4 +1,4 @@
-function all(){
+jQuery(document).ready(function(){
 // nav icons hover and active. Rename the src by adding -active to the png
     $("nav > ul > li")
         .mouseover(function() { 
@@ -80,20 +80,53 @@ function all(){
 
     }
 
-// ------------Checkboxes------------
-    $('.checkbox span, .radio span').click(function() {
-        if($(this).prev('input').prop("checked")) 
-        {
-            $(this).prev('input').prop("checked", false);
-            $(this).removeClass('checked');
-        }else {
-            $(this).prev('input').prop("checked", true);
-            $(this).addClass('checked');
+// ------------Checkboxes and Radios------------
+    $('.row-checkbox input:nth-child(4), .row-radio input:nth-child(4)').nextAll('input').addClass('indent');
+    // $('.checkbox span, .radio span').click(function() {
+    //     if($(this).prev('input').prop("checked")) 
+    //     {
+    //         $(this).prev('input').prop("checked", false);
+    //         $(this).removeClass('checked');
+    //     }else {
+    //         $(this).prev('input').prop("checked", true);
+    //         $(this).addClass('checked');
+    //     }
+    // });
+
+    // sync real checkbox and radios with their fake
+    
+    $('input[type=checkbox], input[type=radio]').each(function(i) {
+        if($(this).is(':checked')) {
+            $(this).next('span').addClass('checked');
+            // console.log($(this).val());
+        }
+        if(!$(this).is(':checked')) {
+            if($(this).next('span').hasClass('checked')) {
+                $(this).next('span').removeClass('checked');
+            }
         }
     });
-    $('.row-checkbox input:nth-child(4), .row-radio input:nth-child(4)').nextAll('input').addClass('indent');
 
-// Call back page
+    // onclick event on checkboxes
+    $('.checkbox span').click(function() {
+        if($(this).hasClass('checked')) {
+            $(this).removeClass('checked');
+            $(this).prev('input[type=checkbox]').prop("checked", false);
+            // console.log('uncheck');
+        }else {
+            $(this).addClass('checked');
+            $(this).prev('input[type=checkbox]').prop("checked", true);
+            // console.log('check');
+        }
+    });
+    
+// ------------------------
+    // $('.radio span').click(function() {
+    //     radioName = $(this).prev('input[type=radio]').attr('name');
+    //     console.log(radioName);
+    // })
+
+// Call request page
 //  tel number section
 //  .match(/^0[1-9]([-. ]?[0-9]{2}){4}$/)
 
@@ -230,6 +263,6 @@ function all(){
         center_logo();
     }
 
-};//End main function all()
+});//End main function all()
 
-jQuery(document).ready(all());
+// jQuery(document).ready(all());
