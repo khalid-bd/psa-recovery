@@ -72,6 +72,11 @@
                     float: right;
                 }
             }
+            p
+            {
+                font-size: inherit;
+                color: $secondary-color;
+            }
         }
         .left
         {

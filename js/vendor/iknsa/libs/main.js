@@ -57,7 +57,7 @@ function all(){
         $(".ico-links ul").css('margin-left', marginLeft)
     }
 
-    if($(".ico-links ul").size() < 4 && $(window).width() > 920) {
+    if($(".ico-links ul li").size() < 4 && $(window).width() > 920) {
         icoLinksLeftMargin();
     }
 
