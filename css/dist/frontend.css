@@ -504,7 +504,12 @@ textarea {
 .popin section .title span.reason {
   float: right;
 }
-/* line 76, ../lib/includes/frontend/_popin.scss */
+/* line 75, ../lib/includes/frontend/_popin.scss */
+.popin section .title p {
+  font-size: inherit;
+  color: #7c298b;
+}
+/* line 81, ../lib/includes/frontend/_popin.scss */
 .popin section .left {
   width: 580px;
   border-right: 1px solid #7c298b;
@@ -515,7 +520,7 @@ textarea {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 88, ../lib/includes/frontend/_popin.scss */
+/* line 93, ../lib/includes/frontend/_popin.scss */
 .popin section .left div {
   background: #fff;
   padding: 10px 15px;
@@ -529,26 +534,26 @@ textarea {
   color: #4b4a4d;
   text-transform: uppercase;
 }
-/* line 100, ../lib/includes/frontend/_popin.scss */
+/* line 105, ../lib/includes/frontend/_popin.scss */
 .popin section .left div:first-child {
   margin-top: 0;
 }
-/* line 105, ../lib/includes/frontend/_popin.scss */
+/* line 110, ../lib/includes/frontend/_popin.scss */
 .popin section .left div .info {
   float: right;
 }
-/* line 111, ../lib/includes/frontend/_popin.scss */
+/* line 116, ../lib/includes/frontend/_popin.scss */
 .popin section .right {
   display: inline-block;
   vertical-align: middle;
   width: 290px;
   padding-top: 5px;
 }
-/* line 118, ../lib/includes/frontend/_popin.scss */
+/* line 123, ../lib/includes/frontend/_popin.scss */
 .popin section .right p {
   font-size: 24px;
 }
-/* line 124, ../lib/includes/frontend/_popin.scss */
+/* line 129, ../lib/includes/frontend/_popin.scss */
 .popin button {
   border: none;
   outline: none;
