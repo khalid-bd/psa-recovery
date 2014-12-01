@@ -104,7 +104,7 @@ header
                     {
                         margin-right: 0;
                     }
-                    &:hover
+                    &:hover, &.active
                     {
                         color: $secondary-color;
                     }
@@ -245,10 +245,6 @@ main
                     }
                 }
             }
-            input[type=submit]
-            {
-                @include submit-btn;
-            }
         }
     }
     .ico-links
@@ -350,13 +346,21 @@ footer
         .lang
         {
             float: left;
+            display: block;
             cursor: pointer;
+            position: relative;
+            text-align: left;
+            width: 140px;
+            height: 40px;
+            overflow: hidden;
 
             .choose
             {
-                float: right;
+                display: block;
                 background:#b8b9b9;
-                padding: 10px 20px;
+                padding: 14px 0;
+                width: 100%;
+                text-align: center;
                 i
                 {
                     background:transparent url(../../img/footer-lang.png) left top no-repeat;
@@ -368,16 +372,30 @@ footer
             }
             .option
             {
-                display: none;
+                // display: none;
+                display: block;
+                position: relative;
+                clear:both;
+                padding: 5px 20px 0;
+
+                &.active
+                {
+                    color: $secondary-color;
+                }
+
+                a
+                {
+                    color: inherit;
+                }
             }
 
             &.active
             {
+                height: initial;
                 position: relative;
-                top: -45px;
+                top: -38px;
                 background: #fff;
                 border: 1px solid #b8b9b9;
-                width: 140px;
                 padding: 10px 20px;
                 @include border-radius(5px);
 
@@ -386,8 +404,7 @@ footer
                     position: relative;
                     background:inherit;
                     border-bottom: 1px solid #b8b9b9;
-                    padding: 0px 17px;
-                    padding-bottom: 10px;
+                    padding: 0px 15px 10px;
                     color: $secondary-color;
 
                     i
@@ -396,31 +413,20 @@ footer
                     }
 
                 }
-                .option
-                {
-                    clear:both;
-                    padding: 5px 20px 0;
-                    display: block;
-
-                    &.active
-                    {
-                        color: $secondary-color;
-                    }
-
-                    a
-                    {
-                        color: inherit;
-                    }
-                }
             }
         }
         .legales
         {
             float: right;
-            padding: 10px 20px;
+            // padding: 10px 20px;
             background: #b8b9b9;
             margin-left: 20px;
             position: relative;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            // overflow: hidden;
 
             a
             {
