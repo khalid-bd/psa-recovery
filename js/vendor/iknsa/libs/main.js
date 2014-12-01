@@ -1,4 +1,4 @@
-jQuery(document).ready(function(){
+function all(){
 // nav icons hover and active. Rename the src by adding -active to the png
     $("nav > ul > li")
         .mouseover(function() { 
@@ -230,4 +230,6 @@ jQuery(document).ready(function(){
         center_logo();
     }
 
-});//End annonymous function
+};//End main function all()
+
+jQuery(document).ready(all());
