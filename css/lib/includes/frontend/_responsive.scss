@@ -331,11 +331,11 @@
         {
             .left
             {
-                width: 51%;
+                width: 55%;
             }
             .right
             {
-                width: 45%;
+                width: 41%;
                 padding-top: 8px;
             }
         }
@@ -345,6 +345,24 @@
         .slick-next, .slick-prev
         {
             display: none !important;
+        }
+    }
+
+    .popin
+    {
+        .content > p
+        {
+            text-align: center;
+        }
+        section
+        {
+            .right
+            {
+                p
+                {
+                    font-size: 22px;
+                }
+            }
         }
     }
 }
