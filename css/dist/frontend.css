@@ -408,6 +408,7 @@ textarea {
 }
 /* line 239, ../lib/includes/frontend/_forms.scss */
 .checkbox input, .radio input {
+  visibility: hidden;
   margin-top: 15px;
 }
 
