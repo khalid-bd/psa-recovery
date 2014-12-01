@@ -38,7 +38,17 @@ jQuery(document).ready(function(){
         $('.disable').remove();
     })
 // ------------------------------------------------
-// 
+    // Popin Vertical center of one element in the left part of the page.
+    if($('.popin .left div:only-child')){
+        leftHeight = $('.popin .left div:only-child').parent().outerHeight();
+        divHeight = $('.popin .left div:only-child').outerHeight();
+
+        marginTop = (leftHeight - divHeight) / 2;
+
+        $('.popin .left div:only-child').css('margin-top', marginTop);
+
+    }
+
 // ------------Checkboxes------------
     $('.checkbox span, .radio span').click(function() {
         if($(this).prev('input').prop("checked")) 
@@ -115,6 +125,28 @@ jQuery(document).ready(function(){
             $('.mdp.error').slideUp(200);
         }
     });
+    // select error
+    $('select').each(function(e) {
+        $(this).change(function(){
+            if($(this).hasClass('i-error')) {
+                $(this).removeClass('i-error');
+                if($(this).parent().next('.error').css('display', 'block')) {
+                    $(this).parent().next('.error').css('display', 'none');
+                }
+            }
+        })
+    });
+    $('form').submit(function(e){
+        $('select').each(function(i){
+            if($(this).val() == "default") {
+                $(this).addClass('i-error');
+                $(this).parent().next('.error').css('display', 'block');
+                e.preventDefault();
+            }
+        });
+    });
+
+    
 // Carousel
     if($(document).width() > 930)
     {
@@ -154,9 +186,21 @@ jQuery(document).ready(function(){
     });
 
     // move div.ico from after footer to after header
+    function center_logo () {
+        $('div.ico').prependTo('main .container');
+
+        // calc of left margin for logo
+        var marginleft = ($(document).width() / 2) - 120;
+        console.log(marginleft);
+        $('header .content .logo').resize().css('margin-left', marginleft);
+        }
+
     if($(document).width() < 930)
     {
-        $('div.ico').prependTo('main .container');
+        center_logo();
     }
+    $(window).resize(function(){
+        center_logo();
+    });
 
 });//End annonymous function

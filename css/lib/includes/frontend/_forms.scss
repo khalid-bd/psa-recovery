@@ -118,7 +118,14 @@ input[type=email], input[type=password], input[type=text]
     padding: 10px 20px;
     outline: none;
 }
-
+input[type=submit]
+{
+    @include submit-btn;
+}
+.center
+{
+    text-align: center;
+}
 // simple select
 .custom-select 
 {
