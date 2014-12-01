@@ -120,12 +120,20 @@ jQuery(document).ready(function(){
         }
     });
     
-// ------------------------
-    // $('.radio span').click(function() {
-    //     radioName = $(this).prev('input[type=radio]').attr('name');
-    //     console.log(radioName);
-    // })
+    $('.radio span').click(function() {
+        var radioName = $(this).prev('input[type=radio]').attr('name');
+        if(!$(this).prev('input[type=radio]').is(':checked')) {
+            $('input[name=' + radioName + ']').prop('checked', false);
+            $('input[name=' + radioName + ']').next('span').removeClass('checked');
+            $(this).prev('input[type=radio]').prop("checked", true);
+            $(this).addClass('checked');
+        }
+        if($(this).prev('input[type=radio]').prop("checked", true)) {
+        }
+        // console.log($(this).prev('input[type=radio]').attr('name'));
+    });
 
+// ------------------------------------------------
 // Call request page
 //  tel number section
 //  .match(/^0[1-9]([-. ]?[0-9]{2}){4}$/)
