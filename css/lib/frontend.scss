@@ -43,7 +43,7 @@ header
                     padding: 5px 10px;
                     position: relative;
 
-                    &:last-child
+                    &.name
                     {
                         border: 1px solid $secondary-color;
                         border-top: none;

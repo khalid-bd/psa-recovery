@@ -859,7 +859,7 @@ header .content #header-sub-menu ul li {
   position: relative;
 }
 /* line 46, ../lib/frontend.scss */
-header .content #header-sub-menu ul li:last-child {
+header .content #header-sub-menu ul li.name {
   border: 1px solid #7c298b;
   border-top: none;
 }
