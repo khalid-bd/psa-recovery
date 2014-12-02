@@ -81,17 +81,8 @@ jQuery(document).ready(function(){
     }
 
 // ------------Checkboxes and Radios------------
+// align radio and checkboxes if there are more than 2 éléments
     $('.row-checkbox input:nth-child(4), .row-radio input:nth-child(4)').nextAll('input').addClass('indent');
-    // $('.checkbox span, .radio span').click(function() {
-    //     if($(this).prev('input').prop("checked")) 
-    //     {
-    //         $(this).prev('input').prop("checked", false);
-    //         $(this).removeClass('checked');
-    //     }else {
-    //         $(this).prev('input').prop("checked", true);
-    //         $(this).addClass('checked');
-    //     }
-    // });
 
     // sync real checkbox and radios with their fake
     
@@ -152,26 +143,38 @@ jQuery(document).ready(function(){
         }
     });
     // callback now radio button
-    $('span.tel.now').click(function(){
-        if($(this).hasClass("checked"))
+    function checkTelNow(){
+        if($('span.tel.now').hasClass("checked"))
         {
-            $('.tel.now.message').slideDown(400);
+            // console.log('checkTelNow');
+            $('.tel.now.message').slideDown(300);
             $('.call input[type=radio]:nth-child(odd)').css('margin-top', '50px');
         }
         else {
-            $('.tel.now.message').slideUp(200);
+            $('.tel.now.message').slideUp(300);
             $('.call input[type=radio]:nth-child(odd)').css('margin-top', '20px');
         }
+    }
+    function checkTelLater() {
+        // console.log('checkTelLater');
+        if($('span.tel.later').hasClass("checked"))
+        {
+            $('section.date-time').slideDown(300);
+        }
+        else {
+            $('section.date-time').slideUp(300);
+        }
+    }
+    checkTelNow();
+    checkTelLater();
+    $('span.tel.now').click(function(){
+        checkTelNow();
+        checkTelLater();
     });
     // callback later radio button
     $('span.tel.later').click(function(){
-        if($(this).hasClass("checked"))
-        {
-            $('section.date-time').slideDown(400);
-        }
-        else {
-            $('section.date-time').slideUp(400);
-        }
+        checkTelLater();
+        checkTelNow();
     });
 
     // Email input error
