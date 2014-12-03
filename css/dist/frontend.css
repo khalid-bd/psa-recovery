@@ -1395,7 +1395,7 @@ footer .opt .legales a {
     border-radius: 5px;
   }
   /* line 126, ../lib/includes/frontend/_responsive.scss */
-  header .content #header-sub-menu ul li:last-child {
+  header .content #header-sub-menu ul li.name {
     display: none;
   }
 
@@ -1555,27 +1555,28 @@ footer .opt .legales a {
   .popin {
     max-width: 100%;
   }
-  /* line 332, ../lib/includes/frontend/_responsive.scss */
-  .popin section .left {
-    width: 55%;
-  }
-  /* line 336, ../lib/includes/frontend/_responsive.scss */
-  .popin section .right {
-    width: 41%;
-    padding-top: 8px;
-  }
-
-  /* line 345, ../lib/includes/frontend/_responsive.scss */
-  .slider .slick-next, .slider .slick-prev {
-    display: none !important;
-  }
-
-  /* line 353, ../lib/includes/frontend/_responsive.scss */
+  /* line 330, ../lib/includes/frontend/_responsive.scss */
   .popin .content > p {
     text-align: center;
   }
-  /* line 361, ../lib/includes/frontend/_responsive.scss */
+  /* line 337, ../lib/includes/frontend/_responsive.scss */
+  .popin section .left {
+    width: 55%;
+    padding-right: 15px;
+    margin-right: 10px;
+  }
+  /* line 343, ../lib/includes/frontend/_responsive.scss */
+  .popin section .right {
+    width: 42%;
+    padding-top: 8px;
+  }
+  /* line 348, ../lib/includes/frontend/_responsive.scss */
   .popin section .right p {
-    font-size: 22px;
+    font-size: 20px;
+  }
+
+  /* line 357, ../lib/includes/frontend/_responsive.scss */
+  .slider .slick-next, .slider .slick-prev {
+    display: none !important;
   }
 }

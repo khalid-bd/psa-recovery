@@ -23,7 +23,8 @@ jQuery(document).ready(function(){
     })
 
 // -------------------END NAV ICONS---------------------
-// 
+
+// --------------------------------------------------------
 // Toggle footer language change
     $("footer .content .opt .lang")
         .mouseover(function() { 
@@ -220,7 +221,9 @@ jQuery(document).ready(function(){
             }
         });
     });
+// If no nav (page connexion) we must increase top for the sub header
 
+    
     
 // Carousel
     if($(document).width() > 930)
@@ -240,6 +243,9 @@ jQuery(document).ready(function(){
                 slidesToShow: 3,
                 slidesToScroll: 3,
         });
+        if(!$('header nav').length) {
+            $('#header-sub-menu').css('top', '91px');
+        }
     }
 
     // Responsive

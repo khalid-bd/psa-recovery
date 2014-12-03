@@ -123,7 +123,7 @@
                         color: white;
                         padding: 5px 0 10px;
                         @include border-radius(5px);
-                        &:last-child
+                        &.name
                         {
                             display: none;
                         }
@@ -327,16 +327,28 @@
     {
         max-width: 100%;
 
+        .content > p
+        {
+            text-align: center;
+        }
+
         section
         {
             .left
             {
                 width: 55%;
+                padding-right: 15px;
+                margin-right: 10px;
             }
             .right
             {
-                width: 41%;
+                width: 42%;
                 padding-top: 8px;
+
+                p
+                {
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -350,19 +362,6 @@
 
     .popin
     {
-        .content > p
-        {
-            text-align: center;
-        }
-        section
-        {
-            .right
-            {
-                p
-                {
-                    font-size: 22px;
-                }
-            }
-        }
+        
     }
 }
