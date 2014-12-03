@@ -280,6 +280,13 @@ jQuery(document).ready(function(){
         center_logo();
     }
 
+    // dynamic bg 
+    // IMPORTANT TO DELETE
+    if(session == undefined) {
+        var session = Math.floor((Math.random() * 10) + 1); 
+    }
+    console.log(session);
+
 });//End main function all()
 
 // jQuery(document).ready(all());
