@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>07_contacter</title>
+    <title>08_etre_appeler</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable = yes">
 
@@ -58,98 +58,67 @@
             </div>
 
             <div class="content">
-                <h1><b>Contacter le service client</b></h1>
+                <h1><b>me faire rappeler</b></h1>
 
-                <div class="transparent">
+                <form action="08_etre_appeler_conf.html" class="call" novalidate>
+
+                    <div class="transparent">
+                        <h2 class="error">Message d'erreur</h2>
+                        <div class="element">
+                            <label for="email">Votre numéro de téléphone</label>
+                            <input type="text" class="tel" name="tel" placeholder="1234567890">
+                            <br>
+                            <div class="tel error">Erreur de saisie dans le numéro de téléphone, merci de ressaisir</div>
+                        </div>
+                        <div class="element radio row-radio">
+                            <label for="row_radio">Type de rappel</label>
+                            <input type="radio" value="7" name="radio"><span class="tel now">Immédiat</span><div class="tel now message">Le temps d'attente est estimé à 8 minutes</div>
+                            <input type="radio" value="8" name="radio"><span class="tel later">Différé</span>
+                        </div>
+                        <section class="date-time">
+                            
+                        <div class="element date">
+                            <label for="simple_select">Date du rappel</label>
+                            <div class="custom-select">
+                                <select>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                    <option value="1">Mardi 16 septembre 2014</option>
+                                </select>
+                            </div>
+                            <div class="message">Date limite de paiement : Lundi 22 septembre</div>
+                        </div>
+                        <div class="element time">
+                            <label for="simple_select">Heure de rappel</label>
+                            <div class="custom-select h">
+                                <select>
+                                    <option value="1">08h</option>
+                                    <option value="1">09h</option>
+                                    <option value="1">10h</option>
+                                </select>
+                            </div>
+                            <div class="custom-select m">
+                                <select>
+                                    <option value="1">00mn</option>
+                                    <option value="1">15mn</option>
+                                    <option value="1">30mn</option>
+                                    <option value="1">45mn</option>
+                                </select>
+                            </div>
+                        </div>
+                        </section>
+                    </div><!-- end transparent -->
                     
-                    <div class="info contact">
-                        <p>Appelez le service client</p>
-
-                        <p><b>au 09 70 81 82 83</b></p>
-
-                        <p>du lundi au samedi de 9h à 19h sauf jours fériés.</p>
+                    <div class="element center">
+                        <input type="submit" value="valider">
                     </div>
-
-                    <h6>(Coût d'un appel local en France ; coût variable suivant opérateur et pays pour un appel depuis l'étranger).</h6>
-
-                </div><!-- end transparent -->
-
-                <div class="ico-links">
-                    <ul>
-                        <li><img src="../img/dynamic/call-cs.png" alt="Appeler le service client"><span><b>appeler le service client</b></span><a href="07_contacter.html"></a></li>
-                        <li><img src="../img/dynamic/my-space.png" alt="Mon espace perso"><span><b>Mon espace perso</b></span><a href="#"></a></li>
-                    </ul>
-                </div>
-                                        
+                    
+                </form>
+                    
             </div><!-- end .content -->
 
         </div><!-- end container -->
     </main>
-
-    <aside class="slider">
-        <div class="carousel">
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider1.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider2.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider4.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider4.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider3.png" alt="">
-                </span>
-            </div>
-            <div>
-                <span class="bg">
-                    <img src="../img/dynamic/slider4.png" alt="">
-                </span>
-            </div>
-        </div>
-    </aside>
 
     <footer>
         <div class="content">
