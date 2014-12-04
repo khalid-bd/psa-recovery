@@ -282,10 +282,10 @@ jQuery(document).ready(function(){
 
     // dynamic bg 
     // IMPORTANT TO DELETE
-    if(session == undefined) {
-        var session = Math.floor((Math.random() * 10) + 1); 
-    }
-    console.log(session);
+    // if(session == undefined) {
+    //     var session = Math.floor((Math.random() * 10) + 1); 
+    // }
+    // console.log(session);
 
 });//End main function all()
 
