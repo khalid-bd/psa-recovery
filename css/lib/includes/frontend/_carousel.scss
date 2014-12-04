@@ -15,7 +15,15 @@
         background:white;
         padding: 5px;
     }
+    a
+    {
+        display: inline-block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
 }
+
 // Default Variables
 
 // $slick-font-path: "./fonts/" !default;
