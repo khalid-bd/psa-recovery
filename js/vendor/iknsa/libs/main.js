@@ -285,26 +285,36 @@ jQuery(document).ready(function(){
     {
         center_logo();
     }
-
+// alert(navigator.userAgent);
     // phones resolutions
     var viewport = $('meta[name="viewport"]');
-    if (!/iPhone/i.test(navigator.userAgent) || screen.width < 640 && window.matchMedia("(orientation: portrait)").matches) {
-        viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
-        window.addEventListener("orientationchange", function() {
-            viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
-        }, false);
+    if (!/iPhone/i.test(navigator.userAgent) || screen.width < 640) {
+        if(window.matchMedia("(orientation: portrait)").matches) {
+            viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
+            window.addEventListener("orientationchange", function() {
+                viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
+            }, false);
+        } 
+        // if(window.matchMedia("(orientation: landscape)").matches) {
+        //     viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
+        //     window.addEventListener("orientationchange", function() {
+        //         viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
+        // }
     // console.log(screen.width);
     }
 
-    else if (/iPhone/i.test(navigator.userAgent && window.matchMedia("(orientation: portrait)").matches)){
-        viewport.attr("content", "initial-scale=1, width=640, user-scalable = yes");
-        window.addEventListener("orientationchange", function() {
-            viewport.attr("content", "initial-scale=0.5, width=640, user-scalable = yes");
-        }, false);
-    } else {
-        viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
-    // console.log(screen.width);
-    }
+    if (/iPhone/i.test(navigator.userAgent)){
+        if(window.matchMedia("(orientation: portrait)").matches) {
+            viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
+            window.addEventListener("orientationchange", function() {
+                viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
+            }, false);
+        }
+    } 
+    // else {
+    //     viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
+    // // console.log(screen.width);
+    // }
     // console.log(viewport.attr("content"));
 });//End main function all()
 
