@@ -134,6 +134,14 @@ main
     .contact
     {
         margin-top: -10px;
+
+        p
+        {
+            a
+            {
+                color: inherit;
+            }
+        }
     }
 
     .mentions

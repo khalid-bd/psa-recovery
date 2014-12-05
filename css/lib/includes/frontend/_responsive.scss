@@ -424,6 +424,40 @@
             }
         }
     }
+    .info.contact
+    {
+        p
+        {
+            b
+            {
+                color: $secondary-color !important;
+                span
+                {
+                    display: block;
+                    visibility: hidden;
+                    position: relative;
+
+                    &:before
+                    {
+                        visibility: visible;
+                        position: relative;
+                        top: 0;
+                        left: 15px;
+                        width: 150px;
+                        height: 150px;
+                        content: url("../../img/responsive/call-btn.png");
+                    }
+                    &:after
+                    {
+                        clear:both;
+                        display: block;
+                        content: '';
+                        height: 0;
+                    }
+                }
+            }
+        }
+    }
     .popin
     {
         max-width: 100%;
