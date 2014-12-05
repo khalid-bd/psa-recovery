@@ -279,14 +279,12 @@ jQuery(document).ready(function(){
     {
         center_logo();
     }
-
-    // dynamic bg 
-    // IMPORTANT TO DELETE
-    // if(session == undefined) {
-    //     var session = Math.floor((Math.random() * 10) + 1); 
-    // }
-    // console.log(session);
-
+    var viewport = $('meta[name="viewport"]');
+    if (!/iPhone/i.test(navigator.userAgent) && screen.width < 640) {
+        viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
+    }
+    console.log(viewport.attr("content"));
+    console.log(screen.width);
 });//End main function all()
 
 // jQuery(document).ready(all());
