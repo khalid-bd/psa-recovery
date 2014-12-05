@@ -178,6 +178,12 @@ jQuery(document).ready(function(){
         checkTelNow();
     });
 
+    // Touch to call us
+    console.log($(window).width());
+    if($(window).width() < 960) {
+        $('.touch-to-call').attr('href', 'tel:0970818283');
+    }
+// --------------------------------------------
     // Email input error
     
     $('input[type=email]').focusout(function(){
@@ -287,7 +293,7 @@ jQuery(document).ready(function(){
         window.addEventListener("orientationchange", function() {
             viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
         }, false);
-    console.log(screen.width);
+    // console.log(screen.width);
     }
 
     else if (/iPhone/i.test(navigator.userAgent && window.matchMedia("(orientation: portrait)").matches)){
@@ -297,9 +303,9 @@ jQuery(document).ready(function(){
         }, false);
     } else {
         viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
-    console.log(screen.width);
+    // console.log(screen.width);
     }
-    console.log(viewport.attr("content"));
+    // console.log(viewport.attr("content"));
 });//End main function all()
 
 // jQuery(document).ready(all());
