@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>01_connexion_popin_single</title>
+    <title>09_planifier</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, user-scalable = yes">
 
@@ -22,45 +22,6 @@
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div class="content">
-        <div class="popin">
-            <h2><b>Détail des compte débiteurs</b><i class="js-close"></i></h2>
-            <div class="content">
-                <p>A ce jour vous êtes débiteur de la somme de <b>1 873,36 euros</b></p>
-                <section>
-                    <div class="title">
-                        <span class="accnt">Compte n° 234457699999</span>
-                        <span class="reason">Importe de la deuda <b>588,34 €</b></span>
-                        <p>Monsieur Jean Albert de la Vilaine</p>
-                    </div>
-                    <div class="left">
-                        <div>
-                            <span class="date">Janvier 2014</span>
-                            <span class="info">294,34 €</span>
-                        </div>
-                        <div>
-                            <span class="date">Février 2014</span>
-                            <span class="info">294,34 €</span>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <p>Marque: Peugeot</p>
-                        <p>Modèle: 307 HDI SW</p>
-                        <p>Immatriculation:  BI 204 ZD</p>
-                    </div>
-                    <div class="content"></div>
-                </section>
-                
-                <section class="center">
-                    <button class="js-close">Fermer</button>
-                </section>
-            </div>
-        </div><!-- End .popin -->
-    </div>
-
-    <!-- disable background -->
-    <div class="disable"></div><!-- End div disable -->
-    
     <header>
         <div class="content">
             <div class="logo">
@@ -96,7 +57,44 @@
                 <div><img src="../img/bg-cars/citroen/car-2.png" alt=""></div>
             </div>
 
-            <div class="content"></div><!-- end .content -->
+            <div class="content">
+                <h1><b>planifier mon paiement</b></h1>
+
+                <form action="#" class="plan" novalidate>
+
+                    <div class="transparent">
+                        <h2>Montant : 588,34 €</h2>
+                        <div class="element">
+                            <label for="email">Mode de règlement</label>
+                            <div class="custom-select">
+                                <select name="moyen" id="moyen">
+                                    <option value="default">Sélectionnez un mode de règlement</option>
+                                    <option value="2">Lorem ipsum dolor sit amet</option>
+                                    <option value="3">Nam cursus bibendum lorem</option>
+                                </select>
+                            </div>
+                            <div class="error select">Merci de saisir une valeur</div>
+                        </div>
+                        <div class="element">
+                            <label for="mdp">date de paiement</label>
+                            <div class="custom-select">
+                                <select name="date" id="date">
+                                    <option value="1">16 Mars 2014</option>
+                                    <option value="">25 Aout 9645</option>
+                                    <option value="">31 Février 2010</option>
+                                </select>
+                            </div>
+                            <div class="message">Date limite de paiement : Lundi 22 septembre</div>
+                        </div>
+                    </div><!-- end transparent -->
+                    
+                    <div class="element center">
+                        <input type="submit" value="valider">
+                    </div>
+                    
+                </form>
+                    
+            </div><!-- end .content -->
 
         </div><!-- end container -->
     </main>
