@@ -7,9 +7,9 @@
     <meta charset="utf-8">
     <!-- <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=edge"> -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>08_etre_appeler</title>
+    <title>01_connexion</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, user-scalable = yes">
+    <meta name="viewport" content="">
 
     <link rel="stylesheet" href="../css/dist/frontend.css">
 
@@ -29,21 +29,21 @@
                 <a href="03_1compte.html"></a>
             </div>
             <div id='responsive-nav-icon'></div>
-            <nav>
+<!--             <nav>
                 <ul>
                     <li><i><img src="../img/nav/accueil.png" alt="Accueil"></i>Accueil<a href="03_1compte.html"></a></li>
                     <li><i><img src="../img/nav/plan.png" alt="Plannifier"></i>planifier<a href="09_planifier.html"></a></li>
                     <li><i><img src="../img/nav/contact.png" alt="Contacter"></i>contacter<a href="07_contacter.html"></a></li>
-                    <li class="active"><i><img src="../img/nav/call.png" alt="Etre Contacter"></i>être appelé<a href="08_etre_appeler.html"></a></li>
+                    <li><i><img src="../img/nav/call.png" alt="Etre Contacter"></i>être appelé<a href="08_etre_appeler.html"></a></li>
                     <li><i><img src="../img/nav/espace.png" alt="Espace Perso"></i>mon espace perso<a href="#"></a></li>
                     <li><i><img src="../img/nav/disconnect.png" alt="Se deconnecter"></i>déconnexion<a href="01_connexion.html"></a></li>
                 </ul>
-            </nav>
+            </nav> -->
             <div id="header-sub-menu">
                 <ul>
-                    <li>Le site de la jv<a href="http://www.psa-peugeot-citroen.com" target="_blank"></a></li>
-                    <li>Le site de banque psa finance<a href="http://www.banquepsafinance.com/" target="_blank"></a></li>
-                    <li class="name">m jean-baptiste martin dupont<a href="#"></a></li>
+                    <li>Le site de la jv<a href="http://www.psa-peugeot-citroen.com"></a></li>
+                    <li>Le site de banque psa finance<a href="http://www.banquepsafinance.com/"></a></li>
+                    <!-- <li class="name">m jean-baptiste martin dupont<a href="#"></a></li> -->
                 </ul>
             </div>
         </div>
@@ -58,56 +58,22 @@
             </div>
 
             <div class="content">
-                <h1><b>me faire rappeler</b></h1>
+                <h1>bienvenue sur le <b>site de recouvrement</b></h1>
 
-                <form action="08_etre_appeler_conf.html" class="call" novalidate>
+                <form action="03_1compte.html" class="connexion" novalidate>
 
                     <div class="transparent">
-                        <h2 class="error">Message d'erreur</h2>
                         <div class="element">
-                            <label for="email">Votre numéro de téléphone</label>
-                            <input type="text" class="tel" name="tel" placeholder="1234567890">
-                            <br>
-                            <div class="tel error">Erreur de saisie dans le numéro de téléphone, merci de ressaisir</div>
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="Entrez votre adresse mail" class="mail">
+                            <div class="mail error">Erreur de saisie dans le mail, merci de ressaisir</div>
                         </div>
-                        <div class="element radio row-radio">
-                            <label for="row_radio">Type de rappel</label>
-                            <input type="radio" value="7" name="radio"><span class="tel now">Immédiat</span><div class="tel now message">Le temps d'attente est estimé à 8 minutes</div>
-                            <input type="radio" value="8" name="radio"><span class="tel later">Différé</span>
+                        <div class="element">
+                            <label for="mdp">Mot de passe</label>
+                            <input type="password" placeholder="Entrez votre mot de passe" class="mdp">
+                            <div class="mdp error">Revérifier votre mdp</div>
                         </div>
-                        <section class="date-time">
-                            
-                        <div class="element date">
-                            <label for="simple_select">Date du rappel</label>
-                            <div class="custom-select">
-                                <select>
-                                    <option value="1">Mardi 16 septembre 2014</option>
-                                    <option value="1">Mardi 16 septembre 2014</option>
-                                    <option value="1">Mardi 16 septembre 2014</option>
-                                </select>
-                            </div>
-                            <div class="message">Date limite de paiement : Lundi 22 septembre</div>
-                        </div>
-                        <div class="element time">
-                            <label for="simple_select">Heure de rappel</label>
-                            <div class="custom-select h">
-                                <select>
-                                    <option value="1">08h</option>
-                                    <option value="1">09h</option>
-                                    <option value="1">10h</option>
-                                </select>
-                            </div>
-                            <div class="custom-select m">
-                                <select>
-                                    <option value="1">00mn</option>
-                                    <option value="1">15mn</option>
-                                    <option value="1">30mn</option>
-                                    <option value="1">45mn</option>
-                                </select>
-                            </div>
-                        </div>
-                        </section>
-                    </div><!-- end transparent -->
+                    </div>
                     
                     <div class="element center">
                         <input type="submit" value="valider">
