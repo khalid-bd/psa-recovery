@@ -179,7 +179,6 @@ jQuery(document).ready(function(){
     });
 
     // Touch to call us
-    console.log($(window).width());
     if($(window).width() < 960) {
         $('.touch-to-call').attr('href', 'tel:0970818283');
     }
@@ -310,7 +309,17 @@ jQuery(document).ready(function(){
                 viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
             }, false);
         }
-    } 
+    }
+    if(/iPad/i.test(navigator.userAgent)){
+        $('body,header,main,aside,footer').css('max-width', '960px');
+        if(window.matchMedia("(orientation: portrait)").matches) {
+            viewport.attr("content", "initial-scale=1, user-scalable = yes");
+            // window.addEventListener("orientationchange", function() {
+            //     viewport.attr("content", "initial-scale=2 width=device-width, user-scalable = yes");
+            //     console.log(viewport.attr("content"));
+            // }, false);
+        }
+    }
     // else {
     //     viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
     // // console.log(screen.width);
