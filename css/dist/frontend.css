@@ -1600,6 +1600,16 @@ footer .opt .legales a {
     height: 0;
   }
   /* line 355, ../lib/includes/frontend/_responsive.scss */
+  span.tel:after {
+    content: '>';
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    float: right;
+    margin-right: 20px;
+  }
+  /* line 362, ../lib/includes/frontend/_responsive.scss */
   span.tel.checked {
     background: transparent;
     border-top: 1px solid #7c298b;
@@ -1615,8 +1625,15 @@ footer .opt .legales a {
     -webkit-border-bottom-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
+  /* line 373, ../lib/includes/frontend/_responsive.scss */
+  span.tel.checked:after {
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+  }
 
-  /* line 369, ../lib/includes/frontend/_responsive.scss */
+  /* line 381, ../lib/includes/frontend/_responsive.scss */
   div.tel.now.message {
     width: 77%;
     margin-left: 11.5%;
@@ -1636,7 +1653,7 @@ footer .opt .legales a {
     font-style: normal;
   }
 
-  /* line 384, ../lib/includes/frontend/_responsive.scss */
+  /* line 396, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time {
     border-top: none;
     margin: 0;
@@ -1659,11 +1676,11 @@ footer .opt .legales a {
     font-style: normal;
     text-align: center;
   }
-  /* line 404, ../lib/includes/frontend/_responsive.scss */
+  /* line 416, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .custom-select, .call section.date-time .element.date .multiple-select {
     margin-left: 0;
   }
-  /* line 408, ../lib/includes/frontend/_responsive.scss */
+  /* line 420, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .message {
     display: inline-block;
     margin: 0;
@@ -1672,23 +1689,23 @@ footer .opt .legales a {
     width: 85%;
     font-size: 12px;
   }
-  /* line 420, ../lib/includes/frontend/_responsive.scss */
+  /* line 432, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.time div.custom-select, .call section.date-time .element.time div.multiple-select {
     width: 25%;
     margin: 0;
   }
 
-  /* line 431, ../lib/includes/frontend/_responsive.scss */
+  /* line 443, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b {
     color: #7c298b !important;
   }
-  /* line 434, ../lib/includes/frontend/_responsive.scss */
+  /* line 446, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span {
     display: block;
     visibility: hidden;
     position: relative;
   }
-  /* line 440, ../lib/includes/frontend/_responsive.scss */
+  /* line 452, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:before {
     visibility: visible;
     position: relative;
@@ -1698,7 +1715,7 @@ footer .opt .legales a {
     height: 150px;
     content: url("../../img/responsive/call-btn.png");
   }
-  /* line 450, ../lib/includes/frontend/_responsive.scss */
+  /* line 462, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:after {
     clear: both;
     display: block;
@@ -1706,31 +1723,31 @@ footer .opt .legales a {
     height: 0;
   }
 
-  /* line 461, ../lib/includes/frontend/_responsive.scss */
+  /* line 473, ../lib/includes/frontend/_responsive.scss */
   .popin {
     max-width: 100%;
   }
-  /* line 465, ../lib/includes/frontend/_responsive.scss */
+  /* line 477, ../lib/includes/frontend/_responsive.scss */
   .popin .content > p {
     text-align: center;
   }
-  /* line 472, ../lib/includes/frontend/_responsive.scss */
+  /* line 484, ../lib/includes/frontend/_responsive.scss */
   .popin section .left {
     width: 55%;
     padding-right: 15px;
     margin-right: 10px;
   }
-  /* line 478, ../lib/includes/frontend/_responsive.scss */
+  /* line 490, ../lib/includes/frontend/_responsive.scss */
   .popin section .right {
     width: 42%;
     padding-top: 8px;
   }
-  /* line 483, ../lib/includes/frontend/_responsive.scss */
+  /* line 495, ../lib/includes/frontend/_responsive.scss */
   .popin section .right p {
     font-size: 20px;
   }
 
-  /* line 492, ../lib/includes/frontend/_responsive.scss */
+  /* line 504, ../lib/includes/frontend/_responsive.scss */
   .slider .slick-next, .slider .slick-prev {
     display: none !important;
   }
