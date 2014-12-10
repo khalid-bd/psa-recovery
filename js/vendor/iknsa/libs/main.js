@@ -1,4 +1,13 @@
 jQuery(document).ready(function(){
+    // header-sub-menu hover effect
+    $('#header-sub-menu ul li:not(.name)').hover(
+        function(){
+        $(this).css('background', '#DBDBE0');
+        }, 
+        function(){
+            $(this).css('background', '#E9E9ED');
+        }
+    );
 // nav icons hover and active. Rename the src by adding -active to the png
     $("nav > ul > li")
         .mouseover(function() { 
@@ -70,7 +79,7 @@ jQuery(document).ready(function(){
             $('.js-close').click(function(){
                 $('.popin').remove();
                 $('.disable').remove();
-                console.log('no slide down close');
+                // console.log('no slide down close');
             });
         }
         else {
@@ -78,13 +87,13 @@ jQuery(document).ready(function(){
             $('#show-popin').click(function(){
                 $('.disable.slide-down').slideDown();
                 $('.popin.slide-down').slideDown();
-                console.log('slide down');
+                // console.log('slide down');
             });
             // Close popin slide down way
             $('.popin.slide-down .js-close').click(function(){
                 $('.popin.slide-down').css('display', 'none');
                 $('.disable.slide-down').css('display', 'none');
-                console.log('slide down close');
+                // console.log('slide down close');
             })
         }
     }
