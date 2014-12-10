@@ -64,11 +64,30 @@ jQuery(document).ready(function(){
 
 // ------------ End footer language change -----------------------
 // 
-// ------------close popin------------
-    $('.js-close').click(function(){
-        $('.popin').remove();
-        $('.disable').remove();
-    })
+// ------------close popin and slide down------------
+    if ($(document).find('.popin').length != 0) {
+        if($(document).find('.popin.slide-down').length == 0) {
+            $('.js-close').click(function(){
+                $('.popin').remove();
+                $('.disable').remove();
+                console.log('no slide down close');
+            });
+        }
+        else {
+            
+            $('#show-popin').click(function(){
+                $('.disable.slide-down').slideDown();
+                $('.popin.slide-down').slideDown();
+                console.log('slide down');
+            });
+            // Close popin slide down way
+            $('.popin.slide-down .js-close').click(function(){
+                $('.popin.slide-down').css('display', 'none');
+                $('.disable.slide-down').css('display', 'none');
+                console.log('slide down close');
+            })
+        }
+    }
 // ------------------------------------------------
     // Popin Vertical center of one element in the left part of the page.
     if($('.popin .left div:only-child')){

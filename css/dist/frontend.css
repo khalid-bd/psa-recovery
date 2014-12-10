@@ -576,6 +576,11 @@ textarea {
   background: #a581ad;
 }
 
+/* line 136, ../lib/includes/frontend/_popin.scss */
+.disable.slide-down, .popin.slide-down {
+  display: none;
+}
+
 /* line 1, ../lib/includes/frontend/_carousel.scss */
 .slider {
   background: #e7e7e7;
