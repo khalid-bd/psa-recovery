@@ -1269,15 +1269,19 @@ footer .opt .legales a {
   height: 100%;
   cursor: pointer;
 }
+/* line 443, ../lib/frontend.scss */
+footer .opt .legales:hover {
+  background: #A4A7A7;
+}
 
-/* line 445, ../lib/frontend.scss */
+/* line 450, ../lib/frontend.scss */
 .ico {
   padding-top: 10px;
   position: relative;
   bottom: 120px;
   float: left;
 }
-/* line 451, ../lib/frontend.scss */
+/* line 456, ../lib/frontend.scss */
 .ico div {
   position: relative;
   display: inline-block;
@@ -1286,11 +1290,11 @@ footer .opt .legales a {
   line-height: 54px;
   vertical-align: top;
 }
-/* line 460, ../lib/frontend.scss */
+/* line 465, ../lib/frontend.scss */
 .ico div:last-child {
   margin-right: 0;
 }
-/* line 465, ../lib/frontend.scss */
+/* line 470, ../lib/frontend.scss */
 .ico div a {
   display: inline-block;
   position: absolute;

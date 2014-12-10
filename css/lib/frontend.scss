@@ -439,6 +439,11 @@ footer
             {
                 @include block-link;
             }
+
+            &:hover
+            {
+                background:#A4A7A7;
+            }
         }
     }
 }
