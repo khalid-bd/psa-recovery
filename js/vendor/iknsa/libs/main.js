@@ -2,7 +2,11 @@ jQuery(document).ready(function(){
     // header-sub-menu hover effect
     $('#header-sub-menu ul li:not(.name)').hover(
         function(){
-        $(this).css('background', '#DBDBE0');
+            if(screen.width > 960) {
+                $(this).css('background', '#DBDBE0');
+            }else {
+                $(this).css('background', '#2C2C30');
+            }
             // console.log('in');
         }, 
         function(){
