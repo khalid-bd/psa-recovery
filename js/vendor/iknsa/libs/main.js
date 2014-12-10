@@ -3,9 +3,11 @@ jQuery(document).ready(function(){
     $('#header-sub-menu ul li:not(.name)').hover(
         function(){
         $(this).css('background', '#DBDBE0');
+            console.log('in');
         }, 
         function(){
             $(this).css('background', '#E9E9ED');
+            console.log('out');
         }
     );
 // nav icons hover and active. Rename the src by adding -active to the png
