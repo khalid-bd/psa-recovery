@@ -168,7 +168,7 @@ input[type=submit]
         // line-height: 30px;
         height: 36px;
         padding: 0 27px 0 0;
-        background: url(../../img/simple-select.png) no-repeat scroll 40% 50% #fff;
+        // background: url(../../img/simple-select.png) no-repeat scroll 40% 50% #fff;
         
         pointer-events:none;
         
@@ -198,7 +198,7 @@ input[type=submit]
     &:after
     {
     @include border-radius(5px);
-        background: url(../../img/multiple-select.png) no-repeat scroll 50% 25% #fff;
+        // background: url(../../img/multiple-select.png) no-repeat scroll 50% 25% #fff;
         height: 99px;
     }
 }
