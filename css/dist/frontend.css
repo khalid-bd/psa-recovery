@@ -190,10 +190,6 @@ h2.error, h4.error {
   color: #7c298b;
   width: 288px;
 }
-/* line 36, ../lib/includes/frontend/_forms.scss */
-.call section.date-time .custom-select:after, .call section.date-time .multiple-select:after {
-  background: url(../../img/call-back-select.png) no-repeat scroll 40% 50% #fff;
-}
 /* line 42, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .date .message {
   top: 40px;
