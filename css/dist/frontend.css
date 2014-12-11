@@ -1487,8 +1487,9 @@ footer .opt .legales:hover {
   /* line 211, ../lib/includes/frontend/_responsive.scss */
   main .container .content .transparent .info p em {
     font-size: 24px;
+    font-weight: 600;
   }
-  /* line 222, ../lib/includes/frontend/_responsive.scss */
+  /* line 223, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li {
     display: block;
     float: unset;
@@ -1497,13 +1498,13 @@ footer .opt .legales:hover {
     margin: 10px 0;
     height: 108px;
   }
-  /* line 231, ../lib/includes/frontend/_responsive.scss */
+  /* line 232, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li img {
     float: left;
     width: 144px;
     border-right: 1px solid #ccc;
   }
-  /* line 237, ../lib/includes/frontend/_responsive.scss */
+  /* line 238, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li span {
     width: 100%;
     position: absolute;
@@ -1516,26 +1517,26 @@ footer .opt .legales:hover {
     background: transparent url(../../img/responsive/icon-links-bg.png) left top repeat-x;
   }
 
-  /* line 255, ../lib/includes/frontend/_responsive.scss */
+  /* line 256, ../lib/includes/frontend/_responsive.scss */
   footer {
     height: 64px;
     background: url(../../img/responsive/footer-bg.png) repeat-x;
   }
-  /* line 257, ../lib/includes/frontend/_responsive.scss */
+  /* line 258, ../lib/includes/frontend/_responsive.scss */
   footer .content {
     text-align: center;
   }
-  /* line 263, ../lib/includes/frontend/_responsive.scss */
+  /* line 264, ../lib/includes/frontend/_responsive.scss */
   footer .opt {
     float: initial;
     display: inline-block;
   }
-  /* line 277, ../lib/includes/frontend/_responsive.scss */
+  /* line 278, ../lib/includes/frontend/_responsive.scss */
   footer .opt .legales {
     display: inline-block;
   }
 
-  /* line 293, ../lib/includes/frontend/_responsive.scss */
+  /* line 294, ../lib/includes/frontend/_responsive.scss */
   main .container .content form label {
     width: initial;
     float: initial;
@@ -1543,34 +1544,34 @@ footer .opt .legales:hover {
     text-align: center;
     margin: 0;
   }
-  /* line 301, ../lib/includes/frontend/_responsive.scss */
+  /* line 302, ../lib/includes/frontend/_responsive.scss */
   main .container .content form input[type="email"], main .container .content form input[type="password"], main .container .content form input[type="text"], main .container .content form div.custom-select, main .container .content form div.multiple-select {
     width: 85%;
     margin-left: 7.5%;
   }
-  /* line 306, ../lib/includes/frontend/_responsive.scss */
+  /* line 307, ../lib/includes/frontend/_responsive.scss */
   main .container .content form input[type="email"] select, main .container .content form input[type="password"] select, main .container .content form input[type="text"] select, main .container .content form div.custom-select select, main .container .content form div.multiple-select select {
     width: 100%;
   }
 
-  /* line 315, ../lib/includes/frontend/_responsive.scss */
+  /* line 316, ../lib/includes/frontend/_responsive.scss */
   .message {
     margin-left: 0;
     text-align: center;
   }
 
-  /* line 320, ../lib/includes/frontend/_responsive.scss */
+  /* line 321, ../lib/includes/frontend/_responsive.scss */
   .error {
     width: 85%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 326, ../lib/includes/frontend/_responsive.scss */
+  /* line 327, ../lib/includes/frontend/_responsive.scss */
   main .container .content form.call {
     text-transform: uppercase;
   }
-  /* line 330, ../lib/includes/frontend/_responsive.scss */
+  /* line 331, ../lib/includes/frontend/_responsive.scss */
   main .container .content form.call input[type="text"].tel, main .container .content form.call .error {
     text-align: center;
     font-size: 22px;
@@ -1579,12 +1580,12 @@ footer .opt .legales:hover {
     margin-left: 16.5%;
   }
 
-  /* line 340, ../lib/includes/frontend/_responsive.scss */
+  /* line 341, ../lib/includes/frontend/_responsive.scss */
   span.tel {
     display: block;
     width: 77%;
     margin-left: 11.5%;
-    background: #4b4a4d;
+    background: #504F51;
     text-align: center;
     padding: 16px 0;
     color: white;
@@ -1592,13 +1593,13 @@ footer .opt .legales:hover {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 349, ../lib/includes/frontend/_responsive.scss */
+  /* line 350, ../lib/includes/frontend/_responsive.scss */
   span.tel:before {
     background: none;
     width: 0;
     height: 0;
   }
-  /* line 355, ../lib/includes/frontend/_responsive.scss */
+  /* line 356, ../lib/includes/frontend/_responsive.scss */
   span.tel:after {
     content: '>';
     -moz-transform: rotate(90deg);
@@ -1608,7 +1609,7 @@ footer .opt .legales:hover {
     float: right;
     margin-right: 20px;
   }
-  /* line 362, ../lib/includes/frontend/_responsive.scss */
+  /* line 363, ../lib/includes/frontend/_responsive.scss */
   span.tel.checked {
     background: transparent;
     border-top: 1px solid #7c298b;
@@ -1624,7 +1625,7 @@ footer .opt .legales:hover {
     -webkit-border-bottom-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  /* line 373, ../lib/includes/frontend/_responsive.scss */
+  /* line 374, ../lib/includes/frontend/_responsive.scss */
   span.tel.checked:after {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -1632,7 +1633,7 @@ footer .opt .legales:hover {
     transform: rotate(-90deg);
   }
 
-  /* line 381, ../lib/includes/frontend/_responsive.scss */
+  /* line 382, ../lib/includes/frontend/_responsive.scss */
   div.tel.now.message {
     width: 77%;
     margin-left: 11.5%;
@@ -1652,7 +1653,7 @@ footer .opt .legales:hover {
     font-style: normal;
   }
 
-  /* line 396, ../lib/includes/frontend/_responsive.scss */
+  /* line 397, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time {
     border-top: none;
     margin: 0;
@@ -1675,11 +1676,11 @@ footer .opt .legales:hover {
     font-style: normal;
     text-align: center;
   }
-  /* line 416, ../lib/includes/frontend/_responsive.scss */
+  /* line 417, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .custom-select, .call section.date-time .element.date .multiple-select {
     margin-left: 0;
   }
-  /* line 420, ../lib/includes/frontend/_responsive.scss */
+  /* line 421, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .message {
     display: inline-block;
     margin: 0;
@@ -1688,23 +1689,23 @@ footer .opt .legales:hover {
     width: 85%;
     font-size: 12px;
   }
-  /* line 432, ../lib/includes/frontend/_responsive.scss */
+  /* line 433, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.time div.custom-select, .call section.date-time .element.time div.multiple-select {
     width: 25%;
     margin: 0;
   }
 
-  /* line 443, ../lib/includes/frontend/_responsive.scss */
+  /* line 444, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b {
     color: #7c298b !important;
   }
-  /* line 446, ../lib/includes/frontend/_responsive.scss */
+  /* line 447, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span {
     display: block;
     visibility: hidden;
     position: relative;
   }
-  /* line 452, ../lib/includes/frontend/_responsive.scss */
+  /* line 453, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:before {
     visibility: visible;
     position: relative;
@@ -1714,7 +1715,7 @@ footer .opt .legales:hover {
     height: 150px;
     content: url("../../img/responsive/call-btn.png");
   }
-  /* line 462, ../lib/includes/frontend/_responsive.scss */
+  /* line 463, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:after {
     clear: both;
     display: block;
@@ -1722,31 +1723,31 @@ footer .opt .legales:hover {
     height: 0;
   }
 
-  /* line 473, ../lib/includes/frontend/_responsive.scss */
+  /* line 474, ../lib/includes/frontend/_responsive.scss */
   .popin {
     max-width: 100%;
   }
-  /* line 477, ../lib/includes/frontend/_responsive.scss */
+  /* line 478, ../lib/includes/frontend/_responsive.scss */
   .popin .content > p {
     text-align: center;
   }
-  /* line 484, ../lib/includes/frontend/_responsive.scss */
+  /* line 485, ../lib/includes/frontend/_responsive.scss */
   .popin section .left {
     width: 55%;
     padding-right: 15px;
     margin-right: 10px;
   }
-  /* line 490, ../lib/includes/frontend/_responsive.scss */
+  /* line 491, ../lib/includes/frontend/_responsive.scss */
   .popin section .right {
     width: 42%;
     padding-top: 8px;
   }
-  /* line 495, ../lib/includes/frontend/_responsive.scss */
+  /* line 496, ../lib/includes/frontend/_responsive.scss */
   .popin section .right p {
     font-size: 20px;
   }
 
-  /* line 504, ../lib/includes/frontend/_responsive.scss */
+  /* line 505, ../lib/includes/frontend/_responsive.scss */
   .slider .slick-next, .slider .slick-prev {
     display: none !important;
   }
