@@ -1233,8 +1233,9 @@ footer .opt .lang.active {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
+  height: 80px;
 }
-/* line 409, ../lib/frontend.scss */
+/* line 410, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -1242,11 +1243,11 @@ footer .opt .lang.active .choose {
   padding: 0px 15px 10px;
   color: #7c298b;
 }
-/* line 417, ../lib/frontend.scss */
+/* line 418, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 425, ../lib/frontend.scss */
+/* line 426, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   background: #b8b9b9;
@@ -1257,7 +1258,7 @@ footer .opt .legales {
   line-height: 40px;
   text-align: center;
 }
-/* line 438, ../lib/frontend.scss */
+/* line 439, ../lib/frontend.scss */
 footer .opt .legales a {
   display: inline-block;
   position: absolute;
@@ -1267,19 +1268,19 @@ footer .opt .legales a {
   height: 100%;
   cursor: pointer;
 }
-/* line 443, ../lib/frontend.scss */
+/* line 444, ../lib/frontend.scss */
 footer .opt .legales:hover {
   background: #A4A7A7;
 }
 
-/* line 450, ../lib/frontend.scss */
+/* line 451, ../lib/frontend.scss */
 .ico {
   padding-top: 10px;
   position: relative;
   bottom: 120px;
   float: left;
 }
-/* line 456, ../lib/frontend.scss */
+/* line 457, ../lib/frontend.scss */
 .ico div {
   position: relative;
   display: inline-block;
@@ -1288,11 +1289,11 @@ footer .opt .legales:hover {
   line-height: 54px;
   vertical-align: top;
 }
-/* line 465, ../lib/frontend.scss */
+/* line 466, ../lib/frontend.scss */
 .ico div:last-child {
   margin-right: 0;
 }
-/* line 470, ../lib/frontend.scss */
+/* line 471, ../lib/frontend.scss */
 .ico div a {
   display: inline-block;
   position: absolute;
