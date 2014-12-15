@@ -367,6 +367,12 @@ jQuery(document).ready(function(){
     // // console.log(screen.width);
     // }
     // console.log(viewport.attr("content"));
+
+
+    // change top margin only on mobile devices
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $('header nav').css('display', 'none')) {
+        $('header .content #header-sub-menu').css('top', '91px');
+    } 
 });//End main function all()
 
 // jQuery(document).ready(all());
