@@ -220,9 +220,9 @@ jQuery(document).ready(function(){
     if($(window).width() < 960) {
         $('.touch-to-call').attr('href', 'tel:0970818283');
     }else {
-        $('.touch-to-call').click(function(e){
-            e.preventDefault();
-        }).css('cursor', 'default');
+        // $('.touch-to-call').click(function(e){
+        //     e.preventDefault();
+        // }).css('cursor', 'pointer');
     }
 // --------------------------------------------
     // Email input error
@@ -318,8 +318,8 @@ jQuery(document).ready(function(){
         $('div.ico').prependTo('main .container');
 
         // calc of left margin for logo
-        var marginLeft = ($(document).width() / 2) - 120;
-        $('header .content .logo').resize().css('margin-left', marginLeft);
+        // var marginLeft = ($(document).width() / 2) - 120;
+        // $('header .content .logo').resize().css('margin-left', marginLeft);
         }
 
     if($(document).width() < 920)
