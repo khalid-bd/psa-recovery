@@ -318,8 +318,8 @@ jQuery(document).ready(function(){
         $('div.ico').prependTo('main .container');
 
         // calc of left margin for logo
-        var marginLeft = ($(document).width() / 2) - 120;
-        $('header .content .logo').resize().css('margin-left', marginLeft);
+        // var marginLeft = ($(document).width() / 2) - 120;
+        // $('header .content .logo').resize().css('margin-left', marginLeft);
         }
 
     if($(document).width() < 920)

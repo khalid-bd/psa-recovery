@@ -312,7 +312,7 @@ input[type=submit]:hover {
   background: #fafafa;
   height: 38px;
   min-width: 280px;
-  padding: 0px 15px;
+  padding: 0px 0px 0px 15px;
   color: #4b4a4d;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -1732,22 +1732,26 @@ footer .opt .legales:hover {
     text-align: center;
   }
   /* line 485, ../lib/includes/frontend/_responsive.scss */
+  .popin section .title {
+    width: 100%;
+  }
+  /* line 489, ../lib/includes/frontend/_responsive.scss */
   .popin section .left {
     width: 55%;
     padding-right: 15px;
     margin-right: 10px;
   }
-  /* line 491, ../lib/includes/frontend/_responsive.scss */
+  /* line 495, ../lib/includes/frontend/_responsive.scss */
   .popin section .right {
     width: 42%;
     padding-top: 8px;
   }
-  /* line 496, ../lib/includes/frontend/_responsive.scss */
+  /* line 500, ../lib/includes/frontend/_responsive.scss */
   .popin section .right p {
     font-size: 20px;
   }
 
-  /* line 505, ../lib/includes/frontend/_responsive.scss */
+  /* line 509, ../lib/includes/frontend/_responsive.scss */
   .slider .slick-next, .slider .slick-prev {
     display: none !important;
   }
