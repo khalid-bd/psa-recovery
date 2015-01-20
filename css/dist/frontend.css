@@ -168,27 +168,26 @@ h2.error, h4.error {
   display: none;
 }
 
-/* line 13, ../lib/includes/frontend/_forms.scss */
-.call .message {
-  position: absolute;
-  display: none;
+/* line 11, ../lib/includes/frontend/_forms.scss */
+.call {
+  text-transform: uppercase;
 }
-/* line 19, ../lib/includes/frontend/_forms.scss */
-.call input[type='radio'] {
-  margin-left: -15px;
+/* line 15, ../lib/includes/frontend/_forms.scss */
+.call input[type="text"].tel, .call .error {
+  text-align: center;
+  font-size: 22px;
+  color: #7c298b;
+  width: 66%;
+  margin-left: 16.5%;
 }
 /* line 23, ../lib/includes/frontend/_forms.scss */
 .call section.date-time {
   display: none;
-  margin: 20px 80px 0;
-  padding: 20px 0;
-  border-top: 1px solid rgba(75, 74, 77, 0.5);
-  border-bottom: 1px solid rgba(75, 74, 77, 0.5);
 }
 /* line 31, ../lib/includes/frontend/_forms.scss */
 .call section.date-time label {
   color: #7c298b;
-  width: 288px;
+  width: 240px;
 }
 /* line 42, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .date .message {
@@ -204,27 +203,139 @@ h2.error, h4.error {
 .call section.date-time .time .custom-select select, .call section.date-time .time .multiple-select select {
   min-width: 100px;
 }
+/* line 61, ../lib/includes/frontend/_forms.scss */
+.call span.tel {
+  display: block;
+  width: 77%;
+  margin-left: 11.5%;
+  background: #A4A7A7;
+  text-align: center;
+  padding: 16px 0;
+  color: white;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 70, ../lib/includes/frontend/_forms.scss */
+.call span.tel:before {
+  background: none;
+  width: 0;
+  height: 0;
+}
+/* line 76, ../lib/includes/frontend/_forms.scss */
+.call span.tel:after {
+  content: '>';
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  float: right;
+  margin-right: 20px;
+}
+/* line 83, ../lib/includes/frontend/_forms.scss */
+.call span.tel.checked {
+  background: transparent;
+  border-top: 1px solid #7c298b;
+  border-right: 1px solid #7c298b;
+  border-left: 1px solid #7c298b;
+  color: #7c298b;
+  font-size: 18px;
+  font-weight: 800;
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+/* line 94, ../lib/includes/frontend/_forms.scss */
+.call span.tel.checked:after {
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+/* line 102, ../lib/includes/frontend/_forms.scss */
+.call div.tel.now.message {
+  width: 77%;
+  margin-left: 11.5%;
+  border-bottom: 1px solid #7c298b;
+  border-right: 1px solid #7c298b;
+  border-left: 1px solid #7c298b;
+  margin-top: -5px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-style: normal;
+}
+/* line 117, ../lib/includes/frontend/_forms.scss */
+.call section.date-time {
+  border-top: none;
+  margin: 0;
+  padding: 0;
+  width: 77%;
+  margin-left: 11.5%;
+  border-bottom: 1px solid #7c298b;
+  border-right: 1px solid #7c298b;
+  border-left: 1px solid #7c298b;
+  margin-top: -5px;
+  padding: 0 10px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  -moz-border-radius-bottomleft: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-style: normal;
+  text-align: center;
+}
+/* line 137, ../lib/includes/frontend/_forms.scss */
+.call section.date-time .element.date .custom-select, .call section.date-time .element.date .multiple-select {
+  margin-left: 0;
+}
+/* line 141, ../lib/includes/frontend/_forms.scss */
+.call section.date-time .element.date .message {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: 0;
+  width: 85%;
+  font-size: 12px;
+}
+/* line 153, ../lib/includes/frontend/_forms.scss */
+.call section.date-time .element.time div.custom-select, .call section.date-time .element.time div.multiple-select {
+  width: 25%;
+  margin: 0;
+}
 
-/* line 64, ../lib/includes/frontend/_forms.scss */
+/* line 163, ../lib/includes/frontend/_forms.scss */
 .plan h2, .plan h4 {
   font-size: 36px;
   font-weight: 600;
 }
-/* line 69, ../lib/includes/frontend/_forms.scss */
+/* line 168, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select, .plan .multiple-select {
   width: 379px;
 }
-/* line 73, ../lib/includes/frontend/_forms.scss */
+/* line 172, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select select, .plan .multiple-select select {
   width: 379px;
 }
 
-/* line 79, ../lib/includes/frontend/_forms.scss */
+/* line 178, ../lib/includes/frontend/_forms.scss */
 .i-error {
   border: 1px solid #ff0000 !important;
 }
 
-/* line 83, ../lib/includes/frontend/_forms.scss */
+/* line 182, ../lib/includes/frontend/_forms.scss */
 .error {
   margin-left: 392px;
   font-size: 18px;
@@ -236,7 +347,7 @@ h2.error, h4.error {
   display: none;
 }
 
-/* line 94, ../lib/includes/frontend/_forms.scss */
+/* line 193, ../lib/includes/frontend/_forms.scss */
 .message {
   margin-left: 392px;
   margin-top: 10px;
@@ -244,7 +355,7 @@ h2.error, h4.error {
   font-style: italic;
 }
 
-/* line 101, ../lib/includes/frontend/_forms.scss */
+/* line 200, ../lib/includes/frontend/_forms.scss */
 label {
   display: inline-block;
   width: 368px;
@@ -256,7 +367,7 @@ label {
   line-height: 37px;
 }
 
-/* line 112, ../lib/includes/frontend/_forms.scss */
+/* line 211, ../lib/includes/frontend/_forms.scss */
 input[type=email], input[type=password], input[type=text] {
   width: 280px;
   border: 1px solid rgba(124, 41, 139, 0.3);
@@ -268,7 +379,7 @@ input[type=email], input[type=password], input[type=text] {
   outline: none;
 }
 
-/* line 121, ../lib/includes/frontend/_forms.scss */
+/* line 220, ../lib/includes/frontend/_forms.scss */
 input[type=submit] {
   border: none;
   outline: none;
@@ -290,18 +401,18 @@ input[type=submit]:hover {
   background: #a581ad;
 }
 
-/* line 125, ../lib/includes/frontend/_forms.scss */
+/* line 224, ../lib/includes/frontend/_forms.scss */
 .center {
   text-align: center;
 }
 
-/* line 130, ../lib/includes/frontend/_forms.scss */
+/* line 229, ../lib/includes/frontend/_forms.scss */
 .custom-select, .multiple-select {
   position: relative;
   display: inline-block;
   /* Select arrow styling */
 }
-/* line 135, ../lib/includes/frontend/_forms.scss */
+/* line 234, ../lib/includes/frontend/_forms.scss */
 .custom-select select, .multiple-select select {
   display: inline-block;
   border: 1px solid rgba(124, 41, 139, 0.3);
@@ -319,12 +430,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   background: #fff;
 }
-/* line 152, ../lib/includes/frontend/_forms.scss */
+/* line 251, ../lib/includes/frontend/_forms.scss */
 .custom-select select option:hover, .multiple-select select option:hover {
   background: #4b4a4d;
   color: white;
 }
-/* line 161, ../lib/includes/frontend/_forms.scss */
+/* line 260, ../lib/includes/frontend/_forms.scss */
 .custom-select:after, .multiple-select:after {
   content: "";
   position: absolute;
@@ -338,29 +449,29 @@ input[type=submit]:hover {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 178, ../lib/includes/frontend/_forms.scss */
+/* line 277, ../lib/includes/frontend/_forms.scss */
 .no-pointer-events .custom-select:after, .no-pointer-events .multiple-select:after {
   content: none;
 }
 
-/* line 184, ../lib/includes/frontend/_forms.scss */
+/* line 283, ../lib/includes/frontend/_forms.scss */
 .multiple-select {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 188, ../lib/includes/frontend/_forms.scss */
+/* line 287, ../lib/includes/frontend/_forms.scss */
 .multiple-select select {
   height: initial;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 193, ../lib/includes/frontend/_forms.scss */
+/* line 292, ../lib/includes/frontend/_forms.scss */
 .multiple-select select option {
   padding: 5px;
 }
-/* line 198, ../lib/includes/frontend/_forms.scss */
+/* line 297, ../lib/includes/frontend/_forms.scss */
 .multiple-select:after {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -368,7 +479,7 @@ input[type=submit]:hover {
   height: 99px;
 }
 
-/* line 205, ../lib/includes/frontend/_forms.scss */
+/* line 304, ../lib/includes/frontend/_forms.scss */
 textarea {
   width: 280px;
   max-width: 530px;
@@ -383,11 +494,11 @@ textarea {
   border-radius: 5px;
 }
 
-/* line 219, ../lib/includes/frontend/_forms.scss */
+/* line 318, ../lib/includes/frontend/_forms.scss */
 .checkbox span, .radio span {
   cursor: pointer;
 }
-/* line 222, ../lib/includes/frontend/_forms.scss */
+/* line 321, ../lib/includes/frontend/_forms.scss */
 .checkbox span:before, .radio span:before {
   display: inline-block;
   width: 12px;
@@ -396,31 +507,31 @@ textarea {
   background: url(../../img/checkbox.png) no-repeat;
   margin-right: 10px;
 }
-/* line 233, ../lib/includes/frontend/_forms.scss */
+/* line 332, ../lib/includes/frontend/_forms.scss */
 .checkbox span.checked:before, .radio span.checked:before {
   background: url(../../img/checkbox-checked.png) no-repeat;
 }
-/* line 239, ../lib/includes/frontend/_forms.scss */
+/* line 338, ../lib/includes/frontend/_forms.scss */
 .checkbox input, .radio input {
   visibility: hidden;
   margin-top: 15px;
 }
 
-/* line 249, ../lib/includes/frontend/_forms.scss */
+/* line 348, ../lib/includes/frontend/_forms.scss */
 .row-checkbox span:after, .row-radio span:after {
   display: block;
   content: "";
 }
-/* line 255, ../lib/includes/frontend/_forms.scss */
+/* line 354, ../lib/includes/frontend/_forms.scss */
 .row-checkbox .indent, .row-radio .indent {
   margin-left: 392px;
 }
 
-/* line 265, ../lib/includes/frontend/_forms.scss */
+/* line 364, ../lib/includes/frontend/_forms.scss */
 .radio span:before {
   background: url(../../img/radio.png) no-repeat;
 }
-/* line 271, ../lib/includes/frontend/_forms.scss */
+/* line 370, ../lib/includes/frontend/_forms.scss */
 .radio span.checked:before {
   background: url(../../img/radio-checked.png) no-repeat;
 }

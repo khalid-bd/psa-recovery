@@ -219,10 +219,6 @@ jQuery(document).ready(function(){
     // Touch to call us
     if($(window).width() < 960) {
         $('.touch-to-call').attr('href', 'tel:0970818283');
-    }else {
-        // $('.touch-to-call').click(function(e){
-        //     e.preventDefault();
-        // }).css('cursor', 'pointer');
     }
 // --------------------------------------------
     // Email input error

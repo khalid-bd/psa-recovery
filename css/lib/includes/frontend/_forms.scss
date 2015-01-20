@@ -10,28 +10,28 @@ h2.error
 
 .call
 {
-    .message
+    text-transform: uppercase;
+        // font-style: initial;
+    input[type="text"].tel, .error
     {
-        position: absolute;
-        display: none;
-    }
-
-    input[type='radio']
-    {
-        margin-left: -15px;
+        text-align: center;
+        font-size: 22px;
+        color: $secondary-color;
+        width: 66%;
+        margin-left: 16.5%;
     }
     section.date-time
     {
         display: none;
-        margin: 20px 80px 0;
-        padding: 20px 0;
-        border-top: 1px solid rgba($main-color, 0.5);
-        border-bottom: 1px solid rgba($main-color, 0.5);
+        // margin: 20px 80px 0;
+        // padding: 20px 0;
+        // border-top: 1px solid rgba($main-color, 0.5);
+        // border-bottom: 1px solid rgba($main-color, 0.5);
 
         label
         {
             color: $secondary-color;
-            width: 288px;
+            width: 240px;
         }
         .custom-select:after
         {
@@ -55,6 +55,105 @@ h2.error
                 {
                     min-width:100px;
                 }
+            }
+        }
+    }
+    span.tel {
+        display: block;
+        width: 77%;
+        margin-left: 11.5%;
+        background:#A4A7A7;
+        text-align: center;
+        padding: 16px 0;
+        color: white;
+        @include border-radius(5px);
+        &:before
+        {
+            background:none;
+            width: 0;
+            height: 0;
+        }
+        &:after
+        {
+            content: '>';
+            @include rotate(90deg);
+            float: right;
+            margin-right: 20px;
+        }
+        &.checked
+        {
+            background:transparent;
+            border-top: 1px solid $secondary-color;
+            border-right: 1px solid $secondary-color;
+            border-left: 1px solid $secondary-color;
+            color: $secondary-color;
+            font-size: 18px;
+            font-weight: 800;
+            @include border-bottom-radius(0px);
+
+            &:after
+            {
+                @include rotate(-90deg);
+            }
+        }
+    }
+    div.tel
+    {
+        &.now.message
+        {
+            width: 77%;
+            margin-left: 11.5%;
+            border-bottom: 1px solid $secondary-color;
+            border-right: 1px solid $secondary-color;
+            border-left: 1px solid $secondary-color;
+            margin-top: -5px;
+            padding-bottom: 10px;
+            font-size: 18px;
+            font-weight: 400;
+            @include border-bottom-radius(5px);
+            font-style: normal;
+        }
+    }
+    section.date-time
+    {
+        border-top: none;
+        margin: 0;
+        padding: 0;
+        width: 77%;
+        margin-left: 11.5%;
+        border-bottom: 1px solid $secondary-color;
+        border-right: 1px solid $secondary-color;
+        border-left: 1px solid $secondary-color;
+        margin-top: -5px;
+        padding: 0 10px 20px;
+        font-size: 18px;
+        font-weight: 400;
+        @include border-bottom-radius(5px);
+        font-style: normal;
+        text-align: center;
+
+        .element.date
+        {
+            .custom-select
+            {
+                margin-left: 0;
+            }
+            .message
+            {
+                display: inline-block;
+                margin: 0;
+                position: relative;
+                top: 0;
+                width: 85%;
+                font-size: 12px;
+            }
+        }
+        .element.time
+        {
+            div.custom-select
+            {
+                width: 25%;
+                margin: 0;
             }
         }
     }
