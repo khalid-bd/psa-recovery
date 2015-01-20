@@ -219,10 +219,6 @@ jQuery(document).ready(function(){
     // Touch to call us
     if($(window).width() < 960) {
         $('.touch-to-call').attr('href', 'tel:0970818283');
-    }else {
-        // $('.touch-to-call').click(function(e){
-        //     e.preventDefault();
-        // }).css('cursor', 'pointer');
     }
 // --------------------------------------------
     // Email input error
@@ -314,7 +310,7 @@ jQuery(document).ready(function(){
     });
 
     // move div.ico from after footer to after header
-    function center_logo () {
+    function move_ico_top () {
         $('div.ico').prependTo('main .container');
 
         // calc of left margin for logo
@@ -324,7 +320,7 @@ jQuery(document).ready(function(){
 
     if($(document).width() < 920)
     {
-        center_logo();
+        move_ico_top();
     }
 // alert(navigator.userAgent);
     // phones resolutions
