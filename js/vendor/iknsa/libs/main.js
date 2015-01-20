@@ -314,7 +314,7 @@ jQuery(document).ready(function(){
     });
 
     // move div.ico from after footer to after header
-    function center_logo () {
+    function move_ico_top () {
         $('div.ico').prependTo('main .container');
 
         // calc of left margin for logo
@@ -324,7 +324,7 @@ jQuery(document).ready(function(){
 
     if($(document).width() < 920)
     {
-        center_logo();
+        move_ico_top();
     }
 // alert(navigator.userAgent);
     // phones resolutions

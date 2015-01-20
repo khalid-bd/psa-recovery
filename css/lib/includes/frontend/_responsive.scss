@@ -84,10 +84,22 @@
                         color: white;
                         font-weight: 200;
                         padding: 15px 0;
-                        background:url(../../img/responsive/nav-seperator.jpg) repeat-x #3a393e;
+                        // background:url(../../img/responsive/nav-seperator.jpg) repeat-x #3a393e;
+                        background:#3a393e;
+                        border-bottom: 1px solid #2e2e32;
+                        border-top: 1px solid #444348;
+
                         i
                         {
                             display: none;
+                        }
+                        &:first-child
+                        {
+                            border-top: none;
+                        }
+                        &:last-child
+                        {
+                            border-bottom: none;
                         }
                         &:hover
                         {
@@ -210,10 +222,17 @@
                         {
                             em
                             {
-                                font-size: 24px;
+                                font-size: 26px;
                                 font-weight: 600;
                             }
                         }
+                    }
+                }
+                .block-links
+                {
+                    a
+                    {
+                        margin: 0 auto 20px;
                     }
                 }
                 .ico-links
@@ -246,6 +265,7 @@
                                 line-height: 90px;
                                 color: $main-color;
                                 background:transparent url(../../img/responsive/icon-links-bg.png) left top repeat-x;
+                                font-size: 19px;
                             }
                         }
                     }
@@ -268,16 +288,39 @@
 
             .lang
             {
+                font-size: 15px;
+                font-weight: 800;
                 &.active
                 {
-                    // top: -60px;
+                    top: -60px;
+                    height: 103px;
                     // margin-left: -32px;
+                    padding: 11px 15px 15px;
+
+                    .choose
+                    {
+                        padding: 0 0 10px;
+                    }
+                }
+                .choose
+                {
+                    width: 100%;
+                    i
+                    {
+                        margin-left: 10px;
+                    }
+                }
+                .option
+                {
+                    padding-top: 10px;
                 }
             }
 
             .legales
             {
                 display: inline-block;
+                font-size: 15px;
+                font-weight: 800;
             }
         }
     }
@@ -301,8 +344,8 @@
                     }
                     input[type="email"], input[type="password"], input[type="text"],div.custom-select
                     {
-                        width: 85%;
-                        margin-left: 7.5%;
+                        width: 50%;
+                        margin-left: 25%;
 
                         select
                         {
@@ -511,4 +554,9 @@
             display: none !important;
         }
     }
+    // main .container .content form input[type="email"], main .container .content form input[type="password"], main .container .content form input[type="text"], main .container .content form div.custom-select, main .container .content form div.multiple-select
+    // {
+    //     width: 50%;
+    //     margin-left: 25%;
+    // }
 }

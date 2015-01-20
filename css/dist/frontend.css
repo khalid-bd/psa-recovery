@@ -1071,14 +1071,14 @@ main .container .content .transparent .element:first-child {
 }
 /* line 260, ../lib/frontend.scss */
 main .ico-links ul {
-  display: inline-block;
+  display: block;
   width: 100%;
+  text-align: center;
 }
-/* line 265, ../lib/frontend.scss */
+/* line 266, ../lib/frontend.scss */
 main .ico-links ul li {
   position: relative;
   display: inline-block;
-  float: left;
   width: 23.5%;
   height: 204px;
   overflow: hidden;
@@ -1086,18 +1086,18 @@ main .ico-links ul li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin-right: 2%;
+  margin-right: 1.5%;
 }
-/* line 277, ../lib/frontend.scss */
+/* line 278, ../lib/frontend.scss */
 main .ico-links ul li:last-child {
   margin-right: 0;
 }
-/* line 282, ../lib/frontend.scss */
+/* line 283, ../lib/frontend.scss */
 main .ico-links ul li img {
   max-width: 100%;
   max-height: 100%;
 }
-/* line 288, ../lib/frontend.scss */
+/* line 289, ../lib/frontend.scss */
 main .ico-links ul li span {
   display: inline-block;
   position: absolute;
@@ -1112,11 +1112,11 @@ main .ico-links ul li span {
   text-transform: uppercase;
   padding: 10px 40px;
 }
-/* line 303, ../lib/frontend.scss */
+/* line 304, ../lib/frontend.scss */
 main .ico-links ul li span.active {
   background: rgba(124, 41, 139, 0.9);
 }
-/* line 309, ../lib/frontend.scss */
+/* line 310, ../lib/frontend.scss */
 main .ico-links ul li a {
   display: inline-block;
   position: absolute;
@@ -1126,11 +1126,11 @@ main .ico-links ul li a {
   height: 100%;
   cursor: pointer;
 }
-/* line 316, ../lib/frontend.scss */
+/* line 317, ../lib/frontend.scss */
 main .block-links {
   text-align: center;
 }
-/* line 319, ../lib/frontend.scss */
+/* line 320, ../lib/frontend.scss */
 main .block-links a {
   border: none;
   outline: none;
@@ -1154,29 +1154,29 @@ main .block-links a {
 main .block-links a:hover {
   background: #a581ad;
 }
-/* line 329, ../lib/frontend.scss */
+/* line 330, ../lib/frontend.scss */
 main .mentions_legales label {
   float: left;
 }
-/* line 333, ../lib/frontend.scss */
+/* line 334, ../lib/frontend.scss */
 main .mentions_legales textarea {
   max-width: calc(100% - 410px);
   min-width: 243px;
 }
 
-/* line 341, ../lib/frontend.scss */
+/* line 342, ../lib/frontend.scss */
 footer {
   height: 119px;
   background: transparent url(../../img/footer-bg.png) left top repeat-x;
   position: relative;
 }
-/* line 347, ../lib/frontend.scss */
+/* line 348, ../lib/frontend.scss */
 footer .opt {
   float: right;
   font-size: 12px;
   color: #4b4a4d;
 }
-/* line 353, ../lib/frontend.scss */
+/* line 354, ../lib/frontend.scss */
 footer .opt .lang {
   float: left;
   display: block;
@@ -1187,7 +1187,7 @@ footer .opt .lang {
   height: 40px;
   overflow: hidden;
 }
-/* line 364, ../lib/frontend.scss */
+/* line 365, ../lib/frontend.scss */
 footer .opt .lang .choose {
   display: block;
   background: #b8b9b9;
@@ -1195,7 +1195,7 @@ footer .opt .lang .choose {
   width: 100%;
   text-align: center;
 }
-/* line 371, ../lib/frontend.scss */
+/* line 372, ../lib/frontend.scss */
 footer .opt .lang .choose i {
   background: transparent url(../../img/footer-lang.png) left top no-repeat;
   display: inline-block;
@@ -1203,22 +1203,22 @@ footer .opt .lang .choose i {
   height: 7px;
   margin-left: 10px;
 }
-/* line 380, ../lib/frontend.scss */
+/* line 381, ../lib/frontend.scss */
 footer .opt .lang .option {
   display: block;
   position: relative;
   clear: both;
   padding: 5px 20px 0;
 }
-/* line 388, ../lib/frontend.scss */
+/* line 389, ../lib/frontend.scss */
 footer .opt .lang .option.active {
   color: #7c298b;
 }
-/* line 393, ../lib/frontend.scss */
+/* line 394, ../lib/frontend.scss */
 footer .opt .lang .option a {
   color: inherit;
 }
-/* line 399, ../lib/frontend.scss */
+/* line 400, ../lib/frontend.scss */
 footer .opt .lang.active {
   height: initial;
   position: relative;
@@ -1231,7 +1231,7 @@ footer .opt .lang.active {
   border-radius: 5px;
   height: 80px;
 }
-/* line 410, ../lib/frontend.scss */
+/* line 411, ../lib/frontend.scss */
 footer .opt .lang.active .choose {
   position: relative;
   background: inherit;
@@ -1239,11 +1239,11 @@ footer .opt .lang.active .choose {
   padding: 0px 15px 10px;
   color: #7c298b;
 }
-/* line 418, ../lib/frontend.scss */
+/* line 419, ../lib/frontend.scss */
 footer .opt .lang.active .choose i {
   background: transparent url(../../img/footer-lang-active.png) left top no-repeat;
 }
-/* line 426, ../lib/frontend.scss */
+/* line 427, ../lib/frontend.scss */
 footer .opt .legales {
   float: right;
   background: #b8b9b9;
@@ -1254,7 +1254,7 @@ footer .opt .legales {
   line-height: 40px;
   text-align: center;
 }
-/* line 439, ../lib/frontend.scss */
+/* line 440, ../lib/frontend.scss */
 footer .opt .legales a {
   display: inline-block;
   position: absolute;
@@ -1264,19 +1264,19 @@ footer .opt .legales a {
   height: 100%;
   cursor: pointer;
 }
-/* line 444, ../lib/frontend.scss */
+/* line 445, ../lib/frontend.scss */
 footer .opt .legales:hover {
   background: #A4A7A7;
 }
 
-/* line 451, ../lib/frontend.scss */
+/* line 452, ../lib/frontend.scss */
 .ico {
   padding-top: 10px;
   position: relative;
   bottom: 120px;
   float: left;
 }
-/* line 457, ../lib/frontend.scss */
+/* line 458, ../lib/frontend.scss */
 .ico div {
   position: relative;
   display: inline-block;
@@ -1285,11 +1285,11 @@ footer .opt .legales:hover {
   line-height: 54px;
   vertical-align: top;
 }
-/* line 466, ../lib/frontend.scss */
+/* line 467, ../lib/frontend.scss */
 .ico div:last-child {
   margin-right: 0;
 }
-/* line 471, ../lib/frontend.scss */
+/* line 472, ../lib/frontend.scss */
 .ico div a {
   display: inline-block;
   position: absolute;
@@ -1373,13 +1373,23 @@ footer .opt .legales:hover {
     color: white;
     font-weight: 200;
     padding: 15px 0;
-    background: url(../../img/responsive/nav-seperator.jpg) repeat-x #3a393e;
+    background: #3a393e;
+    border-bottom: 1px solid #2e2e32;
+    border-top: 1px solid #444348;
   }
-  /* line 88, ../lib/includes/frontend/_responsive.scss */
+  /* line 92, ../lib/includes/frontend/_responsive.scss */
   header .content nav ul li i {
     display: none;
   }
-  /* line 99, ../lib/includes/frontend/_responsive.scss */
+  /* line 96, ../lib/includes/frontend/_responsive.scss */
+  header .content nav ul li:first-child {
+    border-top: none;
+  }
+  /* line 100, ../lib/includes/frontend/_responsive.scss */
+  header .content nav ul li:last-child {
+    border-bottom: none;
+  }
+  /* line 111, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu {
     display: none;
     position: relative;
@@ -1387,12 +1397,12 @@ footer .opt .legales:hover {
     width: 100%;
     right: 0;
   }
-  /* line 108, ../lib/includes/frontend/_responsive.scss */
+  /* line 120, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul {
     background: #333237;
     padding: 20px 0 30px;
   }
-  /* line 112, ../lib/includes/frontend/_responsive.scss */
+  /* line 124, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul li {
     display: block;
     width: 60%;
@@ -1409,40 +1419,40 @@ footer .opt .legales:hover {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 126, ../lib/includes/frontend/_responsive.scss */
+  /* line 138, ../lib/includes/frontend/_responsive.scss */
   header .content #header-sub-menu ul li.name {
     display: none;
   }
 
-  /* line 136, ../lib/includes/frontend/_responsive.scss */
+  /* line 148, ../lib/includes/frontend/_responsive.scss */
   .ico {
     max-height: 60px;
     position: initial;
     float: initial;
     text-align: center;
   }
-  /* line 143, ../lib/includes/frontend/_responsive.scss */
+  /* line 155, ../lib/includes/frontend/_responsive.scss */
   .ico div {
     padding: 0 5% 0 0;
     margin: 0;
     display: inline-block;
   }
-  /* line 149, ../lib/includes/frontend/_responsive.scss */
+  /* line 161, ../lib/includes/frontend/_responsive.scss */
   .ico div:last-child {
     padding-right: 0;
   }
 
-  /* line 158, ../lib/includes/frontend/_responsive.scss */
+  /* line 170, ../lib/includes/frontend/_responsive.scss */
   main .container {
     max-width: 100%;
     min-width: 100%;
   }
-  /* line 163, ../lib/includes/frontend/_responsive.scss */
+  /* line 175, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars {
     max-width: 100%;
     overflow: hidden;
   }
-  /* line 167, ../lib/includes/frontend/_responsive.scss */
+  /* line 179, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div {
     display: inline-block;
     height: auto;
@@ -1450,24 +1460,24 @@ footer .opt .legales:hover {
     max-width: 55%;
     line-height: 310px;
   }
-  /* line 174, ../lib/includes/frontend/_responsive.scss */
+  /* line 186, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:first-child {
     left: -10%;
   }
-  /* line 178, ../lib/includes/frontend/_responsive.scss */
+  /* line 190, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div:last-child {
     right: -10%;
   }
-  /* line 183, ../lib/includes/frontend/_responsive.scss */
+  /* line 195, ../lib/includes/frontend/_responsive.scss */
   main .container #main-bg-cars div img {
     width: 100%;
     vertical-align: middle;
   }
-  /* line 190, ../lib/includes/frontend/_responsive.scss */
+  /* line 202, ../lib/includes/frontend/_responsive.scss */
   main .container .content {
     width: 77.5%;
   }
-  /* line 194, ../lib/includes/frontend/_responsive.scss */
+  /* line 206, ../lib/includes/frontend/_responsive.scss */
   main .container .content h1 {
     position: absolute;
     left: 0;
@@ -1476,20 +1486,24 @@ footer .opt .legales:hover {
     text-align: center;
     font-weight: 600;
   }
-  /* line 203, ../lib/includes/frontend/_responsive.scss */
+  /* line 215, ../lib/includes/frontend/_responsive.scss */
   main .container .content .transparent {
     margin-top: 100px;
   }
-  /* line 206, ../lib/includes/frontend/_responsive.scss */
+  /* line 218, ../lib/includes/frontend/_responsive.scss */
   main .container .content .transparent .info {
     margin: 0;
   }
-  /* line 211, ../lib/includes/frontend/_responsive.scss */
+  /* line 223, ../lib/includes/frontend/_responsive.scss */
   main .container .content .transparent .info p em {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 600;
   }
-  /* line 223, ../lib/includes/frontend/_responsive.scss */
+  /* line 233, ../lib/includes/frontend/_responsive.scss */
+  main .container .content .block-links a {
+    margin: 0 auto 20px;
+  }
+  /* line 242, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li {
     display: block;
     float: unset;
@@ -1498,13 +1512,13 @@ footer .opt .legales:hover {
     margin: 10px 0;
     height: 108px;
   }
-  /* line 232, ../lib/includes/frontend/_responsive.scss */
+  /* line 251, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li img {
     float: left;
     width: 144px;
     border-right: 1px solid #ccc;
   }
-  /* line 238, ../lib/includes/frontend/_responsive.scss */
+  /* line 257, ../lib/includes/frontend/_responsive.scss */
   main .container .content .ico-links ul li span {
     width: 100%;
     position: absolute;
@@ -1515,28 +1529,58 @@ footer .opt .legales:hover {
     line-height: 90px;
     color: #4b4a4d;
     background: transparent url(../../img/responsive/icon-links-bg.png) left top repeat-x;
+    font-size: 19px;
   }
 
-  /* line 256, ../lib/includes/frontend/_responsive.scss */
+  /* line 276, ../lib/includes/frontend/_responsive.scss */
   footer {
     height: 64px;
     background: url(../../img/responsive/footer-bg.png) repeat-x;
   }
-  /* line 258, ../lib/includes/frontend/_responsive.scss */
+  /* line 278, ../lib/includes/frontend/_responsive.scss */
   footer .content {
     text-align: center;
   }
-  /* line 264, ../lib/includes/frontend/_responsive.scss */
+  /* line 284, ../lib/includes/frontend/_responsive.scss */
   footer .opt {
     float: initial;
     display: inline-block;
   }
-  /* line 278, ../lib/includes/frontend/_responsive.scss */
+  /* line 289, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang {
+    font-size: 15px;
+    font-weight: 800;
+  }
+  /* line 293, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang.active {
+    top: -60px;
+    height: 103px;
+    padding: 11px 15px 15px;
+  }
+  /* line 300, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang.active .choose {
+    padding: 0 0 10px;
+  }
+  /* line 305, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang .choose {
+    width: 100%;
+  }
+  /* line 308, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang .choose i {
+    margin-left: 10px;
+  }
+  /* line 313, ../lib/includes/frontend/_responsive.scss */
+  footer .opt .lang .option {
+    padding-top: 10px;
+  }
+  /* line 319, ../lib/includes/frontend/_responsive.scss */
   footer .opt .legales {
     display: inline-block;
+    font-size: 15px;
+    font-weight: 800;
   }
 
-  /* line 294, ../lib/includes/frontend/_responsive.scss */
+  /* line 337, ../lib/includes/frontend/_responsive.scss */
   main .container .content form label {
     width: initial;
     float: initial;
@@ -1544,34 +1588,34 @@ footer .opt .legales:hover {
     text-align: center;
     margin: 0;
   }
-  /* line 302, ../lib/includes/frontend/_responsive.scss */
+  /* line 345, ../lib/includes/frontend/_responsive.scss */
   main .container .content form input[type="email"], main .container .content form input[type="password"], main .container .content form input[type="text"], main .container .content form div.custom-select, main .container .content form div.multiple-select {
-    width: 85%;
-    margin-left: 7.5%;
+    width: 50%;
+    margin-left: 25%;
   }
-  /* line 307, ../lib/includes/frontend/_responsive.scss */
+  /* line 350, ../lib/includes/frontend/_responsive.scss */
   main .container .content form input[type="email"] select, main .container .content form input[type="password"] select, main .container .content form input[type="text"] select, main .container .content form div.custom-select select, main .container .content form div.multiple-select select {
     width: 100%;
   }
 
-  /* line 316, ../lib/includes/frontend/_responsive.scss */
+  /* line 359, ../lib/includes/frontend/_responsive.scss */
   .message {
     margin-left: 0;
     text-align: center;
   }
 
-  /* line 321, ../lib/includes/frontend/_responsive.scss */
+  /* line 364, ../lib/includes/frontend/_responsive.scss */
   .error {
     width: 85%;
     margin: 0 auto;
     text-align: center;
   }
 
-  /* line 327, ../lib/includes/frontend/_responsive.scss */
+  /* line 370, ../lib/includes/frontend/_responsive.scss */
   main .container .content form.call {
     text-transform: uppercase;
   }
-  /* line 331, ../lib/includes/frontend/_responsive.scss */
+  /* line 374, ../lib/includes/frontend/_responsive.scss */
   main .container .content form.call input[type="text"].tel, main .container .content form.call .error {
     text-align: center;
     font-size: 22px;
@@ -1580,7 +1624,7 @@ footer .opt .legales:hover {
     margin-left: 16.5%;
   }
 
-  /* line 341, ../lib/includes/frontend/_responsive.scss */
+  /* line 384, ../lib/includes/frontend/_responsive.scss */
   span.tel {
     display: block;
     width: 77%;
@@ -1593,13 +1637,13 @@ footer .opt .legales:hover {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 350, ../lib/includes/frontend/_responsive.scss */
+  /* line 393, ../lib/includes/frontend/_responsive.scss */
   span.tel:before {
     background: none;
     width: 0;
     height: 0;
   }
-  /* line 356, ../lib/includes/frontend/_responsive.scss */
+  /* line 399, ../lib/includes/frontend/_responsive.scss */
   span.tel:after {
     content: '>';
     -moz-transform: rotate(90deg);
@@ -1609,7 +1653,7 @@ footer .opt .legales:hover {
     float: right;
     margin-right: 20px;
   }
-  /* line 363, ../lib/includes/frontend/_responsive.scss */
+  /* line 406, ../lib/includes/frontend/_responsive.scss */
   span.tel.checked {
     background: transparent;
     border-top: 1px solid #7c298b;
@@ -1625,7 +1669,7 @@ footer .opt .legales:hover {
     -webkit-border-bottom-right-radius: 0px;
     border-bottom-right-radius: 0px;
   }
-  /* line 374, ../lib/includes/frontend/_responsive.scss */
+  /* line 417, ../lib/includes/frontend/_responsive.scss */
   span.tel.checked:after {
     -moz-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
@@ -1633,7 +1677,7 @@ footer .opt .legales:hover {
     transform: rotate(-90deg);
   }
 
-  /* line 382, ../lib/includes/frontend/_responsive.scss */
+  /* line 425, ../lib/includes/frontend/_responsive.scss */
   div.tel.now.message {
     width: 77%;
     margin-left: 11.5%;
@@ -1653,7 +1697,7 @@ footer .opt .legales:hover {
     font-style: normal;
   }
 
-  /* line 397, ../lib/includes/frontend/_responsive.scss */
+  /* line 440, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time {
     border-top: none;
     margin: 0;
@@ -1676,11 +1720,11 @@ footer .opt .legales:hover {
     font-style: normal;
     text-align: center;
   }
-  /* line 417, ../lib/includes/frontend/_responsive.scss */
+  /* line 460, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .custom-select, .call section.date-time .element.date .multiple-select {
     margin-left: 0;
   }
-  /* line 421, ../lib/includes/frontend/_responsive.scss */
+  /* line 464, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.date .message {
     display: inline-block;
     margin: 0;
@@ -1689,23 +1733,23 @@ footer .opt .legales:hover {
     width: 85%;
     font-size: 12px;
   }
-  /* line 433, ../lib/includes/frontend/_responsive.scss */
+  /* line 476, ../lib/includes/frontend/_responsive.scss */
   .call section.date-time .element.time div.custom-select, .call section.date-time .element.time div.multiple-select {
     width: 25%;
     margin: 0;
   }
 
-  /* line 444, ../lib/includes/frontend/_responsive.scss */
+  /* line 487, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b {
     color: #7c298b !important;
   }
-  /* line 447, ../lib/includes/frontend/_responsive.scss */
+  /* line 490, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span {
     display: block;
     visibility: hidden;
     position: relative;
   }
-  /* line 453, ../lib/includes/frontend/_responsive.scss */
+  /* line 496, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:before {
     visibility: visible;
     position: relative;
@@ -1715,7 +1759,7 @@ footer .opt .legales:hover {
     height: 150px;
     content: url("../../img/responsive/call-btn.png");
   }
-  /* line 463, ../lib/includes/frontend/_responsive.scss */
+  /* line 506, ../lib/includes/frontend/_responsive.scss */
   .info.contact p b span:after {
     clear: both;
     display: block;
@@ -1723,35 +1767,35 @@ footer .opt .legales:hover {
     height: 0;
   }
 
-  /* line 474, ../lib/includes/frontend/_responsive.scss */
+  /* line 517, ../lib/includes/frontend/_responsive.scss */
   .popin {
     max-width: 100%;
   }
-  /* line 478, ../lib/includes/frontend/_responsive.scss */
+  /* line 521, ../lib/includes/frontend/_responsive.scss */
   .popin .content > p {
     text-align: center;
   }
-  /* line 485, ../lib/includes/frontend/_responsive.scss */
+  /* line 528, ../lib/includes/frontend/_responsive.scss */
   .popin section .title {
     width: 100%;
   }
-  /* line 489, ../lib/includes/frontend/_responsive.scss */
+  /* line 532, ../lib/includes/frontend/_responsive.scss */
   .popin section .left {
     width: 55%;
     padding-right: 15px;
     margin-right: 10px;
   }
-  /* line 495, ../lib/includes/frontend/_responsive.scss */
+  /* line 538, ../lib/includes/frontend/_responsive.scss */
   .popin section .right {
     width: 42%;
     padding-top: 8px;
   }
-  /* line 500, ../lib/includes/frontend/_responsive.scss */
+  /* line 543, ../lib/includes/frontend/_responsive.scss */
   .popin section .right p {
     font-size: 20px;
   }
 
-  /* line 509, ../lib/includes/frontend/_responsive.scss */
+  /* line 552, ../lib/includes/frontend/_responsive.scss */
   .slider .slick-next, .slider .slick-prev {
     display: none !important;
   }
