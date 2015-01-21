@@ -64,23 +64,6 @@ jQuery(document).ready(function(){
             $('span', this).removeClass("active");
         }).stop();
 
-    // Center li when less than four éléments by applying left margin on the ul
-    function icoLinksLeftMargin() {
-
-        ulWidth = $(".ico-links ul").width();
-        liWidth = 0;
-        $(".ico-links ul li").each(function(i) {
-            liWidth += $(this).outerWidth();
-        })
-        marginLeft = (ulWidth - liWidth) / 2;
-
-        $(".ico-links ul").css('margin-left', marginLeft)
-    }
-
-    if($(".ico-links ul li").size() < 4 && $(window).width() > 920) {
-        icoLinksLeftMargin();
-    }
-
 // ------------ End footer language change -----------------------
 // 
 // ------------close popin and slide down------------
