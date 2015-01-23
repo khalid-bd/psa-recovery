@@ -12,13 +12,27 @@ h2.error
 {
     text-transform: uppercase;
         // font-style: initial;
+
+    h2.error
+    {
+        width: initial;
+        max-width: initial;
+        margin-left: 0;
+        color: $error-color;
+    }
     input[type="text"].tel, .error
     {
         text-align: center;
         font-size: 22px;
         color: $secondary-color;
-        width: 66%;
-        margin-left: 16.5%;
+        width: 46%;
+        margin-left: 27%;
+    }
+    .tel.error
+    {
+        max-width: initial;
+        text-transform: initial;
+        color: $error-color;
     }
     div.element > label
     {
@@ -56,7 +70,6 @@ h2.error
             .message
             {
                 top: 40px;
-                margin-left: 312px;
             }
         }
         .time
@@ -126,6 +139,8 @@ h2.error
             font-weight: 400;
             @include border-bottom-radius(5px);
             font-style: normal;
+            text-transform: initial;
+            text-align: center;
         }
     }
     section.date-time
@@ -158,8 +173,10 @@ h2.error
                 margin: 0;
                 position: relative;
                 top: 0;
-                width: 85%;
+                width: initial;
                 font-size: 12px;
+                text-transform: initial;
+                margin-left: 235px;
             }
         }
         .element.time

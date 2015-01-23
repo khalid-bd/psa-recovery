@@ -384,10 +384,14 @@
             text-align: center;
             font-size: 22px;
             color: $secondary-color;
-            width: 66%;
-            margin-left: 16.5%;
+            width: 46%;
+            margin-left: 27%;
         }
 
+    }
+    main .container .content form.call .error
+    {
+        color: $error-color;
     }
     span.tel {
         display: block;
