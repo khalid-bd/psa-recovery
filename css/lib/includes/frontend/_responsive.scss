@@ -1,13 +1,12 @@
 @import 'breakpoint';
 
-@include breakpoint(320px 940px)
+@include breakpoint(290px 940px)
 {
     // @import 'responsive-forms';
 
     body,header,main,aside,footer
     {
         max-width: 100%;
-        min-width: 640px;
     }
     body
     {
@@ -352,6 +351,15 @@
                             width: 100%;
                         }
                     }
+
+                    &.plan
+                    {
+                        div.custom-select
+                        {
+                            width: 75%;
+                            margin-left: 12.5%;
+                        }
+                    }
                 }
             }
         }
@@ -459,7 +467,8 @@
         {
             .custom-select
             {
-                margin-left: 0;
+                margin-left: 0px;
+                width: initial;
             }
             .message
             {
