@@ -305,6 +305,11 @@ jQuery(document).ready(function(){
     {
         move_ico_top();
     }
+
+    // set min width to 640 for mobile devices.
+    if(/mobile/i.test(navigator.userAgent)){
+        $('body,header,main,aside,footer').css('min-width', '640px');
+    }
 // alert(navigator.userAgent);
     // phones resolutions
     var viewport = $('meta[name="viewport"]');
@@ -322,7 +327,7 @@ jQuery(document).ready(function(){
         // }
     // console.log(screen.width);
     }
-
+// alert(navigator.userAgent);
     if (/iPhone/i.test(navigator.userAgent)){
         if(window.matchMedia("(orientation: portrait)").matches) {
             viewport.attr("content", "initial-scale=0.5, width=device-width, user-scalable = yes");
