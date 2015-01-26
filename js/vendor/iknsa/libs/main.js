@@ -354,6 +354,24 @@ jQuery(document).ready(function(){
             $('header .content #header-sub-menu').css('top', '91px');
         }
     }
+
+    function getHeight()
+    {
+        header = $("header").height();
+        main = $("main").height();
+        footer = $("footer").height();
+
+        wholeHeight = header + main + footer;
+
+        return wholeHeight;
+    }
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        getHeight();
+
+        $(".content > .connexion").css('margin-top', '290px');
+        $(".content > .connexion").css('margin-bottom', '290px');
+    }
 });//End main function all()
 
 // jQuery(document).ready(all());
