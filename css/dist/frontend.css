@@ -1642,8 +1642,7 @@ footer .opt .legales:hover {
   }
   /* line 222, ../lib/includes/frontend/_responsive.scss */
   main .container .content .transparent .info p em {
-    font-size: 26px;
-    font-weight: 600;
+    font-weight: 800;
   }
   /* line 232, ../lib/includes/frontend/_responsive.scss */
   main .container .content .block-links a {

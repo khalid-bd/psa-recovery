@@ -346,17 +346,32 @@ jQuery(document).ready(function(){
             // }, false);
         }
     }
-    // else {
-    //     viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
-    // // console.log(screen.width);
-    // }
-    // console.log(viewport.attr("content"));
 
 
     // change top margin only on mobile devices
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $('header nav').css('display', 'none')) {
-        $('header .content #header-sub-menu').css('top', '91px');
-    } 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if(!$('header nav').length > 0) {
+            $('header .content #header-sub-menu').css('top', '91px');
+        }
+    }
+
+    function getHeight()
+    {
+        header = $("header").height();
+        main = $("main").height();
+        footer = $("footer").height();
+
+        wholeHeight = header + main + footer;
+
+        return wholeHeight;
+    }
+
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        getHeight();
+
+        $(".content > .connexion").css('margin-top', '290px');
+        $(".content > .connexion").css('margin-bottom', '290px');
+    }
 });//End main function all()
 
 // jQuery(document).ready(all());
