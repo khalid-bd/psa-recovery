@@ -346,17 +346,11 @@ jQuery(document).ready(function(){
             // }, false);
         }
     }
-    // else {
-    //     viewport.attr("content", "initial-scale=1, width=device-width, user-scalable = yes");
-    // // console.log(screen.width);
+
+    // // change top margin only on mobile devices
+    // if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $('header nav').css('display', 'none')) {
+    //     // $('header .content #header-sub-menu').css('top', '91px');
     // }
-    // console.log(viewport.attr("content"));
-
-
-    // change top margin only on mobile devices
-    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $('header nav').css('display', 'none')) {
-        $('header .content #header-sub-menu').css('top', '91px');
-    } 
 });//End main function all()
 
 // jQuery(document).ready(all());
