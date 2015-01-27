@@ -358,7 +358,7 @@ footer
             cursor: pointer;
             position: relative;
             text-align: left;
-            width: 140px;
+            min-width: 140px;
             height: 40px;
             overflow: hidden;
 
@@ -431,7 +431,7 @@ footer
             background: #b8b9b9;
             margin-left: 20px;
             position: relative;
-            width: 140px;
+            min-width: 140px;
             height: 40px;
             line-height: 40px;
             text-align: center;

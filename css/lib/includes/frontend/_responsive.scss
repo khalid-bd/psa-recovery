@@ -287,12 +287,13 @@
 
             .lang
             {
-                font-size: 15px;
+                font-size: 20px;
                 font-weight: 800;
+                width: 180px;
                 &.active
                 {
-                    top: -60px;
-                    height: 103px;
+                    top: -88px;
+                    height: 130px;
                     // margin-left: -32px;
                     padding: 11px 15px 15px;
 
@@ -303,6 +304,7 @@
                 }
                 .choose
                 {
+                    padding: 10px 0 10px;
                     width: 100%;
                     i
                     {
@@ -311,15 +313,14 @@
                 }
                 .option
                 {
-                    padding-top: 10px;
+                    padding-top: 15px;
                 }
             }
-
             .legales
             {
-                display: inline-block;
-                font-size: 15px;
+                font-size: 20px;
                 font-weight: 800;
+                width: 180px;
             }
         }
     }
