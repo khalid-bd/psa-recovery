@@ -27,6 +27,7 @@ h2.error
         color: $secondary-color;
         width: 46%;
         margin-left: 27%;
+        padding: 0 20px;
     }
     .tel.error
     {
@@ -37,8 +38,8 @@ h2.error
     div.element > label
     {
         display: block;
-        width: initial;
-        float: initial;
+        width: auto;
+        float: none;
         text-align: center;
     }
     .tel.later

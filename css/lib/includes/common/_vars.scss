@@ -8,16 +8,6 @@ $p-font-size: 30px;
 
 
 
-@mixin block-link
-{
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
 
 @mixin h1
 {
@@ -44,4 +34,15 @@ $p-font-size: 30px;
     font-size: $p-font-size;
     color: $main-color;
     line-height: $p-font-size * 1.1;
+}
+@mixin block-link
+{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background:rgba(white, 0.005);
 }

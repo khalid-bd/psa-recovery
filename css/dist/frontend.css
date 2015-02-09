@@ -187,29 +187,30 @@ h2.error, h4.error {
   color: #7c298b;
   width: 46%;
   margin-left: 27%;
+  padding: 0 20px;
 }
-/* line 31, ../lib/includes/frontend/_forms.scss */
+/* line 32, ../lib/includes/frontend/_forms.scss */
 .call .tel.error {
   max-width: initial;
   text-transform: initial;
   color: #ff0000;
 }
-/* line 37, ../lib/includes/frontend/_forms.scss */
+/* line 38, ../lib/includes/frontend/_forms.scss */
 .call div.element > label {
   display: block;
-  width: initial;
-  float: initial;
+  width: auto;
+  float: none;
   text-align: center;
 }
-/* line 44, ../lib/includes/frontend/_forms.scss */
+/* line 45, ../lib/includes/frontend/_forms.scss */
 .call .tel.later {
   margin-top: 30px;
 }
-/* line 48, ../lib/includes/frontend/_forms.scss */
+/* line 49, ../lib/includes/frontend/_forms.scss */
 .call section.date-time {
   display: none;
 }
-/* line 52, ../lib/includes/frontend/_forms.scss */
+/* line 53, ../lib/includes/frontend/_forms.scss */
 .call section.date-time label {
   color: #7c298b;
   width: 240px;
@@ -221,20 +222,20 @@ h2.error, h4.error {
   float: left;
   line-height: 37px;
 }
-/* line 70, ../lib/includes/frontend/_forms.scss */
+/* line 71, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .date .message {
   top: 40px;
 }
-/* line 77, ../lib/includes/frontend/_forms.scss */
+/* line 78, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .time .custom-select, .call section.date-time .time .multiple-select {
   margin-right: 20px;
   min-width: 100px;
 }
-/* line 81, ../lib/includes/frontend/_forms.scss */
+/* line 82, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .time .custom-select select, .call section.date-time .time .multiple-select select {
   min-width: 100px;
 }
-/* line 88, ../lib/includes/frontend/_forms.scss */
+/* line 89, ../lib/includes/frontend/_forms.scss */
 .call span.tel {
   display: block;
   width: 77%;
@@ -247,13 +248,13 @@ h2.error, h4.error {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 97, ../lib/includes/frontend/_forms.scss */
+/* line 98, ../lib/includes/frontend/_forms.scss */
 .call span.tel:before {
   background: none;
   width: 0;
   height: 0;
 }
-/* line 103, ../lib/includes/frontend/_forms.scss */
+/* line 104, ../lib/includes/frontend/_forms.scss */
 .call span.tel:after {
   content: '>';
   -moz-transform: rotate(90deg);
@@ -263,7 +264,7 @@ h2.error, h4.error {
   float: right;
   margin-right: 20px;
 }
-/* line 110, ../lib/includes/frontend/_forms.scss */
+/* line 111, ../lib/includes/frontend/_forms.scss */
 .call span.tel.checked {
   background: transparent;
   border-top: 1px solid #7c298b;
@@ -279,14 +280,14 @@ h2.error, h4.error {
   -webkit-border-bottom-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-/* line 121, ../lib/includes/frontend/_forms.scss */
+/* line 122, ../lib/includes/frontend/_forms.scss */
 .call span.tel.checked:after {
   -moz-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
   transform: rotate(-90deg);
 }
-/* line 129, ../lib/includes/frontend/_forms.scss */
+/* line 130, ../lib/includes/frontend/_forms.scss */
 .call div.tel.now.message {
   width: 77%;
   margin-left: 11.5%;
@@ -307,7 +308,7 @@ h2.error, h4.error {
   text-transform: initial;
   text-align: center;
 }
-/* line 146, ../lib/includes/frontend/_forms.scss */
+/* line 147, ../lib/includes/frontend/_forms.scss */
 .call section.date-time {
   border-top: none;
   margin: 0;
@@ -330,11 +331,11 @@ h2.error, h4.error {
   font-style: normal;
   text-align: center;
 }
-/* line 166, ../lib/includes/frontend/_forms.scss */
+/* line 167, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .element.date .custom-select, .call section.date-time .element.date .multiple-select {
   margin-left: 0;
 }
-/* line 170, ../lib/includes/frontend/_forms.scss */
+/* line 171, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .element.date .message {
   display: inline-block;
   margin: 0;
@@ -345,32 +346,32 @@ h2.error, h4.error {
   text-transform: initial;
   margin-left: 235px;
 }
-/* line 184, ../lib/includes/frontend/_forms.scss */
+/* line 185, ../lib/includes/frontend/_forms.scss */
 .call section.date-time .element.time div.custom-select, .call section.date-time .element.time div.multiple-select {
   width: 25%;
   margin: 0;
 }
 
-/* line 194, ../lib/includes/frontend/_forms.scss */
+/* line 195, ../lib/includes/frontend/_forms.scss */
 .plan h2, .plan h4 {
   font-size: 36px;
   font-weight: 600;
 }
-/* line 199, ../lib/includes/frontend/_forms.scss */
+/* line 200, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select, .plan .multiple-select {
   width: 379px;
 }
-/* line 203, ../lib/includes/frontend/_forms.scss */
+/* line 204, ../lib/includes/frontend/_forms.scss */
 .plan .custom-select select, .plan .multiple-select select {
   width: 379px;
 }
 
-/* line 209, ../lib/includes/frontend/_forms.scss */
+/* line 210, ../lib/includes/frontend/_forms.scss */
 .i-error {
   border: 1px solid #ff0000 !important;
 }
 
-/* line 213, ../lib/includes/frontend/_forms.scss */
+/* line 214, ../lib/includes/frontend/_forms.scss */
 .error {
   margin-left: 392px;
   font-size: 18px;
@@ -382,7 +383,7 @@ h2.error, h4.error {
   display: none;
 }
 
-/* line 224, ../lib/includes/frontend/_forms.scss */
+/* line 225, ../lib/includes/frontend/_forms.scss */
 .message {
   margin-left: 392px;
   margin-top: 10px;
@@ -390,7 +391,7 @@ h2.error, h4.error {
   font-style: italic;
 }
 
-/* line 231, ../lib/includes/frontend/_forms.scss */
+/* line 232, ../lib/includes/frontend/_forms.scss */
 label {
   display: inline-block;
   width: 368px;
@@ -402,7 +403,7 @@ label {
   line-height: 37px;
 }
 
-/* line 242, ../lib/includes/frontend/_forms.scss */
+/* line 243, ../lib/includes/frontend/_forms.scss */
 input[type=email], input[type=password], input[type=text] {
   width: 280px;
   border: 1px solid rgba(124, 41, 139, 0.3);
@@ -414,7 +415,7 @@ input[type=email], input[type=password], input[type=text] {
   outline: none;
 }
 
-/* line 251, ../lib/includes/frontend/_forms.scss */
+/* line 252, ../lib/includes/frontend/_forms.scss */
 input[type=submit] {
   border: none;
   outline: none;
@@ -436,18 +437,18 @@ input[type=submit]:hover {
   background: #a581ad;
 }
 
-/* line 255, ../lib/includes/frontend/_forms.scss */
+/* line 256, ../lib/includes/frontend/_forms.scss */
 .center {
   text-align: center;
 }
 
-/* line 260, ../lib/includes/frontend/_forms.scss */
+/* line 261, ../lib/includes/frontend/_forms.scss */
 .custom-select, .multiple-select {
   position: relative;
   display: inline-block;
   /* Select arrow styling */
 }
-/* line 265, ../lib/includes/frontend/_forms.scss */
+/* line 266, ../lib/includes/frontend/_forms.scss */
 .custom-select select, .multiple-select select {
   display: inline-block;
   border: 1px solid rgba(124, 41, 139, 0.3);
@@ -465,12 +466,12 @@ input[type=submit]:hover {
   border-radius: 5px;
   background: #fff;
 }
-/* line 282, ../lib/includes/frontend/_forms.scss */
+/* line 283, ../lib/includes/frontend/_forms.scss */
 .custom-select select option:hover, .multiple-select select option:hover {
   background: #4b4a4d;
   color: white;
 }
-/* line 291, ../lib/includes/frontend/_forms.scss */
+/* line 292, ../lib/includes/frontend/_forms.scss */
 .custom-select:after, .multiple-select:after {
   content: "";
   position: absolute;
@@ -484,29 +485,29 @@ input[type=submit]:hover {
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 308, ../lib/includes/frontend/_forms.scss */
+/* line 309, ../lib/includes/frontend/_forms.scss */
 .no-pointer-events .custom-select:after, .no-pointer-events .multiple-select:after {
   content: none;
 }
 
-/* line 314, ../lib/includes/frontend/_forms.scss */
+/* line 315, ../lib/includes/frontend/_forms.scss */
 .multiple-select {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 318, ../lib/includes/frontend/_forms.scss */
+/* line 319, ../lib/includes/frontend/_forms.scss */
 .multiple-select select {
   height: initial;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 323, ../lib/includes/frontend/_forms.scss */
+/* line 324, ../lib/includes/frontend/_forms.scss */
 .multiple-select select option {
   padding: 5px;
 }
-/* line 328, ../lib/includes/frontend/_forms.scss */
+/* line 329, ../lib/includes/frontend/_forms.scss */
 .multiple-select:after {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -514,7 +515,7 @@ input[type=submit]:hover {
   height: 99px;
 }
 
-/* line 335, ../lib/includes/frontend/_forms.scss */
+/* line 336, ../lib/includes/frontend/_forms.scss */
 textarea {
   width: 280px;
   max-width: 530px;
@@ -529,11 +530,11 @@ textarea {
   border-radius: 5px;
 }
 
-/* line 349, ../lib/includes/frontend/_forms.scss */
+/* line 350, ../lib/includes/frontend/_forms.scss */
 .checkbox span, .radio span {
   cursor: pointer;
 }
-/* line 352, ../lib/includes/frontend/_forms.scss */
+/* line 353, ../lib/includes/frontend/_forms.scss */
 .checkbox span:before, .radio span:before {
   display: inline-block;
   width: 12px;
@@ -542,32 +543,32 @@ textarea {
   background: url(../../img/checkbox.png) no-repeat;
   margin-right: 10px;
 }
-/* line 363, ../lib/includes/frontend/_forms.scss */
+/* line 364, ../lib/includes/frontend/_forms.scss */
 .checkbox span.checked:before, .radio span.checked:before {
   background: url(../../img/checkbox-checked.png) no-repeat;
 }
-/* line 369, ../lib/includes/frontend/_forms.scss */
+/* line 370, ../lib/includes/frontend/_forms.scss */
 .checkbox input, .radio input {
   visibility: hidden;
   display: none;
   margin-top: 15px;
 }
 
-/* line 380, ../lib/includes/frontend/_forms.scss */
+/* line 381, ../lib/includes/frontend/_forms.scss */
 .row-checkbox span:after, .row-radio span:after {
   display: block;
   content: "";
 }
-/* line 386, ../lib/includes/frontend/_forms.scss */
+/* line 387, ../lib/includes/frontend/_forms.scss */
 .row-checkbox .indent, .row-radio .indent {
   margin-left: 392px;
 }
 
-/* line 396, ../lib/includes/frontend/_forms.scss */
+/* line 397, ../lib/includes/frontend/_forms.scss */
 .radio span:before {
   background: url(../../img/radio.png) no-repeat;
 }
-/* line 402, ../lib/includes/frontend/_forms.scss */
+/* line 403, ../lib/includes/frontend/_forms.scss */
 .radio span.checked:before {
   background: url(../../img/radio-checked.png) no-repeat;
 }
@@ -722,34 +723,38 @@ textarea {
   display: none;
 }
 
-/* line 1, ../lib/includes/frontend/_carousel.scss */
+/* line 3, ../lib/includes/frontend/_carousel.scss */
 .slider {
   background: #e7e7e7;
   background: url(../../img/carousel-border-top.png) no-repeat #e7e7e7 50% 0%;
   padding: 20px 0 1px;
 }
 
-/* line 7, ../lib/includes/frontend/_carousel.scss */
+/* line 9, ../lib/includes/frontend/_carousel.scss */
 .carousel {
   max-width: 940px;
   margin: 0 auto;
 }
-/* line 12, ../lib/includes/frontend/_carousel.scss */
+/* line 14, ../lib/includes/frontend/_carousel.scss */
 .carousel .bg {
   display: inline-block;
   background: white;
   padding: 5px;
 }
-/* line 18, ../lib/includes/frontend/_carousel.scss */
+/* line 20, ../lib/includes/frontend/_carousel.scss */
 .carousel a {
   display: inline-block;
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 
 /* Slider */
-/* line 67, ../lib/includes/frontend/_carousel.scss */
+/* line 66, ../lib/includes/frontend/_carousel.scss */
 .slick-slider {
   position: relative;
   display: block;
@@ -766,7 +771,7 @@ textarea {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 82, ../lib/includes/frontend/_carousel.scss */
+/* line 81, ../lib/includes/frontend/_carousel.scss */
 .slick-list {
   position: relative;
   overflow: hidden;
@@ -774,21 +779,21 @@ textarea {
   margin: 0;
   padding: 0;
 }
-/* line 89, ../lib/includes/frontend/_carousel.scss */
+/* line 88, ../lib/includes/frontend/_carousel.scss */
 .slick-list:focus {
   outline: none;
 }
-/* line 93, ../lib/includes/frontend/_carousel.scss */
+/* line 92, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-list {
   background: #fff url('/img/ajax-loader.gif') center center no-repeat;
 }
-/* line 97, ../lib/includes/frontend/_carousel.scss */
+/* line 96, ../lib/includes/frontend/_carousel.scss */
 .slick-list.dragging {
   cursor: pointer;
   cursor: hand;
 }
 
-/* line 102, ../lib/includes/frontend/_carousel.scss */
+/* line 101, ../lib/includes/frontend/_carousel.scss */
 .slick-slider .slick-track {
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
@@ -797,59 +802,59 @@ textarea {
   transform: translate3d(0, 0, 0);
 }
 
-/* line 110, ../lib/includes/frontend/_carousel.scss */
+/* line 109, ../lib/includes/frontend/_carousel.scss */
 .slick-track {
   position: relative;
   left: 0;
   top: 0;
   display: block;
 }
-/* line 116, ../lib/includes/frontend/_carousel.scss */
+/* line 115, ../lib/includes/frontend/_carousel.scss */
 .slick-track:before, .slick-track:after {
   content: "";
   display: table;
 }
-/* line 122, ../lib/includes/frontend/_carousel.scss */
+/* line 121, ../lib/includes/frontend/_carousel.scss */
 .slick-track:after {
   clear: both;
 }
-/* line 126, ../lib/includes/frontend/_carousel.scss */
+/* line 125, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-track {
   visibility: hidden;
 }
 
-/* line 130, ../lib/includes/frontend/_carousel.scss */
+/* line 129, ../lib/includes/frontend/_carousel.scss */
 .slick-slide {
   float: left;
   height: 100%;
   min-height: 1px;
   display: none;
 }
-/* line 134, ../lib/includes/frontend/_carousel.scss */
+/* line 133, ../lib/includes/frontend/_carousel.scss */
 [dir="rtl"] .slick-slide {
   float: right;
 }
-/* line 137, ../lib/includes/frontend/_carousel.scss */
+/* line 136, ../lib/includes/frontend/_carousel.scss */
 .slick-slide img {
   display: block;
 }
-/* line 140, ../lib/includes/frontend/_carousel.scss */
+/* line 139, ../lib/includes/frontend/_carousel.scss */
 .slick-slide.slick-loading img {
   display: none;
 }
-/* line 146, ../lib/includes/frontend/_carousel.scss */
+/* line 145, ../lib/includes/frontend/_carousel.scss */
 .slick-slide.dragging img {
   pointer-events: none;
 }
-/* line 150, ../lib/includes/frontend/_carousel.scss */
+/* line 149, ../lib/includes/frontend/_carousel.scss */
 .slick-initialized .slick-slide {
   display: block;
 }
-/* line 154, ../lib/includes/frontend/_carousel.scss */
+/* line 153, ../lib/includes/frontend/_carousel.scss */
 .slick-loading .slick-slide {
   visibility: hidden;
 }
-/* line 158, ../lib/includes/frontend/_carousel.scss */
+/* line 157, ../lib/includes/frontend/_carousel.scss */
 .slick-vertical .slick-slide {
   display: block;
   height: auto;
@@ -858,7 +863,7 @@ textarea {
 
 /* Icons */
 /* Arrows */
-/* line 181, ../lib/includes/frontend/_carousel.scss */
+/* line 180, ../lib/includes/frontend/_carousel.scss */
 .slick-prev,
 .slick-next {
   position: absolute;
@@ -877,7 +882,7 @@ textarea {
   outline: none;
 }
 
-/* line 198, ../lib/includes/frontend/_carousel.scss */
+/* line 197, ../lib/includes/frontend/_carousel.scss */
 .slick-prev:before, .slick-next:before {
   font-size: 20px;
   line-height: 1;
@@ -889,34 +894,34 @@ textarea {
   height: 50px;
 }
 
-/* line 209, ../lib/includes/frontend/_carousel.scss */
+/* line 208, ../lib/includes/frontend/_carousel.scss */
 .slick-prev {
   left: -5px;
   background: url("../../img/carousel-previous.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 212, ../lib/includes/frontend/_carousel.scss */
+/* line 211, ../lib/includes/frontend/_carousel.scss */
 .slick-prev:before {
   content: "";
 }
 
-/* line 216, ../lib/includes/frontend/_carousel.scss */
+/* line 215, ../lib/includes/frontend/_carousel.scss */
 .slick-next {
   right: -5px;
   background: url("../../img/carousel-next.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 219, ../lib/includes/frontend/_carousel.scss */
+/* line 218, ../lib/includes/frontend/_carousel.scss */
 .slick-next:before {
   content: "";
 }
 
 /* Dots */
-/* line 226, ../lib/includes/frontend/_carousel.scss */
+/* line 225, ../lib/includes/frontend/_carousel.scss */
 .slick-slider {
   margin-bottom: 70px;
   text-align: center;
 }
 
-/* line 230, ../lib/includes/frontend/_carousel.scss */
+/* line 229, ../lib/includes/frontend/_carousel.scss */
 .slick-dots {
   position: absolute;
   bottom: -42px;
@@ -926,7 +931,7 @@ textarea {
   padding: 0;
   width: 100%;
 }
-/* line 239, ../lib/includes/frontend/_carousel.scss */
+/* line 238, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li {
   position: relative;
   display: inline-block;
@@ -936,7 +941,7 @@ textarea {
   padding: 0;
   cursor: pointer;
 }
-/* line 248, ../lib/includes/frontend/_carousel.scss */
+/* line 247, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button {
   border: 0;
   background: transparent;
@@ -951,15 +956,15 @@ textarea {
   cursor: pointer;
   background: url("../../img/carousel-dots.png") no-repeat scroll 0% 0% transparent;
 }
-/* line 261, ../lib/includes/frontend/_carousel.scss */
+/* line 260, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:hover, .slick-dots li button:focus {
   outline: none;
 }
-/* line 263, ../lib/includes/frontend/_carousel.scss */
+/* line 262, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:hover:before, .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 268, ../lib/includes/frontend/_carousel.scss */
+/* line 267, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -973,7 +978,7 @@ textarea {
   color: black;
   opacity: 0.25;
 }
-/* line 285, ../lib/includes/frontend/_carousel.scss */
+/* line 284, ../lib/includes/frontend/_carousel.scss */
 .slick-dots li.slick-active button:before {
   color: black;
   opacity: 0.75;
@@ -1025,6 +1030,7 @@ header .content #header-sub-menu ul li a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 /* line 60, ../lib/frontend.scss */
 header .content .logo {
@@ -1046,6 +1052,7 @@ header .content .logo a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 /* line 77, ../lib/frontend.scss */
 header .content nav {
@@ -1073,6 +1080,7 @@ header .content nav ul li a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 /* line 97, ../lib/frontend.scss */
 header .content nav ul li i {
@@ -1272,6 +1280,7 @@ main .ico-links ul li a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 /* line 317, ../lib/frontend.scss */
 main .block-links {
@@ -1410,6 +1419,7 @@ footer .opt .legales a {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 /* line 445, ../lib/frontend.scss */
 footer .opt .legales:hover {
@@ -1445,6 +1455,7 @@ footer .opt .legales:hover {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.005);
 }
 
 @media (min-width: 290px) and (max-width: 940px) {
