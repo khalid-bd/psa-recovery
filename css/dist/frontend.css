@@ -1057,6 +1057,7 @@ header .content .logo a {
 /* line 77, ../lib/frontend.scss */
 header .content nav {
   float: right;
+  font-size-adjust: 0.45;
 }
 /* line 81, ../lib/frontend.scss */
 header .content nav ul {
